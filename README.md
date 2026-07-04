@@ -132,8 +132,8 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics |  ✅ Completed | ✅ Completed | https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye | https://medium.com/@aremufemmy02/scalability-challengeswith-possible-solutions-amazon-s3-unfair-advantage-32a89b313e3d?postPublishedType=repub |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics |  ✅ Completed | ✅ Completed | |  |
+| 01 | Success Mindset | ✅ Completed | ✅ Completed |  https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye |  https://medium.com/@aremufemmy02/scalability-challengeswith-possible-solutions-amazon-s3-unfair-advantage-32a89b313e3d?postPublishedType=repub |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
