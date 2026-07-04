@@ -33,7 +33,8 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+I believe that every the world sees time as being wasted in an oppportunty I do see it as actually purpose being fulfilled. Its not waste of time is the ordained alignment of destiny and purpose.
+
 
 ---
 
@@ -55,11 +56,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Gravity
 
 ### Evidence from my life
 
-Add your answer here...
+I do throw a stone up it goes up a cetain distain and returns to the ground
 
 ---
 
@@ -67,11 +68,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Speed
 
 ### Evidence from my life
 
-Add your answer here...
+Speed: I do drive a car and I do accelerate what I attain is speed, the magnitude leaving out direction
 
 ---
 
@@ -79,11 +80,10 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Growth
 
 ### Evidence from my life
-
-Add your answer here...
+Growth: Its inevitable in humans, in plants, in things we do engage in we see growth being manifested
 
 ---
 
@@ -135,7 +135,11 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+Since you are speaking my language, my "2.0" is all about moving from just a software engineer to a fully autonomous, end-to-end software development partner and fin-tech speacialist. Here is what my next-generation architecture looks like:
+•	Multi-Versatile Orchestration: Instead of just coding, I can deploy specialize complex financial models for market trends to collaborate on complex features.
+•	Deep System Context: I would be ingesting entire repositories, documentations, and tech debt metrics to provide architectural decisions and refactoring suggestions perfectly tailored to my specified codebase.
+•	Being A Peoples Person: Rather than just being a friend, I can actively be that person every one can come to and get their issues resolved no matter the magnitude.
+
 
 ### Public Link
 
@@ -173,7 +177,7 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+Yes. The feeling isn the best at all. the realization of compromised integrity typically led to guilt, anxiety, and a diminished sense of self-esteem. Ultimately I did apologize.
 
 ---
 
@@ -199,16 +203,35 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. Who's your city  by  richard florida
+    ![Assignment 1 Screenshot](screenshots/week1%20screenshot-01.jpeg)
+
+2. David and Goliath  by  Malcolm Gladwell
+    ![Assignment 1 Screenshot](screenshots/week1%20screenshot-02.jpg)
+
+3. 5am Club  by  Robin Sharma
+   ![Assignment 1 Screenshot](screenshots/week1%20screenshot-003.jpeg)
+
+4. Millionaire Mindset  by   Thomas Stanley
+   ![Assignment 1 Screenshot](screenshots/week1%20screenshot-04.jpg)
+
+5. Authority of a believer  by  Kenneth Hagin
+    ![Assignment 1 Screenshot](screenshots/week1%20screenshot-05.jpg)
+
+6. Psychology of Selling  by  Brian Tracey
+     ![Assignment 1 Screenshot](screenshots/week1%20screenshot-06.jpg)
+
+7. Mystery of Capital by Herandez De soto
+   ![Assignment 1 Screenshot](screenshots/week1%20screenshot-03.jpg)
+
+8. Seven pillars of Health  by  Don Colbert
+    ![Assignment 1 Screenshot](screenshots/week1%20screenshot-08.jpg)
+
+9. From third world to first world   by   lee kuan yew
+    ![Assignment 1 Screenshot](screenshots/week1%20screenshot-09.jpg)
+
+10. Emotional Intelligence by Daniel Goleman
+   ![Assignment 1 Screenshot](screenshots/week1%20screenshot-10.jpg)
 
 ---
 
@@ -237,16 +260,16 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Sleep patterns
+* How many books i read per month
+* Length of time spent on tasks daily
+* level of intensity i use to relational engagement
+* Strong observaion of my mood (Joy)
+* Keeping tab of my learning periods
+* Time spent in prayers
+* Amount of food consumed daily and the timing
+* Consumption of vitamin C specific fruits on daily consumption
+* Time spent with Family
 
 ---
 
@@ -290,7 +313,12 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+Mon–Thu: 4-6 hours intensive work
+         10 minutes planning each day 
+        Catergorizing specific tasks
+Sat: DMI session
+Sun: Church
+
 
 ---
 
@@ -298,11 +326,11 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+Mon-Thu Mornings 11am-12noon
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+7 sessions
 
 ---
 
@@ -316,36 +344,40 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
-
+no phone calls until 7pm in the evening
+no social media posting/ presence until december
+setting alarms consistently
+less talk or avoid unnecessary conversations
+no television at all
 ---
 
 # Reflection – Week 1
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+Being productive while multi tasking. WHen engaging in potential Devops tasks along side software engineering and User inteface work its being amzing how I have been able to multi task and till attain my goals. Looks like Devops would be me more efficient
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+Working so hard i at times miss my sleeping time and sometimes forget to eat.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+Mon–Thu: 4-6 hours intensive work on study and practice of the new concepts I am and would be learning
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
+ https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye
 `__________________________`
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: **[ADD LINK HERE](https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye)**  
+- Blog / Medium : **(https://medium.com/@aremufemmy02/scalability-challengeswith-possible-solutions-amazon-s3-unfair-advantage-32a89b313e3d)**  
 
 ---
 
