@@ -87,7 +87,8 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 Add your screenshot here.
 
----
+---  ![task 6](screenshots/Screenshot%20with%20commit%20in%20github%20main.png)
+     ![task 6](screenshots/Screenshot%20with%20commit%20in%20github_1.png)
 
 # Submission Instructions
 
@@ -101,7 +102,7 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+`_https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code_`
 
 ---
 
