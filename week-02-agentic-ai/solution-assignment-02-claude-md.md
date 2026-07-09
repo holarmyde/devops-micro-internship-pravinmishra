@@ -22,7 +22,7 @@ Capture Claude’s response before `CLAUDE.md` exists in the project to establis
 
 Add your screenshot here.
 
----
+---![task 1](screenshots/Screenshot%20before%20claude_md%20exists.png)
 
 # Task 2 — Generate the First Draft with /init
 
@@ -36,7 +36,7 @@ Generate an initial `CLAUDE.md` file using the `/init` command and review the au
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20with%20claude_md.png)
 
 # Task 3 — Customize the CLAUDE.md
 
@@ -50,7 +50,7 @@ Update the generated `CLAUDE.md` file by adding project-specific instructions ac
 
 Add your screenshot here.
 
----
+--- ![task 3](screenshots/Screenshot%20with%20claude_md_main.png)
 
 # Task 4 — Test the After State
 
@@ -64,13 +64,16 @@ Verify that Claude’s behavior changes after adding `CLAUDE.md` by running a ne
 
 Add your screenshot here.
 
----
+--- ![task 4](screenshots/Screenshot%20with%20main_main_main_1.png)
+    ![task 4](screenshots/Screenshot%20with%20main_main_main_2.png)
+    ![task 4](screenshots/Screenshot%20with%20main_main_main_3.png)
+    
 
 #### Screenshot 5 — Claude refusing or warning against adding React because of the "No JavaScript" convention defined in CLAUDE.md
 
 Add your screenshot here.
 
----
+--- ![task 5](screenshots/Screenshot%20with%20no%20react%20framework.png)
 
 # Task 5 — Commit and push your changes to your fork in GitHub
 

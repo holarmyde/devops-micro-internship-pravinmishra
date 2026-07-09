@@ -22,13 +22,14 @@ Install the Claude Code CLI globally and authenticate it using your Anthropic ac
 
 Add your screenshot here.
 
----
+--- ![task 1](screenshots/Screenshot%20assig%20task1-001.png)
 
 #### Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
 
 Add your screenshot here.
 
----
+--- ![task 1](screenshots/Screenshot2%20assig%20task1-002.png)
+    ![task 1](screenshots/Screenshot3%20assig%20task1-003.png)
 
 # Task 2 — Fork and Clone the Starter Repository
 
@@ -42,7 +43,9 @@ Fork the provided GitHub repository, clone it to your local machine, and open it
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20index_html.png)
+    ![task 2](screenshots/Screenshot%20style_css.png)
+    ![task 2](screenshots/Screenshot%20images.png)
 
 # Task 3 — Observe the Agentic Loop
 
@@ -56,13 +59,14 @@ Interact with Claude Code and observe how it performs the Agentic Loop (Gather �
 
 Add your screenshot here.
 
----
+---![task 3](screenshots/Screenshot%20projectrelatedquestions.png)
 
 #### Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
 
 Add your screenshot here.
 
----
+---![task 3](screenshots/Screenshot%20projectrelatedquestions%202.png)
+   ![task 3](screenshots/Screenshot%20projectrelatedquestions%202b.png)
 
 # Submission Instructions
 
@@ -77,18 +81,18 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+`https://github.com/holarmyde/devops-micro-internship-pravinmishra/tree/main`
 
 ---
 
 # Completion Checklist
 
-- [ ] Claude Code CLI installed successfully
-- [ ] Claude Code authenticated successfully
-- [ ] Repository forked successfully
-- [ ] Repository cloned and opened in VS Code
-- [ ] All required screenshots added
-- [ ] GitHub repository URL provided
+- [✅ ] Claude Code CLI installed successfully
+- [✅ ] Claude Code authenticated successfully
+- [✅ ] Repository forked successfully
+- [✅ ] Repository cloned and opened in VS Code
+- [✅ ] All required screenshots added
+- [✅ ] GitHub repository URL provided
 
 ---
 
