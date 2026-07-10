@@ -22,7 +22,7 @@ Create the required `.claude/skills/` directory structure for all skills.
 
 Add your screenshot here.
 
----
+--- ![task 1](screenshots/Screenshot%20with%20claude_skills_subfolders.png)
 
 # Task 2 — Add the Skill Files
 
@@ -36,13 +36,13 @@ Place all required skill files into their correct directories and verify their c
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20with%20skills_md%20and%20template.png.png)
 
 #### Screenshot 3 — Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20with%20tf_plan_skills.png)
 
 # Task 3 — Run /scaffold-terraform
 
