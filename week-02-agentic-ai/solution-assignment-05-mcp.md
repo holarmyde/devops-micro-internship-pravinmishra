@@ -22,7 +22,7 @@ Generate a GitHub Personal Access Token (PAT) that will be used for MCP authenti
 
 Add your screenshot here.
 
----
+--- ![task 1](screenshots/Screenshot%20with%20personal%20access%20token1.png)
 
 # Task 2 — Create .mcp.json at the Project Root
 
@@ -36,7 +36,7 @@ Create and configure the `.mcp.json` file to define the GitHub MCP server.
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20with%20mcp_servers.png)
 
 # Task 3 — Add Your Token to settings.local.json
 
@@ -50,7 +50,7 @@ Store your GitHub token securely in `.claude/settings.local.json` and ensure it 
 
 Add your screenshot here.
 
----
+--- ![task 3](screenshots/Screenshot%20with%20settings_local_json.png)
 
 # Task 4 — Verify the Connection with /mcp
 
@@ -64,7 +64,7 @@ Confirm that the GitHub MCP server is successfully connected inside Claude Code.
 
 Add your screenshot here.
 
----
+--- ![task 4](screenshots/Screenshot%20with%20github%20connected%20to%20claude.png)
 
 # Task 5 — Run a Live GitHub Query
 
@@ -78,7 +78,7 @@ Verify MCP functionality by retrieving real-time data from your GitHub account u
 
 Add your screenshot here.
 
----
+--- ![task 5](screenshots/Screenshot%20with%20github%20claude%20response.png)
 
 # Submission Instructions
 

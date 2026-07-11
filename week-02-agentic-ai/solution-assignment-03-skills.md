@@ -56,13 +56,13 @@ Execute the `/scaffold-terraform` skill to generate a full Terraform infrastruct
 
 Add your screenshot here.
 
----
+--- ![task 3](screenshots/Screenshot%20with%20scaffold_terraform.png)
 
 #### Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
 
 Add your screenshot here.
 
----
+--- ![task 3](screenshots/Screenshot%20with%20terraform%20folder.png)
 
 # Task 4 — Run terraform init and /tf-plan
 
@@ -76,7 +76,7 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 Add your screenshot here.
 
----
+--- ![task 4](screenshots/Screenshot%20with%20tf_plan_terraform.png)
 
 # Submission Instructions
 
@@ -90,27 +90,27 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+`https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code`
 
 ## LinkedIn post URL
 
 Paste your forked repository URL here:
 
-`__________________________`
+`_https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code__`
 ---
 
 # Completion Checklist
 
-- [ ] `.claude/skills/` folder created with all 4 skill folders
-- [ ] All skill files placed correctly
-- [ ] `tf-plan/SKILL.md` shows correct `allowed-tools` restrictions
-- [ ] `/scaffold-terraform` executed successfully
-- [ ] Terraform files generated inside `terraform/` folder
-- [ ] `terraform init` executed successfully
-- [ ] `/tf-plan` executed and output analyzed by Claude
-- [ ] All required screenshots added
-- [ ] GitHub repository URL included
-- [ ] LinkedIn post URL included
+- [✅ ] `.claude/skills/` folder created with all 4 skill folders
+- [✅ ] All skill files placed correctly
+- [✅ ] `tf-plan/SKILL.md` shows correct `allowed-tools` restrictions
+- [✅ ] `/scaffold-terraform` executed successfully
+- [✅ ] Terraform files generated inside `terraform/` folder
+- [✅ ] `terraform init` executed successfully
+- [✅ ] `/tf-plan` executed and output analyzed by Claude
+- [✅ ] All required screenshots added
+- [✅ ] GitHub repository URL included
+- [✅ ] LinkedIn post URL included
 
 ---
 
