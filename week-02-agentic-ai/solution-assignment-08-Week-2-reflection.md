@@ -48,7 +48,7 @@ You can publish your blog on:
 
 Add your screenshot here.
 
----
+--- [task 1](screenshots/Screenshot%20with%20medium.png)
 
 ### Submission Field
 
@@ -94,7 +94,7 @@ P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by 
 
 Add your screenshot here.
 
----
+--- [task 2](screenshots/Screenshot%20with%20linkedIn.png)
 
 ### Submission Field
 
@@ -108,7 +108,7 @@ Paste your LinkedIn post content here
 
 ### LinkedIn Post Link:
 
-`__________________________________________`
+`__https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk___`
 
 ---
 
@@ -124,15 +124,15 @@ Paste your LinkedIn post content here
 
 # Completion Checklist
 
-* [ ] Blog written with required structure
-* [ ] Blog includes at least 2–3 Week 2 topics
-* [ ] Blog is publicly accessible
-* [ ] LinkedIn post created
-* [ ] Required P.S. line included
-* [ ] LinkedIn post content copied in submission field
-* [ ] Blog link added
-* [ ] LinkedIn post link added
-* [ ] Screenshots added to GitHub repo
+* [✅ ] Blog written with required structure
+* [✅ ] Blog includes at least 2–3 Week 2 topics
+* [✅ ] Blog is publicly accessible
+* [✅ ] LinkedIn post created
+* [✅ ] Required P.S. line included
+* [✅ ] LinkedIn post content copied in submission field
+* [✅ ] Blog link added
+* [✅ ] LinkedIn post link added
+* [✅ ] Screenshots added to GitHub repo
 
 ---
 
