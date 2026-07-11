@@ -102,7 +102,7 @@ Prove the tool-level hook works by asking Claude to execute a dangerous Bash com
 
 #### Screenshot 7 — PreToolUse hook blocking terraform destroy
 
----
+--- [task 7](screenshots/Screenshot%20with%20terraform%20clearing.png)
 
 # Task 8 — Test the PostToolUse Logging Hook
 
@@ -113,7 +113,7 @@ Prove the logging hook runs after a successful command execution and records Ter
 ### Evidence
 
 #### Screenshot 8 — Claude running terraform validate successfully
-
+        [task 8](screenshots/Screenshot%20with%20tf_plan_terraform.png)
 #### Screenshot 9 — `.claude/deploy.log` showing the logged command
 
 ---
@@ -138,9 +138,9 @@ Your submission must include:
   - [✅ ] UserPromptSubmit
   - [✅ ] PreToolUse
   - [✅ ] PostToolUse
-- [ ] Destructive prompt test shows UserPromptSubmit blocked the request
-- [ ] Terraform destroy command test shows PreToolUse intercepted the command
-- [ ] Terraform validate test shows PostToolUse created the log entry
+- [✅ ] Destructive prompt test shows UserPromptSubmit blocked the request
+- [✅ ] Terraform destroy command test shows PreToolUse intercepted the command
+- [✅ ] Terraform validate test shows PostToolUse created the log entry
 - [ ] All required screenshots are captured
 
 ---
