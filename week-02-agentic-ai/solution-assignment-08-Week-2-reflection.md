@@ -54,7 +54,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`__________________________________________`
+`___https://medium.com/@aremufemmy02/week-2-reflection-exploring-agentic-ai-in-devops-d4beec71cd60__`
 
 ---
 
