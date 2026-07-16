@@ -307,8 +307,7 @@ That fixed the as  systemctl restart nginx run, followed by an external curl -I 
 
 Write your answer here.
 
---- 
-Use a staging environment to test config changes before they ever touch production.
+--- Use a staging environment to test config changes before they ever touch production.
 
 Always run nginx -t after any config edit, before restarting or reloading.
 
@@ -327,7 +326,7 @@ Simulate missing deployment content and recover the application safely.
 
 Add your screenshot here.
 
----
+---  ![task 7](screenshots/Screenshot%20with%20internal%20error%20nginx%20curl%20http.png)
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
@@ -343,19 +342,26 @@ Answer the following in your own words:
 
 Write your answer here
 
----
+---  it returned a 500 Internal Server Error instead of serving the React application. The issue was that The web root directory   /var/www/html which is   the exact path  that   Nginx serves content from  was emptied of all deployed files.
 
 **2. How did you fix the issue and restore the application?**
 
 Write your answer here.
 
----
+--- I removed the empty broken directory and moved the backup back into place at the correct path. Nginx was restarted to make it was delivered from the restored files. Recovery was confirmed externally via curl -I,  and that showed 200  which meant it was successful/OK 
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
 Write your answer here.
 
 ---
+
+
+
+Have  backups you deploy , so every release can be instantly rolled back 
+
+ monitoring after you deploy  helps to  verify the live site returns a healthy 200  success  response  immediately after every deploy
+
 
 # Task 8 — Security & Reliability Review
 
@@ -370,32 +376,36 @@ Answer the following in your own words:
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
 Write your answer here.
-
----
+ 
+--- SSH key-based authentication is more secure than sharing passwords because it relies on asymmetric cryptography, meaning the secret credential (the private key) never leaves your local device. Unlike passwords, which must be transmitted to or stored on the server to verify your identity, SSH keys use a challenge-response handshake that proves identity without exposing the secret
 
 **2. Why should only required ports be open on a production server?**
 
 Write your answer here.
 
----
+--- Leaving only required ports open on a production server minimizes the attack surface, preventing unauthorized access to hidden backdoors or unpatched services. It helps limit opportunities for attackers to establish remote connections
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
 Write your answer here.
 
----
+--- Enabling Nginx on boot is important  helps  maintains 24/7 uptime for your applications without requiring manual intervention to restart services
+
+  it ensures your web server, load balancer automatically resumes operations following a server restart or unexpected power outage. 
+ 
+
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
 Write your answer here.
 
----
+---  Sharing secrets, keys, or credentials publicly hands unauthorized actors the master key to your digital infrastructure. Automated bots constantly scan platforms like GitHub for exposed data, granting cybercriminals the ability to deploy ransomware, steal sensitive user information, and hijack corporate identities in seconds
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
 Write your answer here.
 
----
+--- . It ensures your infrastructure remains lean, cost-efficient, and aligned with modern operational best practices. It also prevents"cloud sprawl", eliminate unexpected financial waste, and reduce exposure to security vulnerabilities
 
 # LinkedIn Post (Required)
 
