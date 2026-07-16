@@ -22,7 +22,7 @@ Verify the Ubuntu VM and Nginx are ready for deployment.
 
 Add your screenshot here.
 
----
+--- [task 0](screenshots/Screenshot%20with%20no%20pager%20active%20no%204%20task%201.png)
 
 # Task 1 — Get the Website Source Code
 
@@ -36,7 +36,7 @@ Download and extract the portfolio website template.
 
 Add your screenshot here.
 
----
+--- [task 0](screenshots/Screenshot%20with%20proff%20website.png)
 
 # Task 2 — Add Ownership Proof (Anti-Copy Change)
 
@@ -50,7 +50,7 @@ Update the website footer with your deployment details.
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20with%20full%20name_group_indexhtml.png)
 
 # Task 3 — Deploy Website via Nginx
 
@@ -64,13 +64,13 @@ Deploy the portfolio website to the Nginx web root.
 
 Add your screenshot here.
 
----
+--- ![task 3](screenshots/Screenshot%20with%20successful%20nginx_t.png)
 
 #### Screenshot 4 — Output of `ls /var/www/html` showing deployed website files
 
 Add your screenshot here.
-
----
+ 
+--- ![task 3](screenshots/Screenshot%20with%20ls_var_www_html.png)
 
 # Task 4 — Verify Website is Live
 
@@ -84,13 +84,13 @@ Verify the deployed website is publicly accessible and the footer contains your 
 
 Add your screenshot here.
 
----
+--- ![task 4](screenshots/Screenshot%20with%20curl%20ifconfig_me%20assign%204%20no%205.png)
 
 #### Screenshot 6 — Browser showing the live website with your Full Name and deployment details in the footer
 
 Add your screenshot here.
 
----
+--- ![task 4](screenshots/Screenshot%20with%20footer%20live%20and%20name.png)
 
 # Task 5 — Mini Real DevOps Operational Check
 
@@ -104,13 +104,13 @@ Verify the deployed website and Nginx service are healthy.
 
 Add your screenshot here.
 
----
+--- ![task 5](screenshots/Screenshot%20with%20is%20enabled%20nginx.png)
 
 #### Screenshot 8 — Output of `curl -I http://localhost` showing 200 OK
 
 Add your screenshot here.
 
----
+--- ![task 5](screenshots/Screenshot%20with%20localhost.png)
 
 # LinkedIn Post (Mandatory)
 
@@ -141,18 +141,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Screenshot 0: Nginx service status (active/running)
-- [ ] Screenshot 1: Website files downloaded and extracted
-- [ ] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
-- [ ] Screenshot 3: Nginx configuration test successful
-- [ ] Screenshot 4: Website files deployed to /var/www/html
-- [ ] Screenshot 5: Public IP retrieved
-- [ ] Screenshot 6: Live website accessible in browser with footer details
-- [ ] Screenshot 7: Nginx enabled on boot
-- [ ] Screenshot 8: Local HTTP response returns 200 OK
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [✅ ] Screenshot 0: Nginx service status (active/running)
+- [✅ ] Screenshot 1: Website files downloaded and extracted
+- [✅ ] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
+- [✅ ] Screenshot 3: Nginx configuration test successful
+- [✅ ] Screenshot 4: Website files deployed to /var/www/html
+- [✅] Screenshot 5: Public IP retrieved
+- [✅ ] Screenshot 6: Live website accessible in browser with footer details
+- [✅ ] Screenshot 7: Nginx enabled on boot
+- [✅ ] Screenshot 8: Local HTTP response returns 200 OK
+- [✅ ] LinkedIn post published and URL submitted
+- [✅ ] Full Name visible in all required screenshots
+- [✅ ] No sensitive data exposed
 
 ---
 

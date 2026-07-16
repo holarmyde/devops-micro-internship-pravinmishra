@@ -22,13 +22,13 @@ Verify that Bash is available on your system and create a clean workspace for th
 
 Add your screenshot here.
 
----
+--- ![task 1](screenshots/Screenshot%20with%20echo%20shell.png)
 
 #### Screenshot 2 — Output of `pwd` and `ls -lah` showing the scripts directory
 
 Add your screenshot here.
 
----
+--- ![task 1](screenshots/Screenshot%20with%20pwd%20ls_lh.png)
 
 ### Notes
 
@@ -38,19 +38,24 @@ Answer the following in your own words:
 
 Add your answer here.
 
----
+--- Its a shell used on Linux systems. Its the short form for Bourne Again Shell and is a command-line shell also a scripting language. Bash reads commands entered by a user or stored in a script and requests the operating system to perform the required operations. 
+
 
 **2. What is the difference between shell and Bash?**
 
 Add your answer here.
 
----
+---  "shell" is a broad category name for any command-line interpreter program, while "Bash" is one specific, highly popular implementation of a shell
+
+ A shell is a software program that acts as an interface between a user and the operating system kernel. It takes commands typed by the user or read from a script file, interprets them, and passes them to the computer's operating system to execute
+
+ Bash stands for Bourne-Again SHell. It is a specific type of shell.  It is the de facto default shell on almost all Linux distributions.
 
 **3. Why is it important to confirm the Bash version before writing scripts?**
 
 Add your answer here.
 
----
+--- It is important to confirm the bash version cos different versions introduce breaking syntax changes, new features, and array handling differences. Writing a script with newer features without confirming the environment will cause syntax errors on older systems . It ensures that the syntax and features used in our scripts are supported by the existing system. 
 
 # Task 2 — Your First Bash Script
 
@@ -64,19 +69,19 @@ Create your first Bash script, make it executable, and run it from the terminal.
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20with%20content%20of%20first%20script%20.png)
 
 #### Screenshot 2 — Output of `./first-script.sh`
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20with%20output%20of%20first%20script%20.png)
 
 #### Screenshot 3 — Output of `ls -l first-script.sh` showing executable permission
 
 Add your screenshot here.
 
----
+--- ![task 2](screenshots/Screenshot%20with%20output%20output%20putput.png)
 
 ### Notes
 
@@ -86,19 +91,23 @@ Answer the following in your own words:
 
 Add your answer here.
 
----
+---  It talks to the OS(Ubuntu) to use the Bash interpreter to run the commands inside the script. 
+
 
 **2. Why do we use `chmod +x` before running a script?**
 
 Add your answer here.
 
----
+--- It adds the command "execute permission", which enables us to run the script directly for example above we jut invoke/use ./first-script.sh. 
+
 
 **3. What is the difference between running a script using `./script.sh` and `bash script.sh`?**
 
 Add your answer here.
 
----
+--- ./script.sh executes the script as a standalone program using the interpreter defined inside the script,
+
+ while bash script.sh forces the script to run explicitly through the Bash interpreter, bypassing the script's internal instructions
 
 # Task 3 — Variables: User Information Script
 
