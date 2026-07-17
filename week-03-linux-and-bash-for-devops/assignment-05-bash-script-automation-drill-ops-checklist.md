@@ -121,13 +121,13 @@ Use variables to store and display user-related information.
 
 Add your screenshot here.
 
----
+--- ![task 3](screenshots/Screenshot%20with%20content2_userinfo.png)
 
 #### Screenshot 2 — Output of `./user-info.sh`
 
 Add your screenshot here.
 
----
+--- ![task 3](screenshots/Screenshot%20with%20content2_output_userinfo.png)
 
 ### Notes
 
@@ -137,19 +137,25 @@ Answer the following in your own words:
 
 Add your answer here.
 
----
+--- A Bash variable is a container which has temporary storage and holds data, such as a string of text or a number, which can be referenced  throughout a command-line session 
 
 **2. Why should we avoid spaces around the `=` sign when creating variables?**
 
 Add your answer here.
 
----
+--- Because in bash failing to remove spaces causes the compiler or shell interpreter to misread the assignment as a command execution or a syntax error.
+
+ The shell reads whitespace as a delimiter to separate commands and arguments hence when a command is typed with spaces in between it often is causes the command confusion 
+
+ for example our_car = 18 is wrong
+             our_car=18 is correct 
+             (remove the whitespaces write the variables continously no space in between)
 
 **3. How do you access the value stored inside a Bash variable?**
 
-Add your answer here.
+Add your answer here. 
 
----
+--- To access the value stored inside a Bash variable, you must precede the variable name with the sign $ e.g $index. the shell then substitutes the variable name with its actual content before executing the command
 
 # Task 4 — Arrays & Loops: Tools Checklist Script
 
@@ -163,13 +169,13 @@ Use arrays and loops to print a checklist of tools used in Bash scripting.
 
 Add your screenshot here.
 
----
+--- ![task 4](screenshots/Screenshot%20with%20content3%20nano_Gnu.png)
 
 #### Screenshot 2 — Output of `./tools-checklist.sh`
 
 Add your screenshot here.
 
----
+--- ![task 4](screenshots/Screenshot%20with%20content3%20output%204_s.png)
 
 ### Notes
 
@@ -179,25 +185,30 @@ Answer the following in your own words:
 
 Add your answer here.
 
----
+--- An array in Bash is a   collection of variables bundle into a organized container which allows you to store variety of values under a one single variable name instead of managing separate variables like a list of file names, server IPs, or user choices.
 
 **2. Why are arrays useful in scripts?**
 
 Add your answer here.
 
----
+--- Arrays are basic scripting features used to store several values in a single variable. They help to process large datasets quickly using loops and  reduce code repetition by eliminating the need to declare dozens of individual variables.
 
 **3. What does `"${tools[@]}"` mean?**
 
 Add your answer here.
 
----
+--- "${tools[@]}"  ia a structured container of all the values stored inside the tools array. 
+
+Here, it gives the loop access to every index position in the array.
+
+The double quotes ensures each array item is a separate value. 
+
 
 **4. What is the purpose of the `for` loop in this script?**
 
 Add your answer here.
 
----
+--- The purpose of a for loop in the script is to repeat a specific block of code/array a set number of times or iterate over the collection of varaibles sequentialy. It automates repetitive tasks, keeping the script clean and preventing reptition.
 
 # Task 5 — Loops: Number Counter Script
 
@@ -211,13 +222,13 @@ Use loops to repeat a task multiple times.
 
 Add your screenshot here.
 
----
+--- ![task 5](screenshots/Screenshot%20with%20content%20of%20num_counter.png)
 
 #### Screenshot 2 — Output of `./counter.sh`
 
 Add your screenshot here.
 
----
+--- ![task 5](screenshots/Screenshot%20with%20output%205%20counter_sh.png)
 
 ### Notes
 
@@ -227,25 +238,33 @@ Answer the following in your own words:
 
 Add your answer here.
 
----
+--- A sequence of instructions that automatically repeats itself until a specific condition is met
 
 **2. Why do we use loops in Bash scripting?**
 
 Add your answer here.
 
----
+--- Basucally to process e files or arrays, automate repetitive tasks, , and control script execution dynamically without writing duplicate code. 
+
+ a loop allows you to write the command once and let the system execute it as many times as necessary instead of typing the same command multiple times,.
 
 **3. How many times did the loop run in your script?**
 
 Add your answer here.
 
----
+---It iterated 5 times because we supplied it 5 values i.e. 12345
 
 **4. What would you change if you wanted the loop to run 10 times?**
 
 Add your answer here.
 
----
+--- To allow the loop run exactly 10 times, you need to change its  its iteration range  between the starting point and the ending point is exactly 10 points. i.e. add 6 to 10 to the initial 1-5 to make the for loop:
+
+for number in 1 2 3 4 5 6 7 8 9 10
+do
+   	echo "No $number "
+done
+
 
 # Task 6 — Files & Conditionals: File Validation Script
 
@@ -259,19 +278,19 @@ Use file checks and conditionals to verify whether files and directories exist.
 
 Add your screenshot here.
 
----
+--- ![task 6](screenshots/Screenshot%20with%20la_lah_test_folder.png)
 
 #### Screenshot 2 — Content of `file-check.sh`
 
 Add your screenshot here.
 
----
+--- ![task 6](screenshots/Screenshot%20with%20ls_lah_test_folder.png)
 
 #### Screenshot 3 — Output of `./file-check.sh`
 
 Add your screenshot here.
 
----
+--- ![task 6](screenshots/Screenshot%20with%20file_check_sh.png)
 
 ### Notes
 
@@ -281,25 +300,27 @@ Answer the following in your own words:
 
 Add your answer here.
 
----
+--- Its a file test operator used within conditional statements to check if a specified path exists and is a directory
 
 **2. What does `-f` check in Bash?**
 
 Add your answer here.
 
----
+--- Its an operator that checks if a target path exists and is a regular file. It evaluates to true only if both conditions are met
 
 **3. Why should file and directory paths be stored in variables?**
 
 Add your answer here.
 
----
+--- It helps prevents code duplication, maintainability, readability, and ensures cross-platform portability. 
 
 **4. What happens if the file does not exist?**
 
 Add your answer here.
 
----
+---  the line/lines of command under else will run, and the message displayed would be:
+File does not exist: ../test-folder/....
+
 
 # Task 7 — Conditionals: Pass or Retry Script
 
@@ -313,25 +334,25 @@ Use if-else conditionals to make decisions based on a variable value.
 
 Add your screenshot here.
 
----
+--- ![task 7](screenshots/Screenshot%20with%20score_check.png)
 
 #### Screenshot 2 — Output showing `Result: Pass`
 
 Add your screenshot here.
 
----
+--- ![task 7](screenshots/Screenshot%20with%20%20score_check_85_pt.png)
 
 #### Screenshot 3 — Content of `score-check.sh` with `score=55`
 
 Add your screenshot here.
 
----
+---  ![task 7](screenshots/Screenshot%20with%20content%20of%20score%20check%2055.png)
 
 #### Screenshot 4 — Output showing `Result: Retry`
 
 Add your screenshot here.
 
----
+--- ![task 7](screenshots/Screenshot%20with%20output%20score%20check%2055.png)
 
 ### Notes
 
@@ -341,25 +362,28 @@ Answer the following in your own words:
 
 Add your answer here.
 
----
+---  if-else in Bash is conditional statement used to control the function of a script. 
+It does this by executing different code segments based on whether a particular condition evaluates true or false. 
 
 **2. What does `-ge` mean?**
 
 Add your answer here.
 
----
+--- -ge typically means "greater than or equal to". In our ptoject its used in the bash script,
+ it does a check whether the score is greater than or equal to 70
 
 **3. Why should conditions be tested with different values?**
 
 Add your answer here.
 
----
+--- Beacuse it ensures system reliability, catches edge-case logic errors, and verifies that a system handles both standard and unexpected inputs safely.
 
 **4. How can conditionals help in automation scripts?**
 
 Add your answer here.
 
----
+---  It helps script to dynamically make decisions and adapt to real-time inputs, rather than following a rigid, single-path sequence. 
+They allow scripts to respond to errors, process different data types, and determine the next required action based on whether a specific condition is evaluated as true or false.
 
 # Task 8 — Functions: Final Bash Automation Script
 
@@ -373,19 +397,19 @@ Create a final Bash script using functions to organize reusable code.
 
 Add your screenshot here.
 
----
+--- ![task 8](screenshots/Screenshot%20with%20final%20automation.png)
 
 #### Screenshot 2 — Output of `./final-automation.sh`
 
 Add your screenshot here.
 
----
+--- ![task 8](screenshots/Screenshot%20with%20final%20automation%20printout.png)
 
 #### Screenshot 3 — Output of `ls -lah` showing all created scripts
 
 Add your screenshot here.
 
----
+--- ![task 8](screenshots/Screenshot%20with%20final%20final%20output.png)
 
 ### Notes
 
