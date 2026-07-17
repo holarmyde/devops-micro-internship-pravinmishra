@@ -419,25 +419,35 @@ Answer the following in your own words:
 
 Add your answer here.
 
----
+--- Its reusable segment of commands that executes within the current shell environment
+     
 
 **2. Why are functions useful in scripts?**
 
 Add your answer here.
 
----
+--- they completely remove code repetition. They essentially act as features within your main script to make your code easier to write, read, and maintain
 
 **3. Which functions did you create in this script?**
 
 Add your answer here.
 
----
+--- check_files
+    print_header
+    print_tools 
+    print_user_details : prints full name and the assignment name.
+    
 
 **4. How does this final script combine variables, arrays, loops, conditionals, files, and functions?**
 
 Add your answer here.
 
----
+--- The final script uses variables to store values such as  the assignment name, paths.
+An array is effective for this to store the tool names 
+ A loop to is needed to print the values one by one.
+It uses conditionals to check the required directory and file. 
+The commands are seperated into several functions, and when compiled those functions are called to run the complete script.
+
 
 # LinkedIn Post (Required)
 
