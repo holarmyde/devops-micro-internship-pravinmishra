@@ -120,7 +120,7 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+`_https://www.linkedin.com/feed/update/urn:li:activity:7484000066027003905/___`
 
 ---
 
@@ -128,7 +128,7 @@ Paste your LinkedIn post URL here:
 
 Add your screenshot here.
 
----
+--- ![linkedIn](screenshots/Screenshot%20with%20portfolio%20website.png)
 
 # Submission Instructions
 

@@ -457,7 +457,7 @@ The commands are seperated into several functions, and when compiled those funct
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+`__https://www.linkedin.com/feed/update/urn:li:activity:7484006478039818240/_`
 
 ---
 
@@ -465,7 +465,7 @@ Paste your LinkedIn post URL here:
 
 Add your screenshot here.
 
----
+--- [linkedIn](screenshots/Screenshot%20with%20automation%20script.png)
 
 # Submission Instructions
 
@@ -479,18 +479,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes answered)
-- [ ] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes answered)
-- [ ] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
-- [ ] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
-- [ ] Task 8: Final automation script created and run (Screenshots 1–3, Notes answered)
-- [ ] All scripts run without errors
-- [ ] Full Name visible in all required screenshots
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [✅ ] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes answered)
+- [✅ ] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes answered)
+- [✅ ] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
+- [✅ ] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
+- [✅ ] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
+- [✅ ] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
+- [✅ ] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
+- [✅ ] Task 8: Final automation script created and run (Screenshots 1–3, Notes answered)
+- [✅ ] All scripts run without errors
+- [✅ ] Full Name visible in all required screenshots
+- [✅ ] LinkedIn post published and URL submitted
+- [✅ ] No sensitive data exposed
 
 ---
 

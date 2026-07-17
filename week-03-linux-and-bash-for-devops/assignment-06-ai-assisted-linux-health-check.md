@@ -411,7 +411,7 @@ Add your screenshot here.
 
 Add your screenshot here.
 
----  ![task 8](screenshots/Screenshot%20with%20summary%20summary%206_8.png)
+---  ![task 8](screenshots/Screenshot%20with%20summary%20summary3_%206_8.png)
 
 ### Notes   
 
@@ -507,10 +507,14 @@ Add your answer here.
 
 Add your answer here.
 
---- **Gather** The bash script collected outcomes on Nginx, port 80, HTTP response, disk usage
-     **Analyze** laude read the report, found 3 checks to have failed and descibed the outcome  
-     **My Human Decision** read Claudes reports, reviewd the analyses, and recommendation and also ran recoery commands
-     **Verify** I attest of the evidence that I received HTTP 200 response from the application, also Nginx is active and disk usage was adequately managed
+--- **Gather** :   The bash script collected outcomes on Nginx, port 80, HTTP response, disk usage.
+                   No assumptions. No blind automation. Just evidence.
+    **Analyze**:  Claude read the report, found 3 checks to have failed and descibed the outcome. I 
+                  diagnosized issues. identify root causes then recommend recovery steps  
+    **Human Act**: read Claudes reports, reviewd the analyses, and recommendation and also ran recovery commands
+                   Hence I position myself for control, I decide the fix to make, I execute the fix (e.g., restarting Nginx). Am accountable for the system. as a Human I decide.
+    **Verify** :   I attest of the evidence that I received HTTP 200 response from the application,   
+                   also Nginx is active and disk usage was adequately managed.
 
 # LinkedIn Post (Required)
 
@@ -520,7 +524,7 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+`__https://www.linkedin.com/feed/update/urn:li:activity:7483995724192395266/__`
 
 ---
 
@@ -528,13 +532,13 @@ Paste your LinkedIn post URL here:
 
 Add your screenshot here.
 
----
+--- [LinkedIn](screenshots/Screenshot%20with%20nginx%20linkedIn.png)
 
 # GitHub Repository URL
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`__________________________`
+`__https://github.com/pravinmishraaws/devops-micro-internship-pravinmishra/tree/main/week-03-linux-and-bash-for-devops__`
 
 ---
 
@@ -550,20 +554,20 @@ Paste the URL of your GitHub folder or repository containing the assignment file
 
 # Completion Checklist
 
-- [ ] Task 1: Healthy baseline confirmed, workspace created (Screenshots 1–2, Notes answered)
-- [ ] Task 2: CLAUDE.md created with all four sections (Screenshot 3, Notes answered)
-- [ ] Task 3: Five-check plan produced by Claude using read-only tools (Screenshot 4, Notes answered)
-- [ ] Task 4: `linux-triage.sh` created, syntax validated, executable permission set (Screenshots 5–8, Notes answered)
-- [ ] Task 5: Healthy-state report generated with no FAIL result (Screenshots 9–10, Notes answered)
-- [ ] Task 6: `/linux-triage` skill created and run successfully on healthy server (Screenshots 11–12, Notes answered)
-- [ ] Task 7: Nginx incident simulated, failed evidence captured, Claude did not execute recovery (Screenshots 13–15, Notes answered)
-- [ ] Task 8: Nginx recovered manually, recovery verified, reports saved, incident summary complete (Screenshots 16–19, Notes answered)
-- [ ] Incident summary contains all seven required sections
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots and the Bash report
-- [ ] Skill does not have Write permission
-- [ ] Skill did not execute any recovery commands
-- [ ] No sensitive data exposed
+- [✅ ] Task 1: Healthy baseline confirmed, workspace created (Screenshots 1–2, Notes answered)
+- [✅ ] Task 2: CLAUDE.md created with all four sections (Screenshot 3, Notes answered)
+- [✅ ] Task 3: Five-check plan produced by Claude using read-only tools (Screenshot 4, Notes answered)
+- [✅ ] Task 4: `linux-triage.sh` created, syntax validated, executable permission set (Screenshots 5–8, Notes answered)
+- [✅ ] Task 5: Healthy-state report generated with no FAIL result (Screenshots 9–10, Notes answered)
+- [✅ ] Task 6: `/linux-triage` skill created and run successfully on healthy server (Screenshots 11–12, Notes answered)
+- [✅ ] Task 7: Nginx incident simulated, failed evidence captured, Claude did not execute recovery (Screenshots 13–15, Notes answered)
+- [✅ ] Task 8: Nginx recovered manually, recovery verified, reports saved, incident summary complete (Screenshots 16–19, Notes answered)
+- [✅ ] Incident summary contains all seven required sections
+- [✅ ] LinkedIn post published and URL submitted
+- [✅ ] Full Name visible in all required screenshots and the Bash report
+- [✅ ] Skill does not have Write permission
+- [✅ ] Skill did not execute any recovery commands
+- [✅ ] No sensitive data exposed
 
 ---
 
