@@ -524,7 +524,11 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
+<<<<<<< HEAD
 `__https://www.linkedin.com/feed/update/urn:li:activity:7483995724192395266/__`
+=======
+`https://www.linkedin.com/feed/update/urn:li:activity:7483995724192395266/`
+>>>>>>> upstream/main
 
 ---
 
@@ -538,7 +542,11 @@ Add your screenshot here.
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
+<<<<<<< HEAD
 `__https://github.com/pravinmishraaws/devops-micro-internship-pravinmishra/tree/main/week-03-linux-and-bash-for-devops__`
+=======
+`https://github.com/pravinmishraaws/devops-micro-internship-pravinmishra/tree/main/week-03-linux-and-bash-for-devops`
+>>>>>>> upstream/main
 
 ---
 

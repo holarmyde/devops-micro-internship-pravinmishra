@@ -145,7 +145,7 @@ Since you are speaking my language, my "2.0" is all about moving from just a sof
 
 Paste your link here:
 
-`__________________________`
+`Add your URL here`
 
 ---
 
@@ -369,8 +369,12 @@ Mon–Thu: 4-6 hours intensive work on study and practice of the new concepts I 
 
 Paste your LinkedIn post link here:
 
+<<<<<<< HEAD
  https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye
 `__________________________`
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 

@@ -120,7 +120,11 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
+<<<<<<< HEAD
 `_https://www.linkedin.com/feed/update/urn:li:activity:7484000066027003905/___`
+=======
+`https://www.linkedin.com/feed/update/urn:li:activity:7484000066027003905/`
+>>>>>>> upstream/main
 
 ---
 

@@ -102,7 +102,11 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 `_https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code_`
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 

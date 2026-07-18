@@ -81,9 +81,13 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 `https://github.com/holarmyde/devops-micro-internship-pravinmishra/tree/main`
 `https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code`
 
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 
