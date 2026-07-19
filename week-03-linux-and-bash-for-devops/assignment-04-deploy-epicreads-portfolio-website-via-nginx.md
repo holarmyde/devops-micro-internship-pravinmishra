@@ -20,9 +20,9 @@ Verify the Ubuntu VM and Nginx are ready for deployment.
 
 #### Screenshot 0 — Output of `sudo systemctl status nginx --no-pager` showing Active (running)
 
-Add your screenshot here.
+[task 0](screenshots/Screenshot%20with%20no%20pager%20active%20no%204%20task%201.png)
 
---- [task 0](screenshots/Screenshot%20with%20no%20pager%20active%20no%204%20task%201.png)
+--- 
 
 # Task 1 — Get the Website Source Code
 
@@ -34,9 +34,9 @@ Download and extract the portfolio website template.
 
 #### Screenshot 1 — Output of `ls -la` showing the extracted project folder
 
-Add your screenshot here.
+[task 0](screenshots/Screenshot%20with%20proff%20website.png)
 
---- [task 0](screenshots/Screenshot%20with%20proff%20website.png)
+--- 
 
 # Task 2 — Add Ownership Proof (Anti-Copy Change)
 
@@ -48,9 +48,9 @@ Update the website footer with your deployment details.
 
 #### Screenshot 2 — Nano editor open with the updated footer showing your Full Name, Group, Week, and Date
 
-Add your screenshot here.
+ ![task 2](screenshots/Screenshot%20with%20full%20name_group_indexhtml.png)
 
---- ![task 2](screenshots/Screenshot%20with%20full%20name_group_indexhtml.png)
+---
 
 # Task 3 — Deploy Website via Nginx
 
@@ -62,15 +62,15 @@ Deploy the portfolio website to the Nginx web root.
 
 #### Screenshot 3 — Output of `sudo nginx -t` showing configuration test successful
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20successful%20nginx_t.png)
 
---- ![task 3](screenshots/Screenshot%20with%20successful%20nginx_t.png)
+--- 
 
 #### Screenshot 4 — Output of `ls /var/www/html` showing deployed website files
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20ls_var_www_html.png)
  
---- ![task 3](screenshots/Screenshot%20with%20ls_var_www_html.png)
+--- 
 
 # Task 4 — Verify Website is Live
 
@@ -82,15 +82,15 @@ Verify the deployed website is publicly accessible and the footer contains your 
 
 #### Screenshot 5 — Output of `curl ifconfig.me` showing the server's public IP address
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20curl%20ifconfig_me%20assign%204%20no%205.png)
 
---- ![task 4](screenshots/Screenshot%20with%20curl%20ifconfig_me%20assign%204%20no%205.png)
+--- 
 
 #### Screenshot 6 — Browser showing the live website with your Full Name and deployment details in the footer
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20footer%20live%20and%20name.png)
 
---- ![task 4](screenshots/Screenshot%20with%20footer%20live%20and%20name.png)
+--- 
 
 # Task 5 — Mini Real DevOps Operational Check
 
@@ -102,15 +102,15 @@ Verify the deployed website and Nginx service are healthy.
 
 #### Screenshot 7 — Output of `systemctl is-enabled nginx`
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20is%20enabled%20nginx.png)
 
---- ![task 5](screenshots/Screenshot%20with%20is%20enabled%20nginx.png)
+--- 
 
 #### Screenshot 8 — Output of `curl -I http://localhost` showing 200 OK
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20localhost.png)
 
---- ![task 5](screenshots/Screenshot%20with%20localhost.png)
+--- 
 
 # LinkedIn Post (Mandatory)
 
@@ -118,21 +118,19 @@ Add your screenshot here.
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+[`https://www.linkedin.com/feed/update/urn:li:activity:7484000066027003905/`]
 
 <<<<<<< HEAD
-`_https://www.linkedin.com/feed/update/urn:li:activity:7484000066027003905/___`
+
 =======
-`https://www.linkedin.com/feed/update/urn:li:activity:7484000066027003905/`
->>>>>>> upstream/main
+
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the live website with your Full Name in the footer
 
-Add your screenshot here.
-
---- ![linkedIn](screenshots/Screenshot%20with%20portfolio%20website.png)
+ ![linkedIn](screenshots/Screenshot%20with%20portfolio%20website.png)
+---
 
 # Submission Instructions
 

@@ -121,7 +121,7 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20access_log.png)
 
 --- ![task 3](screenshots/Screenshot%20with%20access_log.png)
 
@@ -324,7 +324,7 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20internal%20error%20nginx%20curl%20http.png)
 
 ---  ![task 7](screenshots/Screenshot%20with%20internal%20error%20nginx%20curl%20http.png)
 
@@ -418,16 +418,16 @@ Paste your LinkedIn post URL here:
 <<<<<<< HEAD
 `_https://www.linkedin.com/feed/update/urn:li:activity:7484008587325952002/_`
 =======
-`https://www.linkedin.com/feed/update/urn:li:activity:7484008587325952002/`
+![task 7](screenshots/Screenshot%20with%20internal%20error%20nginx%20curl%20http.png)
 >>>>>>> upstream/main
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+[linkedIn](screenshots/Screenshot%20with%20security.png)
 
---- [linkedIn](screenshots/Screenshot%20with%20security.png)
+
 
 # Submission Instructions
 

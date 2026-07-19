@@ -457,19 +457,15 @@ The commands are seperated into several functions, and when compiled those funct
 
 Paste your LinkedIn post URL here:
 
-<<<<<<< HEAD
-`__https://www.linkedin.com/feed/update/urn:li:activity:7484006478039818240/_`
-=======
-`https://www.linkedin.com/feed/update/urn:li:activity:7484006478039818240/`
->>>>>>> upstream/main
+https://www.linkedin.com/feed/update/urn:li:activity:7484006478039818240/
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+[linkedIn](screenshots/Screenshot%20with%20automation%20script.png)
 
---- [linkedIn](screenshots/Screenshot%20with%20automation%20script.png)
+--- 
 
 # Submission Instructions
 

@@ -20,21 +20,15 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-Write your answer here.
-
---- An AWS account is a isolated container on the web which is adequately secured and that establishes your our work, services and applications with  Amazon Web Services (AWS). At this stage it is needed for the security so secure permissions can be made on our applications which is on the cloud. It is also needed to run virtual servers to attain ease in performance and efficiency(EC). For easy cloud storage it equally stands out for storing files of all sorts applications and software. 
+An AWS account is a isolated container on the web which is adequately secured and that establishes your our work, services and applications with  Amazon Web Services (AWS). At this stage it is needed for the security so secure permissions can be made on our applications which is on the cloud. It is also needed to run virtual servers to attain ease in performance and efficiency(EC). For easy cloud storage it equally stands out for storing files of all sorts applications and software. 
 
 #### Question 2 — What is AWS Free Tier, and how long does it last?
 
-Write your answer here.
-
---- This service in AWS is an account that allows new users to active and use Amazon Web Services at no cost for a limited period of 6 months after which you can sign up for other services that would require payment.
+ This service in AWS is an account that allows new users to active and use Amazon Web Services at no cost for a limited period of 6 months after which you can sign up for other services that would require payment.
 
 #### Question 3 — Name three AWS Free Tier services and their free usage limits.
 
-Write your answer here. 
-
---- AWS Lambda: Always Free. Limit is 1,000,000 free requests and 400,000 GB-seconds of compute time per month.
+ AWS Lambda: Always Free. Limit is 1,000,000 free requests and 400,000 GB-seconds of compute time per month.
 
 Amazon DynamoDB: Always Free. Limit is 25 GB of storage, 25 \text{ provisioned Write Capacity Units (WCU)}, and 25 \text{ provisioned Read Capacity Units (RCU)}.
 
