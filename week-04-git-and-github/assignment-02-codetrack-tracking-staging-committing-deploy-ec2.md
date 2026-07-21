@@ -20,15 +20,15 @@ Confirm that Git works and that you are inside the correct `CodeTrack` repositor
 
 #### Screenshot 1 — Output of `pwd` showing you're inside `CodeTrack`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20pwd%20output%20of%20git.png)
 
 ---
 
 #### Screenshot 2 — Output of `git status` showing no "not a git repository" error
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20git%20status.png)
 
----
+--- 
 
 # Task 2 — Create index.html and style.css
 
@@ -40,7 +40,7 @@ Create the two starter UI files inside `CodeTrack`.
 
 #### Screenshot 3 — Output of `ls` showing `index.html` and `style.css`
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20ls_indexhtml_stylecss.png)
 
 ---
 
@@ -54,7 +54,10 @@ Copy the provided starter HTML and CSS content into your local `index.html` and 
 
 #### Screenshot 4 — Your editor showing the contents of `index.html` and `style.css`
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20indexhtmloutput1.png)
+![task 3](screenshots/Screenshot%20with%20indexhtmloutput2.png)
+![task 3](screenshots/Screenshot%20with%20stylecssoutput1.png)
+![task 3](screenshots/Screenshot%20with%20stylecssoutput3.png)
 
 ---
 
@@ -68,13 +71,13 @@ Confirm both files show as untracked, then stage them individually with `git add
 
 #### Screenshot 5 — Output of `git status` showing both files as untracked
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20git%20status_untracked%20files.png)
 
 ---
 
 #### Screenshot 6 — Output of `git status` showing both files staged under "Changes to be committed"
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20git%20status_changes_to_be_committed.png)
 
 ---
 
@@ -88,13 +91,13 @@ Commit the staged starter files using the message `Initial UI scaffold: add inde
 
 #### Screenshot 7 — Output of `git commit`
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20%20with%20git%20commit%20output.png)
 
 ---
 
 #### Screenshot 8 — Output of `git log --oneline` showing the first commit
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20git%20log--online%20reg.png)
 
 ---
 
@@ -108,25 +111,25 @@ Follow the instruction comment inside `index.html` to update the Student Name an
 
 #### Screenshot 9 — Browser showing the updated page with your Student Name and Group Name visible
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20browser_modified_name.png)
 
 ---
 
 #### Screenshot 10 — Output of `git status` showing `index.html` as modified
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20git%20status_modified%20html.png)
 
 ---
 
 #### Screenshot 11 — Output of `git commit`
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20git%20commit_m%20Update%20homepage.png)
 
 ---
 
 #### Screenshot 12 — Output of `git log --oneline` showing two commits
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20git%20log%20--oneline%20Update%20homepage%20content.png)
 
 ---
 
