@@ -143,19 +143,19 @@ Install and start Nginx on your EC2 instance, then copy `index.html` and `style.
 
 #### Screenshot 13 — Output of `systemctl status nginx --no-pager` showing Nginx `active (running)`
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20systemctl%20status%20nginx%20--no-pager_%20showing_Nginx_active.png)
 
 ---
 
 #### Screenshot 14 — Output of `curl -I http://localhost` showing `HTTP/1.1 200 OK`
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Output%20of%20curl%20-I%20http_localhost.png)
 
 ---
 
 #### Screenshot 15 — Browser showing the CodeTrack site loaded at `http://<EC2_PUBLIC_IP>`, with your Full Name and Group Name visible
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Browser%20showing%20the%20CodeTrack%20site%20loaded%20at%20httpEC2_PUBLIC_IP.png)
 
 ---
 
