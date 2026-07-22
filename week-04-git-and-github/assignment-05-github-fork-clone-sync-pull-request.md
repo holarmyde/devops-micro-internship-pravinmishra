@@ -48,7 +48,7 @@ Clone your fork locally, then add the original repository as `upstream`.
 
 #### Screenshot 3 — Output of `git remote -v` showing `origin` pointing to your fork and `upstream` pointing to `pravinmishraaws/devops-micro-internship-interviews`
 
-![task 2](screenshots/Screenshot%20with%20Output%20of%20git%20remote_v%20showing%20origin%20pointing%20to%20your%20fork%20and%20upstream%20pointing%20to%20.png)
+![task 2](screenshots/Screenshot%20with%20Output%20of%20`git%20remote_v.png)
 
 ---
 
