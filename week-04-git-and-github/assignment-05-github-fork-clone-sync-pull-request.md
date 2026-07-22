@@ -20,7 +20,7 @@ Fork `pravinmishraaws/devops-micro-internship-interviews` into your own GitHub a
 
 #### Screenshot 1 — Your fork page with your username and `devops-micro-internship-interviews` visible in the browser URL
 
-Add your screenshot here.
+![task 0](screenshots/Screenshot%20with%20Your%20fork%20page%20with%20your%20username%20and%20devops-micro-internship-interviews%20visible%20in%20the%20browser%20URL.png)
 
 ---
 
@@ -34,7 +34,7 @@ Configure one authentication method — HTTPS with a Personal Access Token, or S
 
 #### Screenshot 2 — Output of `git config --global --get credential.helper` (HTTPS) or `ssh -T git@github.com` (SSH) showing successful authentication — never show your token or private key
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20output%20of%20ssh%20_T%20git@github.com_(SSH)%20showing%20successful%20authentication%20—%20never%20show%20your%20token%20or%20private%20key.png)
 
 ---
 
@@ -48,7 +48,7 @@ Clone your fork locally, then add the original repository as `upstream`.
 
 #### Screenshot 3 — Output of `git remote -v` showing `origin` pointing to your fork and `upstream` pointing to `pravinmishraaws/devops-micro-internship-interviews`
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Output%20of%20git%20remote_v%20showing%20origin%20pointing%20to%20your%20fork%20and%20upstream%20pointing%20to%20.png)
 
 ---
 
@@ -62,13 +62,14 @@ Create the branch `feature-readme-update`, add only your own entry (`Full Name �
 
 #### Screenshot 4 — Output of `git status` showing `pull_request.md` modified before staging
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Output%20of%20git%20status%20showing%20pull_request_md%20modified%20before%20staging.png)
+![task 3](screenshots/Screenshot%20with%20pull%20request_md.png)
 
 ---
 
 #### Screenshot 5 — Output of `git commit`
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20git%20commit%20assign%205%20task%203%20scn%205.png)
 
 ---
 
@@ -82,13 +83,13 @@ Fetch and merge `upstream/main` into your local default branch, rebase your feat
 
 #### Screenshot 6 — Output of `git push -u origin feature-readme-update` showing a successful push
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Output%20of%20git%20push_u%20origin%20feature_readme_update_showing%20a%20successful%20push.png)
 
 ---
 
 #### Screenshot 7 — Your fork on GitHub showing `feature-readme-update` in the branch selector or a "Compare & pull request" banner
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Your%20fork%20on%20GitHub%20showing%20feature-readme-update%20in%20the%20branch%20selector%20.png)
 
 ---
 
@@ -102,7 +103,7 @@ Open a Pull Request from `feature-readme-update` on your fork to `main` on the u
 
 #### Screenshot 8 — Pull Request creation page showing the correct base repository, base branch, head repository, compare branch, and title
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Pull%20Request%20creation%20page%20showing%20the%20correct%20base%20repository,.png)
 
 ---
 
