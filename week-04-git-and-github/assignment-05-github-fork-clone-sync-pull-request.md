@@ -109,7 +109,7 @@ Open a Pull Request from `feature-readme-update` on your fork to `main` on the u
 
 #### Screenshot 9 — Successfully created Pull Request page with the PR number visible
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Successfully%20created%20Pull%20Request%20page%20with%20the%20PR%20number%20visible.png)
 
 ---
 
@@ -117,7 +117,7 @@ Add your screenshot here.
 
 Paste your Pull Request URL here:
 
-`Add your URL here`
+`https://github.com/pravinmishraaws/devops-micro-internship-interviews/pull/344`
 
 ---
 

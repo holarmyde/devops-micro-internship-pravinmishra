@@ -27,7 +27,7 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 
 #### Screenshot 1 — Output of git remote -v and git branch showing the new branch
 
-Add your screenshot here.
+![task 0](screenshots/Screenshot%20witha%20Output%20of%20git%20remote%20-v%20and%20git%20branch%20showing%20the%20new%20branch.png)
 
 ---
 
@@ -35,7 +35,9 @@ Add your screenshot here.
 
 **1. Why create a dedicated branch instead of doing this work on main?**
 
-Add your answer here.
+Protects the main in case there are broken codes/ untested codes, ensuring there is stability  in production 
+Makes Pull Requests (PRs) smaller and easier for team members to review, resulting in higher-quality feedback
+
 
 ---
 
@@ -49,7 +51,7 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
-Add your screenshot here.
+![track 1](screenshots/Screenshot%20with%20Output%20of%20%20git%20status%20showing%20the%20staged%20file%20on%20feature_ai-pr-ready.png)
 
 ---
 
@@ -57,7 +59,7 @@ Add your screenshot here.
 
 **1. Why does this assignment use an obviously fake key instead of a real one?**
 
-Add your answer here.
+For security reasons Preventing Unauthorized Access cos keys are connected to paid services or sensitive data. Distributing real ones poses a severe security risk if shared publicly or leaked.
 
 ---
 
