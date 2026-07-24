@@ -181,7 +181,7 @@ Add your screenshot here.
 
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
-Add your answer here.
+[!task 5](screenshots/Screenshot%20with%20A%20repository%20page%20showing%20the%20Star%20button%20in%20the%20Starred%20state.png)
 
 ---
 
