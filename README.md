@@ -1,3 +1,4 @@
+
 # DevOps Micro Internship with Agentic AI — My Journey
 
 ![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
@@ -24,7 +25,7 @@
 
 ## About the Program
 
-**DevOps Micro Internship with Agentic AI** is a 14-week mentor-led cohort program by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) — Cloud, DevOps & AI consultant with 15+ years of experience, 5,000+ learners trained, and 20K+ LinkedIn followers.
+**DevOps Micro Internship with Agentic AI** is a 14-week mentor-led cohort program by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) — Cloud, DevOps & AI consultant with 15+ years of experience, 5,000+ learners trained, and 26K+ LinkedIn followers.
 
 This is not a course. It is an internship-style program — real deployments, real pipelines, real evidence reviewed by mentors every week.
 
@@ -57,7 +58,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 *Earn a badge each week. To unlock: remove the `<!--` and `-->` from the badge line below.*
 
-*Share your stack:* `https://github.com/YOUR-USERNAME/devops-micro-internship-pravinmishra#my-devops-stack`
+*Share your stack:* `https://github.com/holarmyde/devops-micro-internship-pravinmishra#my-devops-stack`
 
 **Preview — what your full stack looks like:**
 
@@ -65,10 +66,10 @@ This is not a course. It is an internship-style program — real deployments, re
 
 ---
 
-**Your stack :**
+**Your stack (uncomment each badge as you earn it):**
 
- Week 00 → Internet & Networking Basics 
- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
+ Week 00 → Internet & Networking Basics
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
 
  Week 01 → Success Mindset 
  [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
@@ -76,11 +77,11 @@ This is not a course. It is an internship-style program — real deployments, re
  Week 02 → Agentic AI with Claude Code 
  [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) 
 
- Week 03 → Linux & Bash for DevOps
-[![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
+ Week 03 → Linux & Bash for DevOps 
+ [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
  Week 04 → Git & GitHub 
- [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) 
+ [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) 
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
@@ -109,7 +110,7 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- Week 13 → Final Project / Capstone -->
 <!-- [![Week 13 – Capstone](./badges/week-13.svg)](./week-13-final-project/) -->
 
-
+*Complete a week → uncomment the badge → watch your stack grow.*
 
 ---
 
@@ -130,29 +131,11 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-
-| 00 | Internet & Networking Basics |  ✅ Completed | ✅ Completed | |  |
-| 01 | Success Mindset | ✅ Completed | ✅ Completed |  https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye |  https://medium.com/@aremufemmy02/scalability-challengeswith-possible-solutions-amazon-s3-unfair-advantage-32a89b313e3d?postPublishedType=repub |
-| 02 | Agentic AI with Claude Code |✅ Completed | ✅ Completed | https://medium.com/@aremufemmy02/week-2-reflection-exploring-agentic-ai-in-devops-d4beec71cd60 |https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk |
-| 03 | Linux for DevOps | ✅ Completed | ✅ Completed| https://www.linkedin.com/feed/update/urn:li:activity:7483995724192395266/ | https://medium.com/@aremufemmy02/evolution-of-serverless-architecture-and-aws-lambda-concept-51d0098a05d3 |
-| 04 | Bash Scripting | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-github-opensource-share-7486610623376633856-KML5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk
- | https://medium.com/@aremufemmy02/developing-ai-powered-safeguards-for-git-workflows-f26d1e608da3 |
-| 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
-| 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
-| 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 09 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
-| 10 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
-| 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
-=======
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
-| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | — | — |
+| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending |  https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye |(https://medium.com/@aremufemmy02/scalability-challengeswith-possible-solutions-amazon-s3-unfair-advantage-32a89b313e3d?postPublishedType=repub) |
+| 02 | Agentic AI with Claude Code |  ✅ Completed | ✅ Solved | (https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk) | https://medium.com/@aremufemmy02/week-2-reflection-exploring-agentic-ai-in-devops-d4beec71cd60 |
+| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/feed/update/urn:li:activity:7483995724192395266/ |  https://medium.com/@aremufemmy02/evolution-of-serverless-architecture-and-aws-lambda-concept-51d0098a05d3 |
+| 04 | Git & GitHub | ✅ Completed  | ✅ Solved  | https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-github-opensource-share-7486610623376633856-KML5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk | https://medium.com/@aremufemmy02/developing-ai-powered-safeguards-for-git-workflows-f26d1e608da3 |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
@@ -162,7 +145,6 @@ This is not a course. It is an internship-style program — real deployments, re
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
-
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
 **Assignment:** ⏳ Pending &nbsp;|&nbsp; ✅ Solved
