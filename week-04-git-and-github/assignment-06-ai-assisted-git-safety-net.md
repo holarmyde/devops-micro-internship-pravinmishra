@@ -289,7 +289,7 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 
 #### LinkedIn Post URL
 
-Add your LinkedIn post URL here...
+[linkedIn](https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-git-github-share-7486620863618949120-Wrk6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk)
 
 ---
 
@@ -325,19 +325,19 @@ Paste your forked repository URL here:
 
 # Completion Checklist
 
-- [ ] Branch `feature/ai-pr-ready` created with a staged file containing a fake secret and a debug statement
-- [ ] `hooks/pre-commit` created and tracked in the repo (not only in `.git/hooks/`)
-- [ ] `core.hooksPath` configured to point at `hooks/`
-- [ ] Pre-commit hook shown blocking the risky commit
-- [ ] `.claude/skills/pr-ready/SKILL.md` created with correct `allowed-tools` (no `Write`) and `disable-model-invocation: true`
-- [ ] `/pr-ready` run against the risky diff and shown flagging issues
-- [ ] Risky file fixed; `git commit` succeeds cleanly
-- [ ] `/pr-ready` re-run showing a clean report and drafted PR title/description
-- [ ] Pull Request opened using the AI draft as a starting point, with your own fork as the base repository (not upstream), PR link included
-- [ ] Agentic Loop mapping (Task 7) completed in your own words
-- [ ] LinkedIn post published and URL submitted
-- [ ] All required screenshots added
-- [ ] GitHub repository URL provided
+- [✅ ] Branch `feature/ai-pr-ready` created with a staged file containing a fake secret and a debug statement
+- [✅ ] `hooks/pre-commit` created and tracked in the repo (not only in `.git/hooks/`)
+- [✅ ] `core.hooksPath` configured to point at `hooks/`
+- [✅ ] Pre-commit hook shown blocking the risky commit
+- [✅ ] `.claude/skills/pr-ready/SKILL.md` created with correct `allowed-tools` (no `Write`) and `disable-model-invocation: true`
+- [✅ ] `/pr-ready` run against the risky diff and shown flagging issues
+- [✅ ] Risky file fixed; `git commit` succeeds cleanly
+- [✅ ] `/pr-ready` re-run showing a clean report and drafted PR title/description
+- [✅ ] Pull Request opened using the AI draft as a starting point, with your own fork as the base repository (not upstream), PR link included
+- [✅ ] Agentic Loop mapping (Task 7) completed in your own words
+- [✅ ] LinkedIn post published and URL submitted
+- [✅ ] All required screenshots added
+- [✅ ] GitHub repository URL provided
 
 ---
 

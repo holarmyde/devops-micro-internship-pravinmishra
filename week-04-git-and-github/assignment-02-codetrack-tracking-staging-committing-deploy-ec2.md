@@ -167,13 +167,13 @@ Install and start Nginx on your EC2 instance, then copy `index.html` and `style.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-git-github-share-7486600088786501632-ITnn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk`
 
 ---
 
 #### Screenshot — LinkedIn post showing the deployed CodeTrack application
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20for%20linkedIn%20assign%202.png)
 
 ---
 
@@ -188,14 +188,14 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] `CodeTrack` repository verified with `git status` (Screenshots 1–2)
-- [ ] `index.html` and `style.css` created and populated (Screenshots 3–4)
-- [ ] Starter files staged and committed in the first commit (Screenshots 5–8)
-- [ ] Student Name and Group Name updated in `index.html` (Screenshot 9)
-- [ ] Second controlled commit created (Screenshots 10–12)
-- [ ] Nginx active on the EC2 instance and CodeTrack reachable via its public IP (Screenshots 13–15)
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [✅ ] `CodeTrack` repository verified with `git status` (Screenshots 1–2)
+- [✅ ] `index.html` and `style.css` created and populated (Screenshots 3–4)
+- [✅ ] Starter files staged and committed in the first commit (Screenshots 5–8)
+- [✅ ] Student Name and Group Name updated in `index.html` (Screenshot 9)
+- [✅ ] Second controlled commit created (Screenshots 10–12)
+- [✅ ] Nginx active on the EC2 instance and CodeTrack reachable via its public IP (Screenshots 13–15)
+- [✅ ] LinkedIn post published and URL submitted
+- [✅ ] No sensitive data exposed
 
 ---
 

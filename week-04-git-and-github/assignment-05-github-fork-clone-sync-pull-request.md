@@ -109,7 +109,7 @@ Open a Pull Request from `feature-readme-update` on your fork to `main` on the u
 
 #### Screenshot 9 — Successfully created Pull Request page with the PR number visible
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Pull%20Request%20showing%20the%20base%20repository.png)
 
 ---
 
@@ -117,7 +117,7 @@ Add your screenshot here.
 
 Paste your Pull Request URL here:
 
-`Add your URL here`
+`![PR link](https://github.com/pravinmishraaws/devops-micro-internship-interviews/pull/410)`
 
 ---
 
@@ -129,7 +129,7 @@ Paste your Pull Request URL here:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-github-opensource-share-7486610623376633856-KML5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk`
 
 ---
 
@@ -158,15 +158,15 @@ Paste your fork URL here:
 
 # Completion Checklist
 
-- [ ] Upstream repository forked to your GitHub account (Screenshot 1)
-- [ ] GitHub authentication configured securely (Screenshot 2)
-- [ ] Fork cloned locally with `origin` and `upstream` configured (Screenshot 3)
-- [ ] Only `pull_request.md` modified, with your own entry added (Screenshots 4–5)
-- [ ] Local default branch synchronized with `upstream/main`, feature branch rebased and pushed (Screenshots 6–7)
-- [ ] Pull Request opened against the correct upstream repository and branch (Screenshots 8–9)
-- [ ] Fork URL and Pull Request URL included
-- [ ] LinkedIn post published and URL submitted
-- [ ] No PAT, password, private key, or authentication secret exposed
+- [✅ ] Upstream repository forked to your GitHub account (Screenshot 1)
+- [✅ ] GitHub authentication configured securely (Screenshot 2)
+- [✅ ] Fork cloned locally with `origin` and `upstream` configured (Screenshot 3)
+- [✅ ] Only `pull_request.md` modified, with your own entry added (Screenshots 4–5)
+- [✅ ] Local default branch synchronized with `upstream/main`, feature branch rebased and pushed (Screenshots 6–7)
+- [✅ ] Pull Request opened against the correct upstream repository and branch (Screenshots 8–9)
+- [✅ ] Fork URL and Pull Request URL included
+- [✅ ] LinkedIn post published and URL submitted
+- [✅ ] No PAT, password, private key, or authentication secret exposed
 
 ---
 
