@@ -131,7 +131,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-git-github-share-7486944655385853952-iOTY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk | https://medium.com/@aremufemmy02/what-does-your-2-0-version-look-like-b68038fa639a?postPublishedType=initial |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved |  https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye | https://medium.com/@aremufemmy02/scalability-challengeswith-possible-solutions-amazon-s3-unfair-advantage-32a89b313e3d?postPublishedType=repub |
 | 02 | Agentic AI with Claude Code |  ✅ Completed | ✅ Solved | (https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk) | https://medium.com/@aremufemmy02/week-2-reflection-exploring-agentic-ai-in-devops-d4beec71cd60 |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/feed/update/urn:li:activity:7483995724192395266/ |  https://medium.com/@aremufemmy02/evolution-of-serverless-architecture-and-aws-lambda-concept-51d0098a05d3 |

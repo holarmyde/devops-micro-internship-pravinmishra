@@ -25,7 +25,8 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![Task 1 Screenshot](screenshots/Screenshot%20with%20Your%20detailed%20prompt%20with%20clear%20expectations.png)
+![Task 1 Screenshot](screenshots/Screenshot%20with%20%20ChatGPT's%20simplified%20response%20with%20an%20example.png)
 
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
@@ -34,7 +35,9 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I avoid drawing conclusions about your personal beliefs, profession, or background beyond what I've explicitly shared through my requests. For example, while I've frequently asked for Christian tech study material, I don't infer personal conviction affiliation solely from those requests.
+
+Overall, my conversations suggest I am someone who values depth, structure, and practical application, whether I am studying Scripture, learning networking, or building software.
 
 ---
 
@@ -59,7 +62,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+Users anywhere in the world can access EpicReads because the internet uses TCP/IP to connect devices across different networks. When a user enters the website address, the domain name is translated into the server's IP address, which uniquely identifies the server hosted in Finland. The user's request is then divided into small pieces of data through packet switching, allowing the packets to travel along the most efficient routes before being reassembled at the destination. The server responds by sending the requested web pages back using the same process. Finally, HTTP or the more secure HTTPS protocol is used to transfer the website's content between the user's browser and the server, with HTTPS encrypting the communication to protect sensitive information such as login credentials and payment details.
 
 ---
 
@@ -91,7 +94,8 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![Application Architecture Diagram](screenshots/IMG_2403.jpeg)
+![Application Architecture Diagram](screenshots/IMG_2404.jpeg)
 
 
 Replace `task-3-diagram.png` with your actual diagram file name.
@@ -142,7 +146,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+DNS (Domain Name System) is like the internet's phonebook. It translates a domain name, such as epicreads.com, into an IP address that computers use to locate and connect to a website. To connect the domain to the IP address 52.172.142.222, an A (Address) record should be used because it maps a domain name directly to an IPv4 address, allowing users to access the website by typing the domain name instead of the numeric IP address.
 
 ---
 
@@ -178,7 +182,8 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![VS Code Setup Screenshot](screenshots/Screenshot%20with%20terminal%20vscode%20opening.png)
+![VS Code Setup Screenshot](screenshots/Screenshot%20with%20install%20visual%20code.png)
 
 
 Replace `task-5-vscode.png` with your actual screenshot file name.
@@ -218,7 +223,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-git-github-share-7486944655385853952-iOTY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk
 ```
 
 ---
@@ -227,7 +232,21 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+Only a few years ago, I was another software engineering student with ambitious ideas and a passion for solving developer problems. Today, that vision has become reality. In just three years, I successfully built and launched a developer platform that simplified application development for thousands of software engineers worldwide.
+
+The journey began with identifying common challenges developers faced while building and deploying applications. Instead of waiting for someone else to solve the problem, I designed and shipped a modern developer platform that automated repetitive tasks, streamlined workflows, and improved productivity. The platform quickly gained attention among startups and independent developers because of its clean design, reliable performance, and practical features.
+
+Beyond building the product, I demonstrated strong technical skills by maintaining an active GitHub portfolio filled with open-source projects. These repositories showcased expertise in full-stack development, cloud technologies, APIs, DevOps, and scalable system architecture. The GitHub profile became a valuable resource for aspiring developers who wanted to learn from real-world projects.
+
+I also published technical blogs explaining software architecture, backend optimization, and startup engineering practices. Alongside writing, I earned several professional certifications in cloud computing, software engineering, and system design, strengthening both technical knowledge and industry credibility.
+
+As the startup expanded, the founder led a growing engineering team responsible for developing new features and maintaining platform reliability. Under this leadership, the company successfully released multiple product updates that significantly improved customer satisfaction and platform performance.
+
+I also contributed to the software engineering community by speaking at developer meetups, mentoring junior programmers, and participating in open-source initiatives. These contributions inspired many students and early-career engineers to build meaningful projects and share their knowledge with others.
+
+Today, the startup stands as a successful technology company serving developers across multiple industries. What began as a simple idea evolved into a widely used platform that solved real problems. Through consistent learning, disciplined execution, technical excellence, and community involvement, the founder transformed from a software engineering student into a respected entrepreneur and technology leader. The journey demonstrated that impactful software is built not only with code but also with vision, persistence, and a willingness to continually improve.
+ My graded progress is public: https://lnkd.in/ewxGF2Wf
+#DevOps #Git #GitHub #AI #Claude #AgenteicAI #DeveloperTools #GithubWorkflow #PravinMishra #projects #blogs #certifications #leadership
 
 ---
 
@@ -235,19 +254,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+The chatgpt usage was quite easy to come by
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+The linkedIn post took a toll on my initial schedule
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+My time management would be improved on
 
 ---
 
