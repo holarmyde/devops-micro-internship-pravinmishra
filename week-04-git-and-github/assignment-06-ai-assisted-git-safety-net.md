@@ -289,7 +289,7 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 
 #### LinkedIn Post URL
 
-[linkedIn](https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-git-github-share-7486620863618949120-Wrk6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk)
+![linkedIn](https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-git-github-share-7486620863618949120-Wrk6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk)
 
 ---
 
