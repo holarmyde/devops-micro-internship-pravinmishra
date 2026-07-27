@@ -120,7 +120,7 @@ Verify the deployed website and Nginx service are healthy.
 
 [`https://www.linkedin.com/feed/update/urn:li:activity:7484000066027003905/`]
 
-<<<<<<< HEAD
+
 
 =======
 
