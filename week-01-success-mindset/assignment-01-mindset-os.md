@@ -145,7 +145,7 @@ Since you are speaking my language, my "2.0" is all about moving from just a sof
 
 Paste your link here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-git-github-share-7486944655385853952-iOTY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk`
 
 ---
 
@@ -295,7 +295,7 @@ Examples:
 
 Answer:
 
-Add your answer here...
+Yes
 
 ---
 
@@ -373,14 +373,14 @@ Paste your LinkedIn post link here:
  https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye
 `__________________________`
 =======
-`Add your URL here`
+` https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye`
 >>>>>>> upstream/main
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **[ADD LINK HERE](https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye)**  
+- LinkedIn Post URL: **[https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye](https://www.linkedin.com/pulse/scalability-challenges-possible-solutionsamazon-s3-unfair-aremu-5a7ye)**  
 - Blog / Medium : **(https://medium.com/@aremufemmy02/scalability-challengeswith-possible-solutions-amazon-s3-unfair-advantage-32a89b313e3d)**  
 
 ---

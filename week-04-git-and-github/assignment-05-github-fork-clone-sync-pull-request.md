@@ -135,7 +135,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — LinkedIn post showing your successfully created Pull Request
 
-Add your screenshot here.
+![LinkedIn](Screenshots/Screenshot%20with%20pull%20request%20LinkedIn_5.png)
 
 ---
 
@@ -152,7 +152,7 @@ Add your screenshot here.
 
 Paste your fork URL here:
 
-`Add your URL here`
+`https://github.com/holarmyde/devops-micro-internship-interviews`
 
 ---
 

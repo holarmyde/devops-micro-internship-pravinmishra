@@ -154,7 +154,7 @@ Your submission must include:
 ## 10. Solution Walkthrough
 
 A step-by-step solution and troubleshooting guide is available for reference:
-Full solution walkthrough → [Click here](../assignment-solutions/assignment-01-setup-agentic-loop.md)
+Full solution walkthrough → [../assignment-solutions/assignment-01-setup-agentic-loop.md](../assignment-solutions/assignment-01-setup-agentic-loop.md)
 
 
 ---
