@@ -46,9 +46,9 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20medium.png)
 
---- [task 1](screenshots/Screenshot%20with%20medium.png)
+--- 
 
 ### Submission Field
 
@@ -57,7 +57,7 @@ Blog Link:
 <<<<<<< HEAD
 `___https://medium.com/@aremufemmy02/week-2-reflection-exploring-agentic-ai-in-devops-d4beec71cd60__`
 =======
-`Add your URL here`
+`https://medium.com/@aremufemmy02/week-2-reflection-exploring-agentic-ai-in-devops-d4beec71cd60?sharedUserId=aremufemmy02`
 >>>>>>> upstream/main
 
 ---
@@ -82,7 +82,7 @@ Your post must include:
 
 ### Required P.S. Line (Must Include Exactly)
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/holarmyde.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
 
 ---
 
@@ -96,16 +96,16 @@ Your post must include:
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+1[task 2](screenshots/Screenshot%20with%20linkedIn.png)
 
---- [task 2](screenshots/Screenshot%20with%20linkedIn.png)
+--- 
 
 ### Submission Field
 
 LinkedIn Post Content (copy-paste here):
 
 ```
-Paste your LinkedIn post content here
+https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk
 ```
 
 ---
@@ -115,7 +115,7 @@ Paste your LinkedIn post content here
 <<<<<<< HEAD
 `__https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk___`
 =======
-`Add your URL here`
+`https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk`
 >>>>>>> upstream/main
 
 ---

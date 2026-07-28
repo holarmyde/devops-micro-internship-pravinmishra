@@ -20,9 +20,9 @@ Capture Claude’s response before `CLAUDE.md` exists in the project to establis
 
 #### Screenshot 1 — Claude’s generic response before CLAUDE.md exists (project contains only `index.html`, `style.css`, `images/`, `README.MD`, `privacy.html`, `terms.html`)
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20before%20claude_md%20exists.png)
 
----![task 1](screenshots/Screenshot%20before%20claude_md%20exists.png)
+---
 
 # Task 2 — Generate the First Draft with /init
 
@@ -34,9 +34,9 @@ Generate an initial `CLAUDE.md` file using the `/init` command and review the au
 
 #### Screenshot 2 — The auto-generated CLAUDE.md open in VS Code showing its content
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20claude_md.png)
 
---- ![task 2](screenshots/Screenshot%20with%20claude_md.png)
+--- 
 
 # Task 3 — Customize the CLAUDE.md
 
@@ -48,9 +48,9 @@ Update the generated `CLAUDE.md` file by adding project-specific instructions ac
 
 #### Screenshot 3 — Your customized CLAUDE.md in VS Code showing all 5 sections (scroll to show the full file)
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20claude_md_main.png)
 
---- ![task 3](screenshots/Screenshot%20with%20claude_md_main.png)
+--- 
 
 # Task 4 — Test the After State
 
@@ -62,18 +62,18 @@ Verify that Claude’s behavior changes after adding `CLAUDE.md` by running a ne
 
 #### Screenshot 4 — Claude's specific, detailed answer after reading CLAUDE.md (Claude mentioning S3, CloudFront and Terraform)
 
-Add your screenshot here.
-
---- ![task 4](screenshots/Screenshot%20with%20main_main_main_1.png)
+![task 4](screenshots/Screenshot%20with%20main_main_main_1.png)
     ![task 4](screenshots/Screenshot%20with%20main_main_main_2.png)
     ![task 4](screenshots/Screenshot%20with%20main_main_main_3.png)
+
+--- 
     
 
 #### Screenshot 5 — Claude refusing or warning against adding React because of the "No JavaScript" convention defined in CLAUDE.md
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20no%20react%20framework.png)
 
---- ![task 5](screenshots/Screenshot%20with%20no%20react%20framework.png)
+--- 
 
 # Task 5 — Commit and push your changes to your fork in GitHub
 
@@ -85,10 +85,10 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 #### Screenshot 6 — `CLAUDE.md` visible in your GitHub repository after pushing the commit
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20commit%20in%20github%20main.png)
+![task 6](screenshots/Screenshot%20with%20commit%20in%20github_1.png)
 
----  ![task 6](screenshots/Screenshot%20with%20commit%20in%20github%20main.png)
-     ![task 6](screenshots/Screenshot%20with%20commit%20in%20github_1.png)
+---  
 
 # Submission Instructions
 
@@ -105,7 +105,7 @@ Paste your forked repository URL here:
 <<<<<<< HEAD
 `_https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code_`
 =======
-`Add your URL here`
+`https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code`
 >>>>>>> upstream/main
 
 ---

@@ -20,16 +20,16 @@ Install the Claude Code CLI globally and authenticate it using your Anthropic ac
 
 #### Screenshot 1 — Terminal showing `claude --version` with the version number visible
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20assig%20task1-001.png)
 
---- ![task 1](screenshots/Screenshot%20assig%20task1-001.png)
+--- 
 
 #### Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
 
-Add your screenshot here.
-
---- ![task 1](screenshots/Screenshot2%20assig%20task1-002.png)
+![task 1](screenshots/Screenshot2%20assig%20task1-002.png)
     ![task 1](screenshots/Screenshot3%20assig%20task1-003.png)
+
+--- 
 
 # Task 2 — Fork and Clone the Starter Repository
 
@@ -41,11 +41,11 @@ Fork the provided GitHub repository, clone it to your local machine, and open it
 
 #### Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
 
-Add your screenshot here.
-
---- ![task 2](screenshots/Screenshot%20index_html.png)
+![task 2](screenshots/Screenshot%20index_html.png)
     ![task 2](screenshots/Screenshot%20style_css.png)
     ![task 2](screenshots/Screenshot%20images.png)
+
+--- 
 
 # Task 3 — Observe the Agentic Loop
 
@@ -57,9 +57,9 @@ Interact with Claude Code and observe how it performs the Agentic Loop (Gather �
 
 #### Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20projectrelatedquestions.png)
 
----![task 3](screenshots/Screenshot%20projectrelatedquestions.png)
+---
 
 #### Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
 
@@ -86,7 +86,8 @@ Paste your forked repository URL here:
 `https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code`
 
 =======
-`Add your URL here`
+`https://github.com/holarmyde/devops-micro-internship-pravinmishra/tree/main`
+`https://github.com/holarmyde/Ultimate-Agentic-DevOps-with-Claude-Code`
 >>>>>>> upstream/main
 
 ---
