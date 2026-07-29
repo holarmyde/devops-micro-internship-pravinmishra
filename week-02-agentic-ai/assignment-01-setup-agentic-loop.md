@@ -63,10 +63,10 @@ Interact with Claude Code and observe how it performs the Agentic Loop (Gather â
 
 #### Screenshot 5 â€” Claude's response to the second question, showing it ran a command and reported the line count
 
-Add your screenshot here.
-
----![task 3](screenshots/Screenshot%20projectrelatedquestions%202.png)
+![task 3](screenshots/Screenshot%20projectrelatedquestions%202.png)
    ![task 3](screenshots/Screenshot%20projectrelatedquestions%202b.png)
+
+---
 
 # Submission Instructions
 

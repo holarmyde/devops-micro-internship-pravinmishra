@@ -22,6 +22,7 @@ Install Node.js and npm on the Ubuntu VM and verify the installation.
 
 ![task 1](screenshots/Screenshot%20with%20nodennpminstallation.png)
 
+---
 
 # Task 2 — Setup Environment (Nginx)
 
@@ -35,6 +36,7 @@ Install Nginx, start the service, and confirm it is running.
 
 ![task 2](screenshots/Screenshot%20with%20the%20nginx%20full%20setup2.png)
 
+---
 
 # Task 3 — Clone React Application
 
@@ -48,7 +50,7 @@ Clone the project repository and verify the project files are present.
 
 ![task 3](screenshots/Screenshot%20with%20my_react_app_output_ls.png)
 
-
+---
 
 # Task 4 — Modify Application (Personalization)
 
@@ -62,8 +64,7 @@ Update `App.js` with your full name and the current date.
 
 ![task 4](screenshots/Screenshot%20with%20output%20of%20app_js.png)
 
-
-
+---
 
 # Task 5 — Build React Application
 
@@ -77,7 +78,7 @@ Install dependencies and generate the production build.
 
 ![task 5](screenshots/Screenshot%20with%20build%20folder%20in%20react.png)
 
- 
+ ---
 
 # Task 6 — Deploy React Build to Nginx Web Root
 
@@ -91,7 +92,7 @@ Copy the production build files to the Nginx web root directory.
 
 ![task 6](screenshots/Screenshot%20with%20deployed%20build%20contents%20Assign%202%20no%206.png)
 
-
+---
 
 # Task 7 — Configure Nginx for React Application
 
@@ -105,13 +106,13 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 ![task 7](screenshots/Screenshot%20with%20assign%202%20no%207%20and%208.png)
 
-
+---
 
 #### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
 
 ![task 8](screenshots/Screenshot%20with%20assign%202%20no%207%20and%208.png)
 
-
+---
 
 # Task 8 — Test Deployment
 
@@ -123,15 +124,15 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### Screenshot 9 — Output of `curl ifconfig.me` showing the server's public IP address
 
-Add your screenshot here.
-
 ![task 9](screenshots/Screenshot%20with%20curl%20ifconfig_me%20assign%202%20no%209.png)
+
+---
 
 #### Screenshot 10 — Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
 
 ![task 10](screenshots/Screenshot%20with%20assign%203%20no%201.png)
 
-
+---
 
 # LinkedIn Post (Required)
 
