@@ -20,7 +20,7 @@ Create or access your Jira Cloud account and reach the Jira Software workspace s
 
 #### Screenshot 1 — Jira welcome page, dashboard, or main workspace after successful login, with your name or avatar visible
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Welcome%20page%202_final.png)
 
 ---
 
@@ -34,7 +34,7 @@ Confirm your email address if Atlassian requests verification.
 
 #### Screenshot 2 (if applicable) — Confirmation screen after email verification, or the inbox showing the Atlassian verification email subject
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20account%20verification.png)
 
 ---
 
@@ -42,7 +42,7 @@ Add your screenshot here.
 
 If you signed up with Google and no separate email verification was required, state that here instead of a screenshot.
 
-Write your answer here.
+I did sign up with google
 
 ---
 
@@ -56,7 +56,7 @@ Update your Jira profile with your full name, a job title or role (e.g. "Aspirin
 
 #### Screenshot 3 — Updated profile page showing your full name, role/title, and bio
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20profile%20account.png)
 
 ---
 
@@ -70,13 +70,13 @@ Locate the project list and open a project's Board or Backlog, and view Project 
 
 #### Screenshot 4 — "View all projects" page showing at least one project
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20project%20DMI%20space%20porj%20title.png)
 
 ---
 
 #### Screenshot 5 — Opened project showing either the Board or Backlog screen
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20project%20DMI%20space.png)
 
 ---
 
@@ -90,13 +90,13 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Jira Software Cloud account created or existing account accessed (Screenshot 1)
-- [ ] Task 2: Email verification completed, or a Google sign-in note included (Screenshot 2 or Notes)
-- [ ] Task 3: Professional profile updated with full name, role/title, and bio (Screenshot 3)
-- [ ] Task 4: Projects page and a Board or Backlog explored (Screenshots 4 & 5)
-- [ ] No Jira issues created
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
+- [✅ ] Task 1: Jira Software Cloud account created or existing account accessed (Screenshot 1)
+- [✅ ] Task 2: Email verification completed, or a Google sign-in note included (Screenshot 2 or Notes)
+- [✅ ] Task 3: Professional profile updated with full name, role/title, and bio (Screenshot 3)
+- [✅ ] Task 4: Projects page and a Board or Backlog explored (Screenshots 4 & 5)
+- [✅ ] No Jira issues created
+- [✅ ] Full Name visible in required screenshots
+- [✅ ] No sensitive data exposed
 
 ---
 
