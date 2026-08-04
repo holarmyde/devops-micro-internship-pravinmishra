@@ -20,7 +20,7 @@ Create a private, team-managed Scrum project named `DevOps Micro-Internship Webs
 
 #### Screenshot 1 — Project confirmation or project sidebar showing the project name and key
 
-Add your screenshot here.
+![task](screenshots/Screenshot%20with%20the%20project%20confrimation%20sidebar.png)
 
 ---
 
