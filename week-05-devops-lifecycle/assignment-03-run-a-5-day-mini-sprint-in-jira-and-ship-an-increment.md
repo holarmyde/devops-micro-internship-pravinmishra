@@ -72,13 +72,13 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic
 
-![task 3](screenshots/Screenshot%20with%20the%20index_html%20on%20live%20server.png)
+![task 3](screenshots/Screenshot%20with%20Code%20editor%20showing%20the%20footer%20and%20date%20logic-final.png)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-![task 3](screenshots/Screenshot%20with%20EC2%20browser%20view%20showing%20the%20complete%20footer%20text%20the%20URL%20visible.png)
+![task 3](screenshots/Screenshot%20with%20Code%20editor%20showing%20the%20footer%20and%20date%20logic.png)
 
 ---
 
@@ -104,13 +104,13 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-![task 4](screenshots/Screenshot%20with%20EC2%20browser%20view%20showing%20the%20complete%20footer%20text%20the%20URL%20visible.png)
+![task 4](screenshots/Screenshot%20with%20Desktop%20EC2%20view%20showing%20the%20polished%20footer.png)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-![task 4](screenshots/screenshot%20with%20mobile%20response%20version.PNG)
+![task 4](screenshots/screenshot%20with%20mobile%20response%20version-Final_final.%20PNG.png)
 
 ---
 
@@ -130,7 +130,7 @@ Replace the existing homepage tagline with the required DMI Discord call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Join DMI Cohort 3 on Discord and start your DevOps journey"
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Join%20DMI%20Cohort%203%20on%20Discord%20and%20start%20your%20DevOps%20journey.png)
 
 ---
 
@@ -144,19 +144,19 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Burndown%20Chart%20for%20Sprint%201.png)
 
 ---
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Jira%20retrospective%20comment.png)
 
 ---
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Desktop%20EC2%20view%20showing%20the%20polished%20footer.png)
 
 ---
 
