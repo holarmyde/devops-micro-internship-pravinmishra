@@ -20,13 +20,13 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 
 #### Screenshot 1 — Sprint 1 created with the Story inside it
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20Sprint%201%20created%20with%20the%20Story%20inside%20it.png)
 
 ---
 
 #### Screenshot 2 — Active Sprint board showing the Sprint Goal
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20Active%20Sprint%20board%20showing%20the%20Sprint%20Goal.png)
 
 ---
 
@@ -40,25 +40,25 @@ Add the required footer text (`Portfolio v1.0 — Deployed on <DD Mon YYYY> — 
 
 #### Screenshot 3 — Jira board showing the Day 1 Sub-task in Done
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Jira%20board%20showing%20the%20Day%201%20Sub-task%20in%20Done.png)
 
 ---
 
 #### Screenshot 4 — Successful Git commit output
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20git%20commit%20changes.png)
 
 ---
 
 #### Screenshot 5 — EC2 browser view showing the complete footer text, with the URL visible
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20EC2%20browser%20view%20showing%20the%20complete%20footer%20text%20the%20URL%20visible.png)
 
 ---
 
 #### Screenshot 6 — Jira Story comment showing the Day 1 Daily Scrum update
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Jira%20Story%20comment%20showing%20the%20Day%201%20Daily%20Scrum%20update.png)
 
 ---
 
@@ -72,25 +72,25 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20the%20index_html%20on%20live%20server.png)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20EC2%20browser%20view%20showing%20the%20complete%20footer%20text%20the%20URL%20visible.png)
 
 ---
 
 #### Screenshot 9 — README snippet documenting the footer and date behavior
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20readme_file.png)
 
 ---
 
 #### Screenshot 10 — Jira Story comment showing the Day 2 Daily Scrum update
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Jira%20Story%20comment%20showing%20the%20Day%202%20Daily%20Scrum%20update.png)
 
 ---
 
@@ -104,19 +104,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20EC2%20browser%20view%20showing%20the%20complete%20footer%20text%20the%20URL%20visible.png)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![task 4](screenshots/screenshot%20with%20mobile%20response%20version.PNG)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Jira%20Story%20comment%20showing%20the%20Day%203%20Daily%20Scrum%20update.png)
 
 ---
 
