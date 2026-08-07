@@ -136,7 +136,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 02 | Agentic AI with Claude Code |  ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk | https://medium.com/@aremufemmy02/week-2-reflection-exploring-agentic-ai-in-devops-d4beec71cd60?sharedUserId=aremufemmy02 |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-ai-linuxsysadmin-share-7483995723349446656-h6rm/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk | https://medium.com/@aremufemmy02/evolution-of-serverless-architecture-and-aws-lambda-concept-51d0098a05d3 |
 | 04 | Git & GitHub | ✅ Completed  | ✅ Solved  | https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-github-opensource-share-7486610623376633856-KML5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk | https://medium.com/@aremufemmy02/developing-ai-powered-safeguards-for-git-workflows-f26d1e608da3 |
-| 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Not Started | ✅ Pending | https://lnkd.in/p/e48v-PSe | https://medium.com/@aremufemmy02/a-day-as-a-scrum-master-f2559755f285 |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
