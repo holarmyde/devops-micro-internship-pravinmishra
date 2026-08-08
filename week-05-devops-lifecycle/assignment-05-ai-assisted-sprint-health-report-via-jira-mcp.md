@@ -20,7 +20,7 @@ Generate an API token from your Atlassian account that the MCP server will use t
 
 #### Screenshot 1 — Jira API token creation confirmation page showing the token name, with the token value not visible
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Jira%20API%20token%20creation%20confirmation%20page%20showing%20the%20token%20name.png)
 
 ### Notes You Must Write (Very Important):
 
