@@ -43,13 +43,24 @@ Create or update `.mcp.json` at your project root with a Jira MCP server block, 
 
 #### Screenshot 2 — `.mcp.json` open in VS Code showing the Jira server configuration
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20mcp_json%20open%20in%20VS%20Code%20showing%20the%20Jira%20server%20configuration.png)
 
 ### Notes You Must Write (Very Important):
 
 Compare this jira block to the github block from Week 2 Assignment 5. The GitHub server ran via npx (a Node.js package); this one runs via uvx (a Python package) — what stays exactly the same shape despite that difference, and why doesn't Claude Code care which language a given MCP server is written in?
 
-Add your answer here
+Despite the change in the underlying runtime launcher from Node's npx to Python's uvx, the JSON configuration block structure (the outer shape, keys like command, args, and env) stays identical, and Claude Code remains agnostic to the host language because it communicates via a language-neutral Model Context Protocol (MCP) abstraction layer using standard input/output (stdio) streams.
+
+What Stays the Same Shape
+•	The JSON Block Keys: Both configurations use the exact same parent-child keys (mcpServers -> server_name -> command, args, and env) inside configuration files like ~/.claude.json.
+•	The Transport Mechanism: Both spawn as local child processes communicating over standard I/O (stdio), where JSON-RPC messages flow back and forth identically regardless of whether the executable running at the other end interprets JavaScript or Python.
+
+Why Claude Code Doesn’t Care About the Language
+•	Protocol Standardization: Claude Code interacts with an MCP Client that speaks a strict JSON-RPC schema. It only cares about the manifest—the declared tool names, input schemas, and returned payloads. 
+•	Process Decoupling: The server runs as a completely isolated black-box process on the machine. 
+•	Universal Stdio Bridge: Once npx or uvx boots the package, the execution layer is hidden; Claude Code only reads the standardized tool outputs piped through stdout. 
+
+
 
 ---
 
@@ -63,13 +74,13 @@ Add your Jira site URL, account email, and API token to `.claude/settings.local.
 
 #### Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section, with the actual token value blurred or covered
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20env%20section%20with%20the%20actual%20token%20value%20blurred%20or%20covered.png)
 
 ### Notes You Must Write (Very Important):
 
 Why must JIRA_API_TOKEN live in settings.local.json and never in .mcp.json?
 
-Add your answer here
+This is to prevent accidental credential leaks. Files named .mcp.json are typically tracked in version control (git), which risks exposing sensitive secrets publicly. Local settings files are ignored by git to keep tokens safe on my computer
 
 ---
 
@@ -83,7 +94,7 @@ Restart Claude Code and confirm the Jira MCP server shows as connected.
 
 #### Screenshot 4 — `/mcp` output showing `jira: connected`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20mcp%20output%20showing%20jira%20connected.png)
 
 ---
 
