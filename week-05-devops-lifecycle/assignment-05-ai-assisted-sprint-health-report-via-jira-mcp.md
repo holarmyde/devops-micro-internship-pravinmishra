@@ -108,13 +108,22 @@ Ask Claude to list the issues in your current active sprint through the Jira MCP
 
 #### Screenshot 5 — Claude's response showing the live sprint issue list retrieved via Jira MCP
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Claude's%20response%20showing%20the%20live%20sprint.png)
 
 ### Notes You Must Write (Very Important):
 
 How did you confirm this was real board data and not something Claude guessed?
 
-Add your answer here
+Visual & Technical Indicators
+•	Tool Call Blocks: The chat interface displays an explicit, collapsible "Tool Use" or "Executing MCP Call" notification within the response, showing the actual request sent to Jira.
+•	Exact Identifiers: The output contains precise, non-generic ticket keys, exact user handles, and timestamps that cannot be reverse-engineered or guessed from general training data.
+•	Fresh State Validation: The data reflects real-time status attributes, recent comments, or freshly updated assignees that occurred minutes prior. 
+
+Procedural Verification Steps
+•	Cross-Check the UI: Opening your actual Jira agile board in the browser tab I can verify that the issue keys, summaries, and sprint markers match the list Claude returned item-for-item. 
+•	Inspect Client Logs: my local client configuration logs (such as Claude Desktop logs or claude.json) is confirmed to see the successful HTTP/SSE handshake and payload responses returned from my authorized Jira Cloud domain.
+
+
 
 ---
 
@@ -128,21 +137,45 @@ Create a `/sprint-health` skill restricted to read-only Jira tools plus `Read`, 
 
 #### Screenshot 6 — `SKILL.md` frontmatter showing `allowed-tools` limited to read-only Jira tools plus `Read`, with `disable-model-invocation: true`
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20SKILL.md%20frontmatter%20showing%20allowed-tools%20limited%20to%20read-only.png)
 
 #### Screenshot 7 — `/sprint-health` output showing the full triage report against your real sprint
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20sprint-health%20output%20showing%20the%20full%20triage%20report%20.png)
 
 ### Notes You Must Write (Very Important):
 
 1. Which Jira MCP tools does this skill's allowed-tools list include, and which mutating tools (create issue, update issue, transition issue, add comment) does it deliberately exclude?
 
-Add your answer here
+The skill includes query and retrieval actions in its allowed-tools list (such as getJiraIssue or JQL searches) while deliberately omitting mutating tools like createJiraIssue, updateJiraIssue, transitionJiraIssue, and addJiraComment to enforce a strict read-only security boundary. 
+
+Included Read/Search Tools
+•	mcp__atlassian__getJiraIssue or equivalent retrieval commands.
+•	mcp__atlassian__searchJiraUsingJql / getIssuesByJQL.
+•	General metadata lookup functions (e.g., user info, accessible resources).
+
+Deliberately Excluded Mutating Tools
+•	createJiraIssue / create_issue
+•	updateJiraIssue / update_issue
+•	transitionJiraIssue / status workflow transitions
+•	addJiraComment / comment additions 
+
 
 2. Why does a Scrum Master need this restriction more than almost any other role in this course?
 
-Add your answer here
+a Scrum Master need this restriction because of a fundamental agile principle: the Scrum Master does not own, assign, or manage the data inside the sprint backlog. 
+
+A Scrum Master agent must be restricted to read-only capabilities due to the following specific reasons:
+1. Enforcing Team Self-Management
+•	The Anti-Pattern: If an SM agent has access to updateJiraIssue or transitionJiraIssue, the AI will inevitably begin moving tickets across the board based on chat conversations or standup logs.
+•	The Agile Reality: The Development Team owns the Sprint Backlog. Forcing an AI to automatically transition tickets on their behalf strips developers of autonomy, turns the daily standup into a "status reporting theater," and models the Scrum Master as an administrative micromanager. 
+2. Preventing AI "Proxy Ownership" of Impediments
+•	The Anti-Pattern: An SM agent with addJiraComment or createJiraIssue access might try to fix blockers by instantly spamming other teams' tickets with automated messages or creating dozens of sub-tasks. 
+•	The Agile Reality: A core teaching in Scrum is that the Scrum Master should not remove impediments without involving the team. The role is meant to coach humans to communicate, resolve dependencies face-to-face, and self-organize—not to deploy a robotic proxy that silently alters Jira state. 
+3. Protecting Psychological Safety and Team Metrics
+•	The Anti-Pattern: An agent executing a JQL query to find bottlenecks might use a mutating tool to add a warning comment to a developer's ticket, e.g., "This ticket has been in In Progress for 4 days, reducing team velocity."
+•	The Agile Reality: Velocity and cycle times are ecosystem diagnostic metrics, never weapons to shame individuals. Automated, non-human reprimands or system-generated "nudges" completely destroy the psychological safety required for high-performing agile environments
+
 
 ---
 
