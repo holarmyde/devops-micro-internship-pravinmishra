@@ -189,13 +189,17 @@ Manually update one ticket on your board in the browser (for example, move a sto
 
 #### Screenshot 8 — Second `/sprint-health` run showing the report now reflects your manual board change
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Second%20sprint-health%20run%20showing%20the%20report%20.png)
 
 ### Notes You Must Write (Very Important):
 
 Map this assignment to Gather → Analyze → Human Act → Verify from Week 3 Assignment 6. Which step did you perform manually in the browser, and why must that step stay human?
 
-Add your answer here
+ Gather: Claude uses the Jira MCP server tool to fetch raw data (e.g., executing a JQL query for open sprints or calling search_issues).
+ Analyze: Claude processes the JSON output payload, structuring the raw issue data into a human-readable sprint table or list.
+  Human Act: I manually cross-reference the ticket keys, labels, or active statuses in your browser.
+Verify: I confirm the interface's data matches reality, providing feedback or changing a state to close the validation loop. 
+
 
 ---
 
@@ -211,16 +215,16 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: Jira API token created, value never screenshotted (Screenshot 1)
-- [ ] Task 2: `.mcp.json` has the Jira server block (Screenshot 2)
-- [ ] Task 3: Credentials stored in `settings.local.json`, token blurred, file gitignored (Screenshot 3)
-- [ ] Task 4: `/mcp` shows the Jira server connected (Screenshot 4)
-- [ ] Task 5: Live query returned real sprint data, verified against the browser (Screenshot 5)
-- [ ] Task 6: `/sprint-health` skill created with correct read-only `allowed-tools`, and produced a full report (Screenshots 6–7)
-- [ ] Task 7: A manual board change was reflected in a second `/sprint-health` run (Screenshot 8)
-- [ ] Skill never created, edited, transitioned, or commented on any issue
-- [ ] Reflection answered (Notes)
-- [ ] No API token value exposed
+- [✅ ] Task 1: Jira API token created, value never screenshotted (Screenshot 1)
+- [✅ ] Task 2: `.mcp.json` has the Jira server block (Screenshot 2)
+- [✅ ] Task 3: Credentials stored in `settings.local.json`, token blurred, file gitignored (Screenshot 3)
+- [✅ ] Task 4: `/mcp` shows the Jira server connected (Screenshot 4)
+- [✅ ] Task 5: Live query returned real sprint data, verified against the browser (Screenshot 5)
+- [✅ ] Task 6: `/sprint-health` skill created with correct read-only `allowed-tools`, and produced a full report (Screenshots 6–7)
+- [✅ ] Task 7: A manual board change was reflected in a second `/sprint-health` run (Screenshot 8)
+- [✅ ] Skill never created, edited, transitioned, or commented on any issue
+- [✅ ] Reflection answered (Notes)
+- [✅ ] No API token value exposed
 
 ---
 
