@@ -20,7 +20,7 @@ Download or clone the portfolio website template from GitHub and confirm `index.
 
 #### Screenshot 1 — File Explorer or terminal showing the template folder contents with `index.html` visible
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20File%20Explorer%20or%20terminal%20showing%20the%20template%20folder%20contents.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a globally unique S3 bucket in your chosen AWS region.
 
 #### Screenshot 2 — S3 bucket created screen showing the bucket name and region
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20S3%20bucket%20created%20screen%20showing%20the%20bucket%20name%20and%20region.png)
 
 ---
 
