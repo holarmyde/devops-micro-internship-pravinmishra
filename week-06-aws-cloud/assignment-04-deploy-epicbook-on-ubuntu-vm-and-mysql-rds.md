@@ -20,19 +20,19 @@ Create `epicbook-vpc` (10.0.0.0/16) with a public subnet (10.0.1.0/24) and a pri
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20VPC%20details%20showing%20CIDR%2010.0.0.0_16.png)
 
 ---
 
 #### Screenshot 2 — Subnets list showing both subnets and their CIDRs
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Subnets%20list%20showing%20both%20subnets%20and%20their%20CIDRs.png)
 
 ---
 
 #### Screenshot 3 — Route table showing 0.0.0.0/0 → IGW and association with the public subnet
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Route%20table%20showing%200.0.0.0_0%20→%20IGW%20and%20association%20with%20the%20public%20subnet.png)
 
 ---
 
@@ -46,13 +46,13 @@ Create `epicbook-ec2-sg` (SSH from your IP, HTTP/HTTPS public) and `epicbook-rds
 
 #### Screenshot 4 — EC2 security-group inbound rules showing ports and sources
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20EC2%20security-group%20inbound%20rules%20showing%20ports%20and%20sources.png)
 
 ---
 
 #### Screenshot 5 — RDS security-group inbound rule showing MySQL 3306 allowed from the EC2 security group
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20RDS%20security-group%20inbound%20rule%20showing%20MySQL%203306%20allowed.png)
 
 ---
 
@@ -66,13 +66,13 @@ Launch an Ubuntu 20.04 instance in the public subnet with `epicbook-ec2-sg` atta
 
 #### Screenshot 6 — EC2 instance summary showing the public IPv4 address, subnet, and security group
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20EC2%20instance%20sumary%20showin%20the%20public%20IPv4%20address%20subnt%20and%20security%20grp.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing a successful SSH login
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terminal%20showing%20a%20successful%20SSH%20login.png)
 
 ---
 
@@ -86,19 +86,19 @@ Install Node.js, npm, Nginx, and the MySQL client on the instance, and confirm N
 
 #### Screenshot 8 — Output of `node -v` and `npm -v`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Output%20of%20node%20-v%20and%20npm%20-v.png)
 
 ---
 
 #### Screenshot 9 — Output of `systemctl status nginx`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Output%20of%20systemctl%20status%20nginx.png)
 
 ---
 
 #### Screenshot 10 — Output of `mysql --version`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Output%20of%20mysql%20--version.png)
 
 ---
 
@@ -112,13 +112,13 @@ Create a private MySQL RDS instance in `epicbook-vpc` using a DB Subnet Group ov
 
 #### Screenshot 11 — RDS instance summary showing Publicly accessible: No
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20RDS%20instance%20summary%20showing%20Publicly%20accessible%20No.png)
 
 ---
 
 #### Screenshot 12 — Connectivity & security section showing the VPC and attached security group
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Connectivity%20&%20security%20section%20showing%20the%20VPC%20and%20attached%20security%20group.png)
 
 ---
 
