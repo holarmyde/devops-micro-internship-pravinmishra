@@ -20,31 +20,31 @@ Build a VPC (10.0.0.0/16) with two public and two private subnets across two Ava
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20VPC%20details%20showing%20CIDR%2010.0.0.0_16_number%205.png)
 
 ---
 
 #### Screenshot 2 — Subnets list showing four subnets and their Availability Zones
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Subnets%20list%20showing%20four%20subnets%20and%20their%20Availability%20Zones.png)
 
 ---
 
 #### Screenshot 3 — Public route table showing the Internet Gateway route and both public-subnet associations
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Public%20route%20table%20.png)
 
 ---
 
 #### Screenshot 4 — Private route table showing the NAT Gateway route and both private-subnet associations
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Private%20route%20table%20showing%20the%20NAT%20Gateway%20route%20.png)
 
 ---
 
 #### Screenshot 5 — NAT Gateway status showing Available and the Elastic IP
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20NAT%20Gateway%20status%20showing%20Available%20and%20the%20Elastic%20IP.png)
 
 ---
 
