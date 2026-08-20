@@ -20,7 +20,7 @@ Create the Azure Resource Group `react-app-rg` in a region close to you.
 
 #### Screenshot 1 — Resource Group overview showing the name and region
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Resource%20Group%20overview%20showing%20the%20name%20and%20region.png)
 
 ---
 
