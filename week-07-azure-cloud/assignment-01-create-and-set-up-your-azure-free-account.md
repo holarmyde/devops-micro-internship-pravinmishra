@@ -30,13 +30,13 @@ Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machi
 
 #### Screenshot 1 — Azure Portal homepage after successful login
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Azure%20Portal%20homepage%20after%20successful%20login.png)
 
 ---
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Subscriptions%20section%20showing%20the%20Free%20Trial%20subscription.png)
 
 ---
 
@@ -44,7 +44,17 @@ Add your screenshot here.
 
 Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
 
-Write your answer here.
+• Azure Active Directory (AD) 
+ SO I can access the software from any corner of the world through authenticated login. As Azure Active Directory creates a single identity platform, it is also easier to have secure engagement with internal and external users. 
+•	Azure CDN
+Azure Content Delivery Network (CDN) For delivery of package managers around the world. Its server is designed in a way that it can integrate a lot of storage space, web apps, and Azure cloud services. This is why Azure CDN is used to deliver content securely all across the world.
+•	Azure SQL
+Azure SQL database cos of backups, monitoring, patching, and upgrading. The efficiency of Azure SQL without requiring any human intervention is the reason it would be used cos we can operate it without any kind of user involvement 
+•  Azure Function
+Cos its a serverless compute service, that enables enterprises to run event-triggered codes without having an infrastructure for its provision.
+Azure Function is greatly reliable and is used in production settings. It can be used to achieve decoupling, high-throughput, shared, and reusability.
+
+
 
 ---
 
@@ -57,12 +67,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Azure Free Account created with identity, phone, and payment verification completed
-- [ ] Microsoft Agreement and Offer Terms accepted
-- [ ] Azure Portal accessed successfully (Screenshot 1)
-- [ ] Free Trial subscription confirmed (Screenshot 2)
-- [ ] Reflection paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [✅] Azure Free Account created with identity, phone, and payment verification completed
+- [✅] Microsoft Agreement and Offer Terms accepted
+- [✅] Azure Portal accessed successfully (Screenshot 1)
+- [✅] Free Trial subscription confirmed (Screenshot 2)
+- [✅] Reflection paragraph written (Notes)
+- [✅] No sensitive information exposed
 
 ---
 
