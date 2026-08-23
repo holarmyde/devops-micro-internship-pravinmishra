@@ -34,13 +34,13 @@ Create an Ubuntu 20.04 LTS VM (size B1s) with a Network Security Group allowing 
 
 #### Screenshot 2 — Azure VM overview page showing the VM name, Resource Group, and region
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Azure%20VM%20overview%20page%20showin%20d%20VM%20name,%20Resource%20Grp,%20and%20region.png)
 
 ---
 
 #### Screenshot 3 — Network Security Group inbound rules showing ports 22 and 80 allowed
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Nwk%20Security%20Grp%20inbound%20rules%20showing%20ports%2022%20and%2080%20allowed.png)
 
 ---
 
@@ -54,7 +54,7 @@ Connect to the VM over SSH and confirm the Linux prompt is visible.
 
 #### Screenshot 4 — Terminal showing a successful SSH login with the prompt visible
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terminal%20showing%20a%20successful%20SSH%20login%20with%20the%20prompt%20visible.png)
 
 ---
 
@@ -68,7 +68,7 @@ Update Ubuntu and install Git, Node.js, and npm.
 
 #### Screenshot 5 — Terminal output showing `node -v` and `npm -v`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Terminal%20output%20showing%20node%20-v%20and%20npm%20-v.png)
 
 ---
 
@@ -82,7 +82,8 @@ Clone `my-react-app`, install dependencies, and run `npm run build` to produce t
 
 #### Screenshot 6 — Terminal showing successful `npm run build` completion and `ls -la build` output
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20npm%20run%20build.png)
+[task 5](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20ls%20-la%20build%20output.png)
 
 ---
 
@@ -96,13 +97,13 @@ Install Nginx and configure it to serve the `build/` directory with `try_files $
 
 #### Screenshot 7 — Successful `sudo nginx -t` output
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Successful%20sudo%20nginx%20-t%20output.png)
 
 ---
 
 #### Screenshot 8 — Nginx configuration snippet showing the build root and `try_files` directive
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Nginx%20configuration%20snippet%20showing%20the%20build%20root%20and%20directive.png)
 
 ---
 
@@ -116,7 +117,7 @@ Confirm the React app loads through the VM's public IP, navigation works, and a 
 
 #### Screenshot 9 — Browser showing the React app with the public IP visible in the address bar
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Browser%20showing%20the%20React%20app%20with%20the%20public%20IP%20visible.png)
 
 ---
 

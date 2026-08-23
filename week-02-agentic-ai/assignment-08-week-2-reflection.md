@@ -118,7 +118,7 @@ https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agent
 `https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agenticai-claudecode-share-7481561677507837953-cv8R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk`
 >>>>>>> upstream/main
 
----
+--- 
 
 # Submission Instructions
 
@@ -132,7 +132,7 @@ https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_dmibypravinmishra-agent
 
 # Completion Checklist
 
-* [✅ ] Blog written with required structure
+* [✅] Blog written with required structure
 * [✅ ] Blog includes at least 2–3 Week 2 topics
 * [✅ ] Blog is publicly accessible
 * [✅ ] LinkedIn post created
