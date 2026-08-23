@@ -131,7 +131,7 @@ Restrict the SSH Network Security Group rule to your IP if not already restricte
 
 #### Screenshot 10 (optional) — Network Security Group rule showing SSH restricted to your IP
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Network%20Security%20Group%20rule%20showing%20SSH%20restricted%20to%20your%20IP.png)
 
 ---
 
@@ -144,15 +144,15 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Resource Group created (Screenshot 1)
-- [ ] Task 2: Ubuntu VM provisioned with correct NSG rules (Screenshots 2 & 3)
-- [ ] Task 3: SSH access verified (Screenshot 4)
-- [ ] Task 4: Git, Node.js, and npm installed (Screenshot 5)
-- [ ] Task 5: React app built successfully (Screenshot 6)
-- [ ] Task 6: Nginx configured with SPA routing support (Screenshots 7 & 8)
-- [ ] Task 7: App verified via the VM public IP, including route refresh (Screenshot 9)
-- [ ] Task 8: SSH hardening applied (Screenshot 10, optional)
-- [ ] No sensitive data exposed
+- [✅] Task 1: Resource Group created (Screenshot 1)
+- [✅] Task 2: Ubuntu VM provisioned with correct NSG rules (Screenshots 2 & 3)
+- [✅] Task 3: SSH access verified (Screenshot 4)
+- [✅] Task 4: Git, Node.js, and npm installed (Screenshot 5)
+- [✅] Task 5: React app built successfully (Screenshot 6)
+- [✅] Task 6: Nginx configured with SPA routing support (Screenshots 7 & 8)
+- [✅] Task 7: App verified via the VM public IP, including route refresh (Screenshot 9)
+- [✅] Task 8: SSH hardening applied (Screenshot 10, optional)
+- [✅] No sensitive data exposed
 
 ---
 
