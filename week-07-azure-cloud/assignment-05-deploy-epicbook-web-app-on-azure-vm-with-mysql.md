@@ -20,19 +20,19 @@ Create a VNet (10.0.0.0/16) with a public subnet (10.0.1.0/24) for the VM and a 
 
 #### Screenshot 1 — Virtual Network overview showing the 10.0.0.0/16 address space and both subnets
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Virtual%20Network%20overview%20showing%20the%20address%20space.png)
 
 ---
 
 #### Screenshot 2 — Public and private NSG inbound rules showing ports 80, 22, and restricted 3306 access
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Public%20and%20private%20NSG%20inbound%20rules%20showing%20ports%2080.png)
 
 ---
 
 #### Screenshot 3 — Public IP and Network Interface association for the Virtual Machine
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Public%20IP%20and%20Network%20Interface%20association%20for%20the%20Virtual%20Machine.png)
 
 ---
 
@@ -46,13 +46,13 @@ Launch an Ubuntu 22.04 LTS VM (Standard B1s or equivalent) in the public subnet,
 
 #### Screenshot 4 — Virtual Machine overview showing Ubuntu, size, public IP, and subnet
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Virtual%20Machine%20overview%20showing%20Ubuntu.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful software installation or installed-version checks
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20software%20installation.png)
 
 ---
 
@@ -66,19 +66,18 @@ Clone the EpicBook repository, install dependencies, build the frontend, configu
 
 #### Screenshot 6 — Terminal showing the EpicBook repository cloned and dependencies installed
 
-Add your screenshot here.
-
+![task 3](screenshots/Screenshot%20with%20Terminal%20showing%20the%20EpicBook%20repository%20cloned%20.png)
 ---
 
 #### Screenshot 7 — Nginx configuration or service status proving the frontend is configured to be served
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Nginx%20configuration%20or%20service%20status.png)
 
 ---
 
 #### Screenshot 8 — Backend process or listening-port evidence (without exposing environment-variable secrets)
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Backend%20process%20or%20listening-port%20evidence.png)
 
 ---
 
