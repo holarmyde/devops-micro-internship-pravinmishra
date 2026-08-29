@@ -20,13 +20,14 @@ Create an architecture diagram and implementation plan identifying the presentat
 
 #### Screenshot 1 — Architecture diagram showing the public entry point, three tiers, network boundaries, and traffic flow
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Architecture%20diagram%20showing%20the%20public.png)
+
 
 ---
 
 #### Screenshot 2 — Written architecture assumptions and selected Azure services
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Written%20architecture%20assumptions%20and%20selected%20Azure%20services.png)
 
 ---
 
@@ -40,19 +41,19 @@ Create a dedicated Resource Group and VNet with separate subnets for the web, ap
 
 #### Screenshot 3 — Resource Group overview showing the assignment resources
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Resource%20Group%20overview%20showing%20the%20assignment%20resources.png)
 
 ---
 
 #### Screenshot 4 — VNet overview showing the address space and all required subnets
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20VNet%20overview%20showing%20the%20address%20space%20and%20all%20required%20subnets.png)
 
 ---
 
 #### Screenshot 5 — Route-table or Private DNS evidence where applicable
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20%20Route-table%20or%20Private%20DNS%20evidence%20where%20applicable.png)
 
 ---
 
@@ -66,7 +67,7 @@ Apply least-privilege NSG rules so traffic flows Internet → public entry point
 
 #### Screenshot 6 — NSG rules proving least-privilege access between the tiers
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20NSG%20rules%20proving%20least-privilege%20access%20between%20the%20tiers.png)
 
 ---
 
