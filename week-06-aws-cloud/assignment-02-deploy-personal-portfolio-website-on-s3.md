@@ -46,7 +46,7 @@ Upload the contents of the template folder (not the folder itself) so `index.htm
 
 ### Evidence
 
-#### Screenshot 3 — S3 bucket Objects view showing `index.html` at the root level
+#### Screenshot 3 — S3 bucket Objects view showing `index.html` at the top or root level
 
 ![task 3](screenshots/Screenshot%20with%20S3%20bucket%20Objects%20view%20showing%20index.html%20at%20the%20root%20level.png)
 
@@ -60,7 +60,7 @@ Enable S3 Static Website Hosting with `index.html` as the index document and `er
 
 ### Evidence
 
-#### Screenshot 4 — Static website hosting enabled screen showing the website endpoint
+#### Screenshot 4 — Static website hosting enabled screen showing the Website endpoint
 
 ![task 4](screenshots/Screenshot%20with%20Static%20website%20hosting%20enabled%20screen%20showing%20the%20website%20endpoint2.png)
 
@@ -102,7 +102,7 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 
 ### Evidence
 
-#### Screenshot 7 (optional) — Before/after view, or a browser view showing the updated text
+#### Screenshot 7 (optional) — Before and after views, or a browser view showing the updated text
 
 ![task 7](screenshots/Screenshot%20with%20after%20view%20a%20browser%20view%20showing%20the%20updated%20text.png)
 
