@@ -20,13 +20,13 @@ Create a `terraform-azure-vm` project and define the resource group, virtual net
 
 #### Screenshot 1 — VS Code showing `main.tf` and the required Azure resources
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20VS%20Code%20showing%20main_tf.png)
 
 ---
 
 #### Screenshot 2 — `main.tf` showing the public IP output and VM authentication configuration, with the password hidden or redacted
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20main_tf%20showing%20the%20public%20IP%20output%20and%20VM%20authentication%20.png)
 
 ---
 
@@ -40,7 +40,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 #### Screenshot 3 — Terminal showing successful `terraform init` output
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20terraform%20init%20output.png)
 
 ---
 
@@ -54,19 +54,19 @@ Review `terraform plan`, run `terraform apply`, and record the VM's public IP fr
 
 #### Screenshot 4 — Terraform plan summary showing the proposed resources
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terraform%20plan%20summary%20showing%20the%20proposed%20resources.png)
 
 ---
 
 #### Screenshot 5 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terraform%20output%20showing%20the%20public%20IP%20of%20the%20VM.png)
 
 ---
 
 #### Screenshot 6 — Terraform output showing the public IP of the VM
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terraform%20output%20showing%20the%20public%20IP%20of%20the%20VM_final.png)
 
 ---
 
@@ -80,7 +80,7 @@ Use Azure CLI to confirm the VM was created and is running.
 
 #### Screenshot 7 — Azure CLI output showing the VM name and running status
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Azure%20CLI%20output%20showing%20the%20VM%20name%20and%20running%20status.png)
 
 ---
 
@@ -94,7 +94,7 @@ Run `terraform destroy` to clean up the Azure resources after testing.
 
 #### Screenshot 8 — Terminal showing successful `terraform destroy` completion
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20terraform%20destroy%20completion.png)
 
 ---
 
@@ -102,7 +102,7 @@ Add your screenshot here.
 
 Write a short paragraph explaining what you learned or any issues you encountered.
 
-Write your answer here.
+I learned that Azure VM availability depends on the specific subscription and region. In East US 2, the original Standard_D2s_v5 and Standard_B2s VM sizes were unavailable due to subscription/capacity restrictions. The SKU list showed that some newer D-series sizes, such as Standard_D2s_v7, are available, but availability does not necessarily mean they are free-tier eligible. This highlighted the need to check the specific free-tier B-series sizes before choosing a VM size for the Terraform deployment.
 
 ---
 
@@ -116,13 +116,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
-- [ ] Task 2: `terraform init` completed successfully (Screenshot 3)
-- [ ] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
-- [ ] Task 4: VM verified as running via Azure CLI (Screenshot 7)
-- [ ] Task 5: `terraform destroy` completed successfully (Screenshot 8)
-- [ ] Learning/issues paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [✅] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
+- [✅] Task 2: `terraform init` completed successfully (Screenshot 3)
+- [✅] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
+- [✅] Task 4: VM verified as running via Azure CLI (Screenshot 7)
+- [✅] Task 5: `terraform destroy` completed successfully (Screenshot 8)
+- [✅] Learning/issues paragraph written (Notes)
+- [✅] No sensitive information exposed
 
 ---
 
