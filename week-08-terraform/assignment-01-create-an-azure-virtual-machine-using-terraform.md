@@ -20,19 +20,19 @@ Prepare your local environment for Terraform deployment by installing Terraform,
 
 #### Screenshot 1 — Terminal showing successful `terraform version` output
 
-Add your screenshot here.
+![task 0](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20terraform%20version%20output.png)
 
 ---
 
 #### Screenshot 2 — Terminal showing successful `az version` output
 
-Add your screenshot here.
+![task 0](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20az%20version%20output.png)
 
 ---
 
 #### Screenshot 3 — VS Code Extensions panel showing the HashiCorp Terraform extension installed and enabled
 
-Add your screenshot here.
+![task 0](screenshots/Screenshot%20with%20VS%20Code%20Extensions%20panel%20showing%20the%20HashiCorp%20Terraform.png)
 
 ---
 
@@ -96,7 +96,7 @@ Review the Terraform execution plan and provision the Azure resources.
 
 ### Question
 
-VM Public IP Address: [Enter the public IP shown by terraform output]
+VM Public IP Address: [20.119.172.242]
 
 ---
 
