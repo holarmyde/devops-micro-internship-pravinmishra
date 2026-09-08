@@ -54,7 +54,7 @@ The configuration must include:
 
 #### Screenshot 2 — VS Code showing the AWS provider configuration and VPC configuration in `main.tf`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20%20VS%20Code%20showing%20the%20AWS%20provider%20configuration.png)
 
 ---
 
@@ -62,7 +62,7 @@ Add your screenshot here.
 
 Ensure that no AWS credentials, private keys, account IDs, or other sensitive information are visible.
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20EC2%20instance%20configuration%20and%20public%20IP.png)
 
 ---
 
@@ -76,7 +76,7 @@ Initialize the Terraform working directory and download the required provider co
 
 #### Screenshot 4 — Terminal showing the successful `terraform init` output
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terminal%20showing%20the%20successful%20terraform%20init%20output.png)
 
 ---
 
@@ -90,19 +90,19 @@ Review the Terraform execution plan, provision the AWS resources, and record the
 
 #### Screenshot 5 — Terraform plan summary showing the proposed resources
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20plan%20summary%20showing%20the%20proposed%20resources.png)
 
 ---
 
 #### Screenshot 6 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terraform%20apply%20output%20showing%20successful%20completion%20-%20NOW.png)
 
 ---
 
 #### Screenshot 7 — Terraform output showing the public IP address of the EC2 instance
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20output%20showing%20successful%20completion.png)
 
 ---
 
@@ -110,7 +110,7 @@ Add your screenshot here.
 
 Record the public IP address displayed by `terraform output`.
 
-**EC2 Public IP Address:** `Add the public IP address here`
+**EC2 Public IP Address:** `16.170.157.207`
 
 ---
 
@@ -132,13 +132,13 @@ Confirm that:
 
 #### Screenshot 8 — AWS CLI output showing the EC2 instance ID, `running` state, and public IP address
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20VS%20Code%20Extensions%20panel%20showing%20the%20HashiCorp%20Terraform.png)
 
 ---
 
 #### Screenshot 9 — Browser showing the Nginx page successfully loaded using the EC2 instance public IP
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20React%20Application%20in%20the%20Browser.png)
 
 ---
 
@@ -152,7 +152,7 @@ Remove all AWS resources created by Terraform after completing the deployment an
 
 #### Screenshot 10 — Terminal showing successful `terraform destroy` completion
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Destroy%20the%20Resources.png)
 
 ---
 
@@ -172,33 +172,33 @@ Add your screenshot here.
 
 # Completion Checklist
 
-* [ ] Installed Terraform and verified it using `terraform version`
-* [ ] Installed AWS CLI and verified it using `aws --version`
-* [ ] Configured AWS CLI and verified account access
-* [ ] Confirmed the correct AWS Region
-* [ ] Installed and enabled the HashiCorp Terraform extension in VS Code
-* [ ] Created the `terraform-aws-vm` project directory and `main.tf`
-* [ ] Added the Terraform and AWS provider configuration
-* [ ] Defined the custom VPC, public subnet, and private subnet
-* [ ] Configured the Internet Gateway and public route table
-* [ ] Associated the public route table with the public subnet
-* [ ] Defined the security group for SSH and HTTP access
-* [ ] Restricted SSH access to my public IP whenever possible
-* [ ] Defined the EC2 instance inside the public subnet
-* [ ] Configured SSH authentication without exposing the private key
-* [ ] Added the Terraform output for the EC2 public IP address
-* [ ] Completed `terraform init` successfully
-* [ ] Reviewed the Terraform execution plan using `terraform plan`
-* [ ] Completed `terraform apply` successfully
-* [ ] Captured and recorded the EC2 public IP using `terraform output`
-* [ ] Verified that the EC2 instance is running using AWS CLI
-* [ ] Verified that the AWS public IP matches the Terraform output
-* [ ] Verified Nginx access through the EC2 public IP
-* [ ] Completed `terraform destroy` successfully
-* [ ] Captured all 10 required screenshots
-* [ ] Confirmed that my full name is visible in the required screenshots
-* [ ] Checked that no AWS credentials, private keys, passwords, account IDs, or other sensitive information are visible
-* [ ] Confirmed that no `.pem` private key file has been uploaded to the GitHub repository
+* [✅] Installed Terraform and verified it using `terraform version`
+* [✅] Installed AWS CLI and verified it using `aws --version`
+* [✅] Configured AWS CLI and verified account access
+* [✅] Confirmed the correct AWS Region
+* [✅] Installed and enabled the HashiCorp Terraform extension in VS Code
+* [✅] Created the `terraform-aws-vm` project directory and `main.tf`
+* [✅] Added the Terraform and AWS provider configuration
+* [✅] Defined the custom VPC, public subnet, and private subnet
+* [✅] Configured the Internet Gateway and public route table
+* [✅] Associated the public route table with the public subnet
+* [✅] Defined the security group for SSH and HTTP access
+* [✅] Restricted SSH access to my public IP whenever possible
+* [✅] Defined the EC2 instance inside the public subnet
+* [✅] Configured SSH authentication without exposing the private key
+* [✅] Added the Terraform output for the EC2 public IP address
+* [✅] Completed `terraform init` successfully
+* [✅] Reviewed the Terraform execution plan using `terraform plan`
+* [✅] Completed `terraform apply` successfully
+* [✅] Captured and recorded the EC2 public IP using `terraform output`
+* [✅] Verified that the EC2 instance is running using AWS CLI
+* [✅] Verified that the AWS public IP matches the Terraform output
+* [✅] Verified Nginx access through the EC2 public IP
+* [✅] Completed `terraform destroy` successfully
+* [✅] Captured all 10 required screenshots
+* [✅] Confirmed that my full name is visible in the required screenshots
+* [✅] Checked that no AWS credentials, private keys, passwords, account IDs, or other sensitive information are visible
+* [✅] Confirmed that no `.pem` private key file has been uploaded to the GitHub repository
 
 ---
 
