@@ -109,7 +109,7 @@ The network module must include:
 
 Add a screenshot of VS Code showing the VPC, public subnet, and two private database subnet configurations.
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20VPC%20and%20Subnets.png)
 
 ---
 
@@ -117,15 +117,14 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the Internet Gateway, public route table, and route table association.
 
-Add your screenshot here.
-
+![task 2](screenshots/Screenshot%20with%20%20Internet%20Gateway%20and%20Public%20Routing.png)
 ---
 
 ### Screenshot 7 — EC2 and RDS Security Groups
 
 Add a screenshot of VS Code showing the EC2 and RDS Security Groups, including MySQL access from the EC2 Security Group only.
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20EC2%20and%20RDS%20Security%20Groups.png)
 
 ---
 
@@ -133,7 +132,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the network module outputs.
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Network%20Module%20Outputs.png)
 
 ---
 
@@ -171,7 +170,7 @@ Add a screenshot of VS Code showing `user_data.sh`.
 
 Ensure that no credentials, passwords, private keys, access tokens, or application secrets are visible.
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20user_data.sh.png)
 
 ---
 
@@ -179,7 +178,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 module variables and outputs.
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20EC2%20Module%20Variables%20and%20Outputs.png)
 
 ---
 
@@ -205,7 +204,7 @@ The RDS module must include:
 
 Add a screenshot of VS Code showing the DB subnet group and RDS MySQL configuration.
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20DB%20Subnet%20Group%20and%20RDS%20MySQL.png)
 
 ---
 
@@ -215,7 +214,7 @@ Add a screenshot of VS Code showing `publicly_accessible = false`, the RDS Secur
 
 Ensure that the database password and other sensitive values are hidden.
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20DB%20Subnet%20Group%20and%20RDS%20MySQL.png)
 
 ---
 
@@ -223,7 +222,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the RDS endpoint output.
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20RDS%20Endpoint%20Output.png)
 
 ---
 
@@ -239,7 +238,7 @@ Use the root Terraform configuration to call the Network, EC2, and RDS modules a
 
 Add a screenshot of VS Code showing the root `main.tf` with the Network, EC2, and RDS module blocks.
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20%20Root%20Module%20Blocks.png)
 
 ---
 
@@ -247,7 +246,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing values passed from the Network module to the EC2 and RDS modules.
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Values%20Passed%20Between%20Modules.png)
 
 ---
 
@@ -255,7 +254,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the root EC2 public IP and RDS endpoint outputs.
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Values%20Passed%20Between%20Modules.png)
 
 ---
 
@@ -271,7 +270,7 @@ Initialize the modular Terraform project, validate the configuration, review the
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Terraform%20Initialization-1.png)
 
 ---
 
@@ -279,7 +278,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `terraform validate` output.
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20terraform%20validation.png)
 
 ---
 
@@ -287,7 +286,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan summary and proposed resources.
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Terraform%20plan%20summary%20showing%20the%20proposed%20resources.png)
 
 ---
 
@@ -295,7 +294,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Terraform%20apply%20output%20showing%20successful%20completion%20-%20NOW.png)
 
 ---
 
@@ -303,7 +302,7 @@ Add your screenshot here.
 
 Add a screenshot showing the EC2 public IP and RDS endpoint returned by `terraform output`.
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Terraform%20output%20showing%20the%20public%20IP%20of%20the%20VM_final.png)
 
 ---
 
