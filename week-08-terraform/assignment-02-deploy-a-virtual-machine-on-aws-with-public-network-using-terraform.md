@@ -102,7 +102,7 @@ Review the Terraform execution plan, provision the AWS resources, and record the
 
 #### Screenshot 7 — Terraform output showing the public IP address of the EC2 instance
 
-![task 3](screenshots/Screenshot%20with%20output%20showing%20successful%20completion.png)
+![task 3](screenshots/Screenshot%20with%20Terraform%20output%20showing%20the%20public%20IP%20address%20of%20the%20EC2%20instance.png)
 
 ---
 
@@ -110,7 +110,7 @@ Review the Terraform execution plan, provision the AWS resources, and record the
 
 Record the public IP address displayed by `terraform output`.
 
-**EC2 Public IP Address:** `16.170.157.207`
+**EC2 Public IP Address:** `18.223.196.202`
 
 ---
 
