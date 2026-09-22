@@ -20,7 +20,7 @@ Create the `mini-finance` project with separate `terraform/` and `ansible/` subd
 
 #### Screenshot 1 — Terminal or editor showing the complete `mini-finance` project tree
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Terminal%20or%20editor%20showing%20the%20complete%20mini-finance%20project%20tree.png)
 
 ---
 
@@ -34,19 +34,19 @@ Provision an Ubuntu 22.04 Standard_B1s VM with a public IP, SSH key authenticati
 
 #### Screenshot 2 — Terminal showing the end of a successful `terraform apply`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Terminal%20showing%20the%20end%20of%20a%20successful%20terraform%20apply.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing `terraform output public_ip`
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terminal%20showing%20terraform%20output%20public_ip.png)
 
 ---
 
 #### Screenshot 4 — Terraform code or Azure Portal showing NSG inbound rules for ports 22 and 80
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Azure%20Portal%20showing%20NSG%20rules%20for%20ports%2022%20and%2080.png)
 
 ---
 
@@ -60,7 +60,7 @@ Connect to the VM with SSH using the injected key and run `hostname` remotely wi
 
 #### Screenshot 5 — Terminal showing the successful passwordless SSH hostname check
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terminal%20showing%20the%20successful%20passwordless%20SSH%20hostname%20.png)
 
 ---
 
@@ -74,13 +74,13 @@ Create `ansible/inventory.ini` and a three-play `site.yml` that installs Nginx a
 
 #### Screenshot 6 — Editor showing `inventory.ini` and the three plays in `site.yml`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Editor%20showing%20inventory.ini%20and%20the%20three%20plays.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing `ansible-playbook -i inventory.ini site.yml` with HTTP 200, assertion OK, and no failures
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20ansible-playbook%20-i%20inventory.ini%20site_yml.png)
 
 ---
 
@@ -94,7 +94,7 @@ Confirm the Mini Finance site is publicly accessible and correctly served by Ngi
 
 #### Screenshot 8 — Browser showing the Mini Finance site loaded from `http://<public_ip>` with the URL visible
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Browser%20showing%20the%20Mini%20Finance%20site%20loaded.png)
 
 ---
 
@@ -102,7 +102,9 @@ Add your screenshot here.
 
 Describe an issue you faced and how you fixed it, and what you learned.
 
-Write your answer here.
+One issue I faced during the Mini Finance deployment was that the Ansible playbook kept hanging when it tried to clone the GitHub repository. I first tested the connection from the Azure VM and confirmed that DNS and HTTPS access to GitHub were working. I then discovered that the repository URL provided in my playbook was not accessible, while the correct repository was https://github.com/pravinmishraaws/mini_finance. I updated the repository URL in site.yml and reran the playbook. The deployment then completed successfully, including synchronizing the application to /var/www/html/, reloading Nginx, and passing the HTTP 200 validation.
+
+This taught me the importance of troubleshooting each layer separately instead of assuming that a deployment failure is caused by Ansible itself. I learned to verify DNS, network connectivity, Git access, and the repository URL independently before changing the playbook. I also learned that small configuration details, such as an incorrect repository URL, can stop an otherwise correctly configured automation workflow
 
 ---
 
@@ -118,13 +120,13 @@ Publish a LinkedIn post about the Terraform + Ansible deployment, mentioning the
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/gzGZV9Tb`
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one image or proof
 
-Add your screenshot here.
+![LinkedIn](screenshots/Screenshot%20with%20linkedIn%20post.png)
 
 ---
 
@@ -138,14 +140,14 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: `mini-finance` project structure created (Screenshot 1)
-- [ ] Task 2: Azure VM and NSG provisioned with Terraform (Screenshots 2–4)
-- [ ] Task 3: Passwordless SSH verified (Screenshot 5)
-- [ ] Task 4: Ansible install/deploy/verify plays run successfully (Screenshots 6–7)
-- [ ] Task 5: Site verified in the browser (Screenshot 8)
-- [ ] Reflection notes written (Notes)
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [✅] Task 1: `mini-finance` project structure created (Screenshot 1)
+- [✅] Task 2: Azure VM and NSG provisioned with Terraform (Screenshots 2–4)
+- [✅] Task 3: Passwordless SSH verified (Screenshot 5)
+- [✅] Task 4: Ansible install/deploy/verify plays run successfully (Screenshots 6–7)
+- [✅] Task 5: Site verified in the browser (Screenshot 8)
+- [✅] Reflection notes written (Notes)
+- [✅] LinkedIn post published and URL submitted
+- [✅] No sensitive data exposed
 
 ---
 
