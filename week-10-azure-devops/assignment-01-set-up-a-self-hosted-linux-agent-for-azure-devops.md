@@ -30,8 +30,7 @@ Create a self-hosted agent pool (e.g. `SelfHostedPool`) in Azure DevOps Organiza
 
 #### Screenshot 1 — Azure DevOps Agent Pools page showing the newly created pool
 
-Add your screenshot here.
-
+![task 2](screenshots/Screenshot%20with%20Azure%20DevOps%20Agent%20Pools%20page%20showing%20the%20newly%20created%20pool.png)
 ---
 
 # Task 3 — Provision the Ubuntu VM
@@ -44,13 +43,13 @@ Create an Ubuntu 22.04 (or latest) VM in AWS or Azure with SSH access, and confi
 
 #### Screenshot 2 — Cloud console showing the running Ubuntu VM and its public IP or DNS name
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20cloud%20console%20and%20its%20public%20IP%20or%20DNS%20name.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing a successful SSH login and Ubuntu version details
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terminal%20showing%20a%20successful%20SSH%20login%20and%20Ubuntu%20version%20details.png)
 
 ---
 
@@ -64,13 +63,13 @@ Download the Linux agent package, register it with your organization/pool/PAT vi
 
 #### Screenshot 4 — Terminal showing successful agent configuration without exposing the PAT
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20agent%20configuration%20without%20exposing%20the%20PAT.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing the agent service running successfully
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20the%20agent%20service%20running%20successfully.png)
 
 ---
 
@@ -84,7 +83,7 @@ Confirm the agent service is running and the agent shows as Online in the Azure 
 
 #### Screenshot 6 — Agent Pool listing showing the registered agent online
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Pipeline%20online.png)
 
 ---
 
@@ -98,7 +97,7 @@ Create and run a YAML pipeline targeting the self-hosted pool, running `uname -a
 
 #### Screenshot 7 — Successful test pipeline run output in Azure DevOps showing the Linux commands
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20verify%20test.png)
 
 ---
 
@@ -106,7 +105,17 @@ Add your screenshot here.
 
 Note the cloud platform used, your Azure DevOps organization/project name, and the agent pool name. Describe any issue you faced and how you resolved it.
 
-Write your answer here.
+Cloud Platform and Azure DevOps Details
+Cloud platform: AWS EC2
+Azure DevOps organization: bebotchild
+Azure DevOps project: SelfHostedAgentProject
+Agent pool: Default
+Self-hosted agent: SelfHostedAgentProject
+Issue Faced and Resolution
+
+One issue I faced was getting SSH access to the Ubuntu EC2 instance. The correct AWS private key initially returned Permission denied (publickey) because the corresponding public key was not present in the Ubuntu user's authorized_keys file. I used AWS EC2 Instance Connect to temporarily access the VM, added the correct public key to ~/.ssh/authorized_keys, corrected the SSH file permissions, and then successfully connected using the original key.
+
+I also encountered an authentication mistake while configuring the Azure DevOps agent, where a PAT was entered at the wrong prompt. I revoked that exposed PAT, created a replacement PAT, and completed the agent configuration successfully.
 
 ---
 
@@ -119,14 +128,14 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: PAT created with required scopes and stored securely
-- [ ] Task 2: Self-hosted agent pool created (Screenshot 1)
-- [ ] Task 3: Ubuntu VM provisioned and SSH verified (Screenshots 2–3)
-- [ ] Task 4: Agent installed, registered, and running as a service (Screenshots 4–5)
-- [ ] Task 5: Agent verified Online (Screenshot 6)
-- [ ] Task 6: Test pipeline run successfully (Screenshot 7)
-- [ ] Platform/org/pool details and issue notes written (Notes)
-- [ ] No secrets exposed
+- [✅] Task 1: PAT created with required scopes and stored securely
+- [✅] Task 2: Self-hosted agent pool created (Screenshot 1)
+- [✅] Task 3: Ubuntu VM provisioned and SSH verified (Screenshots 2–3)
+- [✅] Task 4: Agent installed, registered, and running as a service (Screenshots 4–5)
+- [✅] Task 5: Agent verified Online (Screenshot 6)
+- [✅] Task 6: Test pipeline run successfully (Screenshot 7)
+- [✅] Platform/org/pool details and issue notes written (Notes)
+- [✅] No secrets exposed
 
 ---
 
