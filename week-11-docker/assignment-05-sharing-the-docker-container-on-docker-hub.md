@@ -20,49 +20,49 @@ Create a Docker Hub repository (`my-react-app`), log in from the CLI, tag and pu
 
 #### Screenshot 1 — Docker Hub repository (`my-react-app`)
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Docker%20Hub%20repository%20my-react-app.png)
 
 ---
 
 #### Screenshot 2 — Successful `docker login`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Successful%20docker%20login.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker tag`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Successful%20docker%20tag_1.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker push`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Successful%20docker%20push.png)
 
 ---
 
 #### Screenshot 5 — Docker Hub repository showing the uploaded image
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Docker%20Hub%20repository%20showing%20the%20uploaded%20image.png)
 
 ---
 
 #### Screenshot 6 — Successful `docker pull`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Successful%20docker%20pull%20_%202.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker ps`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Output%20of%20docker%20ps_%202.png)
 
 ---
 
 #### Screenshot 8 — Browser displaying the running React application
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Browser%20displaying%20the%20application.png)
 
 ---
 
@@ -78,13 +78,13 @@ Create a LinkedIn post covering the assignment title, the Docker Hub repository 
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/evNeYdem`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn](screenshots/Screenshot%20with%20published%20LinkedIn%20-4.png)
 
 ---
 
@@ -99,11 +99,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Docker Hub account and repository created
-- [ ] Docker image tagged and pushed successfully (Screenshots 1–5)
-- [ ] Docker image pulled and container run successfully (Screenshots 6–7)
-- [ ] React application accessible in the browser (Screenshot 8)
-- [ ] No sensitive information exposed
+- [✅] Docker Hub account and repository created
+- [✅] Docker image tagged and pushed successfully (Screenshots 1–5)
+- [✅] Docker image pulled and container run successfully (Screenshots 6–7)
+- [✅] React application accessible in the browser (Screenshot 8)
+- [✅] No sensitive information exposed
 
 ---
 
