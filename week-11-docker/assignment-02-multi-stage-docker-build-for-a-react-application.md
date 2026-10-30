@@ -20,7 +20,7 @@ Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.docke
 
 #### Screenshot 1 — Contents of the `.dockerignore` file
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Contents%20of%20the%20dockerignore%20file.png)
 
 ---
 
@@ -34,13 +34,13 @@ Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
 
 #### Screenshot 2 — Contents of `Dockerfile.single`
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Contents%20of%20Dockerfile.single.png)
 
 ---
 
 #### Screenshot 3 — Browser displaying the application running from the single-stage container
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Browser%20displaying%20the%20application.png)
 
 ---
 
@@ -54,13 +54,13 @@ Create a multi-stage Dockerfile with separate build and Nginx runtime stages, bu
 
 #### Screenshot 4 — Contents of the multi-stage Dockerfile
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Contents%20of%20the%20multi-stage%20Dockerfile.png)
 
 ---
 
 #### Screenshot 5 — Browser displaying the application running from the multi-stage container
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Browser%20displaying%20the%20app.png)
 
 ---
 
@@ -74,7 +74,7 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 #### Screenshot 6 — Docker image list showing both image sizes
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Docker%20image%20list%20showin%20both%20img.png )
 
 ---
 
@@ -88,15 +88,19 @@ Write a 5–8 line analysis covering the percentage reduction, security benefits
 
 #### Screenshot 7 — Analysis included in your submission document
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20analysis%20submission%20doc.png)
 
 ---
 
 ### Notes
 
-Write your analysis here.
+### Analysis: Single-Stage vs. Multi-Stage Docker Build
 
-Write your answer here.
+The single-stage Docker image (`react-single`) had a disk usage of 818 MB, while the multi-stage image (`react-multistage`) used only 95.1 MB. This represents an approximate **88.37% reduction** in image size, saving 722.9 MB. The multi-stage approach achieves this by using Node.js only in the build stage and Nginx Alpine in the final runtime stage. Removing the Node.js environment and development dependencies reduces the final image's attack surface and improves security. The smaller image also requires less storage and can be transferred and deployed faster. Separating build and runtime stages makes the deployment more efficient, while Docker layer caching can help speed up subsequent builds when dependencies remain unchanged.
+
+### Optional Optimization: Docker Health Check
+
+I enhanced my multi-stage Docker deployment by adding a Docker HEALTHCHECK instruction to the Nginx runtime stage. The health check uses `wget` to send an HTTP request to the local Nginx server every 30 seconds. Docker allows a 5-second startup period, a 3-second timeout, and marks the container unhealthy after three consecutive failures. After rebuilding the image and recreating the container, I verified that its status was **healthy**, with a failing streak of zero and an exit code of zero. This optimization improves container monitoring by allowing Docker to distinguish between a running container and an application that is actually responding to requests.
 
 ---
 
@@ -106,7 +110,7 @@ Write your answer here.
 
 Optionally configure an Nginx health check, cache headers, parameterized ports via environment variables, or a lighter runtime image, and compare results.
 
-> Screenshot optional.
+![task 6](screenshots/Screenshot%20with%20analysis%20submission%20doc.png)
 
 ---
 
@@ -122,13 +126,13 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eHnpaxU7`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20with%20publisheld%20linkedIn.png)
 
 ---
 
@@ -142,13 +146,13 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: `.dockerignore` created (Screenshot 1)
-- [ ] Task 2: Single-stage image built and verified (Screenshots 2–3)
-- [ ] Task 3: Multi-stage image built and verified (Screenshots 4–5)
-- [ ] Task 4: Image sizes compared (Screenshot 6)
-- [ ] Task 5: Analysis written (Screenshot 7 & Notes)
-- [ ] Task 6: Optional production optimizations explored
-- [ ] No sensitive information exposed
+- [✅] Task 1: `.dockerignore` created (Screenshot 1)
+- [✅] Task 2: Single-stage image built and verified (Screenshots 2–3)
+- [✅] Task 3: Multi-stage image built and verified (Screenshots 4–5)
+- [✅] Task 4: Image sizes compared (Screenshot 6)
+- [✅] Task 5: Analysis written (Screenshot 7 & Notes)
+- [✅] Task 6: Optional production optimizations explored
+- [✅] No sensitive information exposed
 
 ---
 

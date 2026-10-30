@@ -20,37 +20,37 @@ List Docker networks, verify/pull the Nginx image, run an Nginx container (`mywe
 
 #### Screenshot 1 — Output of `docker network ls`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Output%20of%20docker%20network%20ls.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker images`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Output%20of%20docker%20images.png)
 
 ---
 
 #### Screenshot 3 — Output of `docker search nginx`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Output%20of%20docker%20search%20nginx.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker pull nginx` (if applicable)
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Successful%20docker%20pull%20nginx.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the running `myweb` container
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Output%20of%20docker%20ps%20.png)
 
 ---
 
 #### Screenshot 6 — Browser displaying the Nginx Welcome Page using the Public IP address
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20%20Browser%20displaying%20the%20Nginx.png)
 
 ---
 
@@ -64,55 +64,55 @@ Create a custom bridge network `mynetwork`, build and run a Node/Express `fronte
 
 #### Screenshot 1 — Output of `docker network create mynetwork`
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Output%20of%20docker%20netwk.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker network ls`
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Output%20of%20docker%20netwrk%20ls.png)
 
 ---
 
 #### Screenshot 3 — Frontend Dockerfile
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Frontend%20Dockerfile.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker build` for the frontend
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Frontend%20Dockerfile.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the frontend container
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20%20Output%20of%20docker%20ps%20showing%20both.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing both frontend and backend containers
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20%20Output%20of%20docker%20ps%20showing%20both.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker network inspect mynetwork`
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Output%20of%20docker%20ps%20.png)
 
 ---
 
 #### Screenshot 8 — Successful `curl http://<Public-IP>` showing "Hello from Frontend"
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Successful%20curl%20http.png)
 
 ---
 
 #### Screenshot 9 — Successful `curl backend` output from the frontend container showing the Nginx Welcome Page
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20%20Output%20of%20docker%20ps%20showing%20both.png)
 
 ---
 
@@ -126,91 +126,91 @@ Build a three-tier app (frontend, backend, MongoDB) across `backend-network` (ba
 
 #### Screenshot 1 — Creation of `backend-network`
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20docker%20network%20inspect%20backend-network.png)
 
 ---
 
 #### Screenshot 2 — Creation of `frontend-network`
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20docker%20network%20create%20frontend-network.png)
 
 ---
 
 #### Screenshot 3 — Project folder structure
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Project%20Structure.png)
 
 ---
 
 #### Screenshot 4 — Database Dockerfile
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Database%20dockerfile.png)
 
 ---
 
 #### Screenshot 5 — Backend Dockerfile
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20backend%20Dockerfile.png)
 
 ---
 
 #### Screenshot 6 — Frontend Dockerfile
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Project%20Structure.png)
 
 ---
 
 #### Screenshot 7 — Successful Docker image builds (database, backend, frontend)
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20%20Terminal%20showing%20docker%20images.png)
 
 ---
 
 #### Screenshot 8 — Running containers (`docker ps`)
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20%20Output%20of%20docker%20ps%20showing%20both.png)
 
 ---
 
 #### Screenshot 9 — Output of `docker network inspect backend-network`
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20docker%20network%20inspect%20backend-network.png)
 
 ---
 
 #### Screenshot 10 — Output of `docker network inspect frontend-network`
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20docker%20network%20create%20frontend-network.png)
 
 ---
 
 #### Screenshot 11 — Browser showing the frontend application
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20wit%20Browser%20displayin%20d%20deployed%20website.png)
 
 ---
 
 #### Screenshot 12 — Successful `curl api` from the frontend container
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Successful%20curl%20http.png)
 
 ---
 
 #### Screenshot 13 — MongoDB connection using `mongosh`
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20MongoDB%20connection%20using%20mongosh.png)
 
 ---
 
 #### Screenshot 14 — Successful document insertion
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Successful%20document%20insertion.png)
 
 ---
 
 #### Screenshot 15 — Successful retrieval of the inserted document
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20Successful%20retrieval%20of%20the%20inserted%20document.png)
 
 ---
 
@@ -224,31 +224,31 @@ Deploy an Nginx container (`fastapp`) using Host Network Mode and verify it's re
 
 #### Screenshot 1 — Output of `docker run --network host`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20%20Output%20of%20docker%20run%20--network%20host.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker ps` showing the running `fastapp` container
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Output%20of%20docker%20ps%20with%20fastapp.png)
 
 ---
 
 #### Screenshot 3 — Browser or terminal displaying the Nginx Welcome Page
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20%20Browser%20displaying%20the%20Nginx.png)
 
 ---
 
 #### Screenshot 4 — Output of `docker inspect fastapp | grep "NetworkMode"`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20%20Output%20of%20docker%20run%20--network%20host.png)
 
 ---
 
 #### Screenshot 5 — Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20docker%20stop%20fastapp.png)
 
 ---
 
@@ -264,13 +264,13 @@ Create a LinkedIn post covering the assignment objective, networking modes explo
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eyXz_k_P`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn](screenshots/Screenshot%20with%20published%20LinkedIn%20-2.png)
 
 ---
 
@@ -284,11 +284,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Standalone app on default bridge network deployed and verified (Screenshots 1–6)
-- [ ] Task 2: Custom bridge network with frontend/backend communication verified (Screenshots 1–9)
-- [ ] Task 3: Multi-tier app across two networks deployed and verified end to end (Screenshots 1–15)
-- [ ] Task 4: Host network mode deployment verified and cleaned up (Screenshots 1–5)
-- [ ] No sensitive information exposed
+- [✅] Task 1: Standalone app on default bridge network deployed and verified (Screenshots 1–6)
+- [✅] Task 2: Custom bridge network with frontend/backend communication verified (Screenshots 1–9)
+- [✅] Task 3: Multi-tier app across two networks deployed and verified end to end (Screenshots 1–15)
+- [✅] Task 4: Host network mode deployment verified and cleaned up (Screenshots 1–5)
+- [✅] No sensitive information exposed
 
 ---
 
