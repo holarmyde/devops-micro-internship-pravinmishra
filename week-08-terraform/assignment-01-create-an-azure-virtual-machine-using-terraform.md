@@ -1,6 +1,6 @@
 # Assignment 1 — Create an Azure Virtual Machine using Terraform
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -128,6 +128,7 @@ Remove all Azure resources created by Terraform after completing the deployment 
 
 ---
 
+<<<<<<< HEAD
 
 ### Notes
 
@@ -138,9 +139,27 @@ I learned that Azure VM availability depends on the specific subscription and re
 ---
 
 
+=======
+# Task 6 — Share Your Terraform Progress on WhatsApp
+
+## Goal
+
+Share your Terraform deployment progress on WhatsApp by using Screenshot 8, the provided Terraform caption, and your generated DMI Leaderboard progress link.
+
+### Evidence
+
+#### Screenshot 12 — Published WhatsApp Status showing your Terraform deployment progress and DMI Leaderboard progress link
+
+Add your screenshot here.
+
+> Ensure that no passwords, account IDs, subscription IDs, private phone numbers, or personal messages are visible.
+
+---
+
+>>>>>>> upstream/main
 # Submission Instructions
 
-- Complete all tasks in sequence and include all required screenshots specified in Tasks 0–5.
+- Complete all tasks in sequence and include all required screenshots specified in Tasks 0–6.
 - Do not expose passwords, keys, account IDs, or other sensitive information in screenshots.
 
 ---
@@ -172,6 +191,8 @@ I learned that Azure VM availability depends on the specific subscription and re
 - Captured and recorded the VM public IP using `terraform output`
 - Verified that the VM is running using Azure CLI
 - Completed `terraform destroy` successfully
+- Shared Terraform deployment progress on WhatsApp by following Task 6
+- Captured a screenshot of the published WhatsApp Status
 - Captured all required screenshots
 - Checked that no passwords, keys, account IDs, or other sensitive information are visible in the screenshots
 ---
@@ -196,4 +217,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
