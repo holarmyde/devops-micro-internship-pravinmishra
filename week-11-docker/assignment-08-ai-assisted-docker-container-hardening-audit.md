@@ -33,7 +33,7 @@ docker-audit.sh
 SKILL.md
 ```
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Audit%20Workspace%20Files.png)
 
 ---
 
@@ -49,7 +49,7 @@ Add the supplied `docker-audit` skill to Claude Code and confirm that it is avai
 
 Add a screenshot of Claude Code showing `docker-audit` in the available skill list.
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20%20Docker%20Audit%20Skill%20Available%20in%20Claude%20Code.png)
 
 ---
 
@@ -70,7 +70,7 @@ Add a terminal screenshot showing:
 - Your full name
 - The usage message displayed when the script runs without a container name
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Script%20Validation%20_1.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add a terminal screenshot showing:
 - `docker ps`
 - The audit command using the selected target container name
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Run%20the%20Initial%20Docker%20Security%20Audit.png)
 
 ---
 
@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing the initial Docker audit results.
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Initial%20Audit%20Results.png)
 
 ---
 
@@ -119,7 +119,7 @@ Add a Claude Code screenshot showing:
 - Recommended manual fix
 - Verification method
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Audit%20Explanation%20and%20Recommended%20Fix.png)
 
 ---
 
@@ -135,7 +135,7 @@ Manually fix one WARN or FAIL finding from the initial audit.
 
 Add a screenshot of the updated Dockerfile or `docker-compose.yml` showing the selected hardening fix.
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20hardening%20Configuration%20Change.png)
 
 ---
 
@@ -143,7 +143,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing your full name and the rebuilt or recreated service/container running successfully.
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Updated%20Service%20Running.png)
 
 ---
 
@@ -163,7 +163,7 @@ Add a terminal screenshot showing:
 - The updated running container
 - The final audit report
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20final%20audit%20results.png)
 
 ---
 
@@ -176,7 +176,10 @@ Write a short comparison covering:
 - Final audit result
 - Security benefit of the improvement
 
-Write your comparison here.
+Docker Container Hardening Audit – Before and After Comparison
+The initial Docker security audit identified that the epicbook-nginx container was using the generic nginx:alpine image tag, which was flagged as a security concern because it does not pin a specific version. To address this, I updated the Docker Compose configuration from nginx:alpine to nginx:1.31.8-alpine. After recreating the proxy container, I verified that it was running and healthy, confirmed Nginx version 1.31.8, and tested the application successfully with an HTTP 200 OK response. This improvement makes deployments more predictable by ensuring a specific Nginx version is used, reducing unexpected changes from moving image tags and improving version consistency.
+
+Note: The initial audit flagged the image tag as FAIL. The remediation was successfully applied and operationally verified, but the final audit result still needs to be confirmed by rerunning the audit script.
 
 ---
 
@@ -188,13 +191,13 @@ Create a LinkedIn post about the container security checks you performed, one ha
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** `https://lnkd.in/p/e74QMGyq`
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post, including the final audit result.
 
-Add your screenshot here.
+![LinkedIn](screenshots/Screenshot%20with%20LinkedIn%20Post%20Screenshot__7.png)
 
 ---
 
@@ -210,19 +213,19 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Audit workspace created and supplied files verified
-- [ ] `docker-audit` skill added to Claude Code
-- [ ] Audit script validated successfully
-- [ ] Running target container identified
-- [ ] Initial Docker audit completed
-- [ ] Claude Code explanation of findings captured
-- [ ] One hardening fix applied manually
-- [ ] Affected service or container rebuilt and recreated
-- [ ] Final Docker audit completed
-- [ ] Before-and-after comparison completed
-- [ ] Screenshots 1–9 included
-- [ ] LinkedIn post URL and screenshot included
-- [ ] No sensitive information exposed
+- [✅ ] Audit workspace created and supplied files verified
+- [✅ ] `docker-audit` skill added to Claude Code
+- [✅ ] Audit script validated successfully
+- [✅ ] Running target container identified
+- [✅ ] Initial Docker audit completed
+- [✅ ] Claude Code explanation of findings captured
+- [✅ ] One hardening fix applied manually
+- [✅ ] Affected service or container rebuilt and recreated
+- [✅ ] Final Docker audit completed
+- [✅ ] Before-and-after comparison completed
+- [✅ ] Screenshots 1–9 included
+- [✅ ] LinkedIn post URL and screenshot included
+- [✅ ] No sensitive information exposed
 
 ---
 

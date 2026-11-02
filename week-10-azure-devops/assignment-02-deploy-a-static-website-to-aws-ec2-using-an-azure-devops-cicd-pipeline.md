@@ -36,7 +36,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 * `index.html`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Azure%20Repos%20showing%20the%20imported%20repository%20files%20with%20index.html.png)
 
 ---
 
@@ -65,7 +65,7 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * Service Connection name
 * SSH connection type
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terraform%20output%20or%20cloud%20console%20showing%20the%20running%20VM%20.png )
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -91,7 +91,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `CopyFilesOverSSH@0` task
 * `SSH@0` verification task
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Pipeline%20YAML%20definition%20open%20in%20the%20Azure%20DevOps%20editor.png)
 
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
@@ -115,7 +115,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Remote-verification step completed
 * Your Full Name visible in the pipeline output
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Successful%20Azure%20DevOps%20pipeline%20run%20log%20summary.png)
 
 ---
 
@@ -136,15 +136,15 @@ Add a browser screenshot showing:
 * Your Full Name
 * Updated website content after the automatic deployment
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Browser%20showin%20the%20deployed%20website%20wit%20d%20VM%20public%20IP%20visible.png)
 
 ## Final Website URL
 
-`http://<target-vm-public-ip>`
+`http://3.145.52.251`
 
 Replace the placeholder with your actual website URL:
 
-[Paste your final website URL here]
+[(http://3.145.52.251)]
 
 ---
 
@@ -152,7 +152,16 @@ Replace the placeholder with your actual website URL:
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+[Issue Faced and Resolution
+
+I initially encountered issues with the Azure DevOps pipeline connecting to the AWS EC2 instance. The EC2 public IP address changed, which caused the SSH connection to time out. I also had an issue with the self-hosted Azure DevOps agent being offline, which prevented the pipeline from running.
+
+I resolved the issues by bringing the self-hosted agent service back online and verifying that it was active on the EC2 instance. I then updated the Azure DevOps SSH service connection to use the EC2 instance's private IP address (10.0.1.211) because the self-hosted agent and deployment target were on the same VM. I created a dedicated SSH deployment key and configured it on the VM. Finally, Nginx was installed and started on the EC2 instance.
+
+After these fixes, the pipeline successfully copied the website, deployed it to /var/www/html, and verified the site through Nginx. The final pipeline output confirmed:
+
+DEPLOYMENT VERIFICATION PASSED
+OLUWAFEMI AREMU is present on the website]
 
 ---
 

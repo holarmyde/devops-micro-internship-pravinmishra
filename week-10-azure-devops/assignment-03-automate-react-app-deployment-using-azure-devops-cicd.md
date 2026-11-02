@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Azure%20Repos%20showing%20the%20imported%20React%20project.png)
 
 ---
 
@@ -81,7 +81,7 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Azure%20Pipeline%20YAML%20definition%20with%20the%20Build.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,7 +104,7 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Azure%20Pipeline%20YAML%20definition%20with%20the%20Build.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Terminal%20or%20pipeline%20output%20showing%20after%20deployment.png)
 
 ---
 
@@ -143,7 +143,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Browser%20showing%20the%20running%20React%20application.png)
 
 ## Final Application URL
 
