@@ -12,17 +12,17 @@ Deploy the Book Review App as a production-style three-tier application using Ku
 
 ## Submission Details
 
-**Full Name:** Add your full name here.
+**Full Name:** Oluwafemi Aremu
 
-**Kubernetes Platform:** Add your platform here.
+**Kubernetes Platform:** Docker-Desktop
 
 **Namespace:** book-review
 
-**Frontend URL or IP:** Add the working endpoint here.
+**Frontend URL or IP:** https://app.docker.com/accounts/aremufemmy
 
 **Access Method:** Public LoadBalancer, Ingress, or documented local access.
 
-**GitHub Manifests or Helm Chart URL:** Add your repository link here.
+**GitHub Manifests or Helm Chart URL:** https://github.com/holarmyde?tab=repositories
 
 **Architecture Diagram:** Add your diagram or link here.
 
@@ -38,7 +38,7 @@ Prepare the cluster, application source, container images, and tooling needed fo
 
 #### Screenshot 1 — Active Kubernetes context and Ready nodes
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Active%20Kubernetes%20context%20and%20Ready%20nodes.png)
 
 ---
 
@@ -60,7 +60,7 @@ Document the workloads, networking, configuration, storage, and permitted commun
 
 #### Screenshot 3 — Completed Kubernetes architecture diagram
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Completed%20Kubernetes%20architecture%20diagram.png)
 
 ---
 
@@ -74,13 +74,13 @@ Provide application configuration and credentials without embedding sensitive va
 
 #### Screenshot 4 — ConfigMap configuration or describe output showing non-sensitive values
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20ConfigMap%20configuration%20or%20describe%20output_4.png)
 
 ---
 
 #### Screenshot 5 — Secret references or describe output showing names and keys without sensitive values
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Secret%20references%20or%20describe%20output%20showing_5.png)
 
 ---
 
@@ -94,13 +94,13 @@ Provide persistent MySQL storage and allow the backend to connect without exposi
 
 #### Screenshot 6 — Managed MySQL status or MySQL StatefulSet and PVC status
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Managed%20MySQL%20status%20or%20MySQL%20StatefulSet%20and%20PVC%20status.png)
 
 ---
 
 #### Screenshot 7 — Successful database connectivity or schema verification with credentials hidden
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Successful%20database%20connectivity%20or%20schema.png)
 
 ---
 
@@ -114,7 +114,7 @@ Run one or two Node.js/Express backend replicas on port 3001 and expose them thr
 
 #### Screenshot 8 — Backend Deployment, ready Pods, and internal Service
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Backend%20Deployment,%20ready%20Pods,%20and%20internal%20Service.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add your screenshot here.
 
 If the application does not log successful database connections, provide a successful database-backed request alongside the startup logs.
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Backend%20startup%20logs%20and%20database%20connectivity%20evidence.png)
 
 ---
 
@@ -136,13 +136,13 @@ Run the Next.js frontend behind Nginx on port 80 and proxy API requests to the i
 
 #### Screenshot 10 — Frontend Deployment and Ready Pods
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Frontend%20Deployment%20and%20Ready%20Pods.png)
 
 ---
 
 #### Screenshot 11 — Nginx reverse-proxy configuration showing the internal backend Service name and port 3001
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Nginx%20reverse-proxy%20configuration%20showing%20d.png)
 
 ---
 
@@ -156,13 +156,13 @@ Expose the frontend and enforce the intended communication path between applicat
 
 #### Screenshot 12 — Frontend LoadBalancer or Ingress configuration and assigned endpoint, or documented local access method
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Frontend%20LoadBalancer%20or%20Ingress%20configuration.png)
 
 ---
 
 #### Screenshot 13 — Internal backend Service and NetworkPolicy or equivalent restriction, with access-test evidence
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Internal%20backend%20Service%20and%20NetworkPolicy.png)
 
 ---
 
@@ -176,31 +176,31 @@ Prove that the frontend, backend, and MySQL database work together and collect o
 
 #### Screenshot 14 — `kubectl get all` output for the book-review namespace
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20`kubectl%20get%20all`%20output%20for%20the%20book-review%20namespace.png)
 
 ---
 
 #### Screenshot 15 — Functional Book Review App in the browser with the URL visible, including evidence of a successful user flow
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20`kubectl%20get%20all`%20output%20for%20the%20book-review%20namespace.png)
 
 ---
 
 #### Screenshot 16 — Frontend or Nginx container logs
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Frontend%20or%20Nginx%20container%20logs.png)
 
 ---
 
 #### Screenshot 17 — Backend logs and evidence of a successful database-backed operation
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Backend%20logs%20and%20evidence%20of%20a%20successful%20database.png)
 
 ---
 
 #### Screenshot 18 — Optional: Kubernetes dashboard
 
-Add your screenshot here, or write “Not attempted.”
+![task 8](screenshots/Screenshot%20with%20Optional_%20Kubernetes%20dashboard.png)
 
 Multiple images may be included under a screenshot number when needed to demonstrate the complete user flow.
 
@@ -216,7 +216,7 @@ Add selected improvements without breaking the required three-tier architecture.
 
 #### Screenshot 19 — Optional: Evidence of selected Helm, HPA, probe, or TLS improvements
 
-Add your screenshot here, or write “Not attempted.”
+![task 9](screenshots/Screenshot%20with%20Optional_Implement%20Production%20Improvements.png)
 
 ---
 
@@ -230,11 +230,11 @@ Explain your three-tier architecture, demonstrate the working application, and s
 
 #### Screenshot 20 — Published LinkedIn post about your Book Review App deployment on Kubernetes
 
-Add your screenshot here.
+![LinkedIn](screenshots/Screenshot%20with%20kubernates%20linkedIn%20post_10.png)
 
 ### LinkedIn Post URL
 
-Add your published LinkedIn post URL here.
+`https://lnkd.in/p/ex9b6PtK`
 
 ---
 

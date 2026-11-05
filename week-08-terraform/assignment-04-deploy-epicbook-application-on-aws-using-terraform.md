@@ -160,7 +160,7 @@ The `user_data.sh` script must install the required software without storing dat
 
 Add a screenshot of VS Code showing the EC2 resource and `user_data` configuration.
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20HashiCorp%20Terraform%20Extension.png)
 
 ---
 

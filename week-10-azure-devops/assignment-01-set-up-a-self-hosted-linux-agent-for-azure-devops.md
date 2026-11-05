@@ -45,7 +45,7 @@ Create the Azure DevOps agent pool that will contain the Linux agent.
 
 ![task 2](screenshots/Screenshot%20with%20Azure%20DevOps%20Agent%20Pools%20page%20showing%20the%20newly%20created%20pool.png)
 =======
-No submission screenshot is required for this task.
+![task 2](screenshots/Screenshot%20with%20Azure%20DevOps%20Agent%20Pools%20page%20showing%20the%20newly%20created%20pool.png)
 
 >>>>>>> upstream/main
 ---
