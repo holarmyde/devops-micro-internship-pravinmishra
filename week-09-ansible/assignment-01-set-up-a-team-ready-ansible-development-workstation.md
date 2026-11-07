@@ -24,7 +24,7 @@ Create the assignment workspace, initialize a Git repository, prepare the requir
 
 #### Screenshot 1 — Terminal showing the `ansible-onboarding` path, `ls -la` output, and `git status` confirming the Git repository is on the `main` branch
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20Terminal%20showing%20the%20activated%20venv%20-1.png)
 
 ---
 
@@ -38,7 +38,7 @@ Create an isolated Python virtual environment and install Ansible and the requir
 
 #### Screenshot 2 — Terminal showing the active `(.venv)` environment, `which ansible`, `ansible --version`, `ansible-lint --version`, `yamllint --version`, and `pre-commit --version`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20ansible-lint%20--version.png)
 
 ---
 
@@ -52,13 +52,13 @@ Configure Visual Studio Code to use the project’s Python virtual environment a
 
 #### Screenshot 3 — VS Code Extensions panel showing the Ansible, YAML, and Python extensions installed
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20VS%20Code%20Extensions%20panel%20showing%20Ansible.png)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig` open side by side, with the required settings clearly visible
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20VS%20Code%20showing%20vscodesettings.json.png)
 
 ---
 
@@ -72,13 +72,13 @@ Create a reusable `ansible.cfg` file containing the default settings that will b
 
 #### Screenshot 5 — `ansible.cfg` open in VS Code or another editor, showing the complete configuration
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20VS%20Code%20or%20terminal%20showing%20ansible_cfg.png)
 
 ---
 
 #### Screenshot 6 — Terminal showing `ansible --version` with the `ansible.cfg` path and the output of `ansible-config dump --only-changed`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20ssh-add%20-l%20with%20the%20key%20loaded.png)
 
 ---
 
@@ -92,7 +92,7 @@ Prepare SSH key authentication, load the key into the SSH agent, configure reusa
 
 #### Screenshot 7 — Terminal showing `ssh-add -l` with the ED25519 key loaded and the SSH configuration verification output
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20pre-commit%20install%20output.png)
 
 ---
 
@@ -106,7 +106,7 @@ Configure your Git identity and install pre-commit hooks that validate YAML and 
 
 #### Screenshot 8 — Terminal showing your Git full name, Git email, default branch, successful `pre-commit install` output, and `.git/hooks/pre-commit`
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Terminal%20showing%20pre-commit%20run%20--all-files%20passing.png)
 
 ---
 
@@ -120,13 +120,13 @@ Verify that Ansible, the linting tools, Git hooks, SSH agent, and Git ignore rul
 
 #### Screenshot 9 — Terminal showing `pre-commit run --all-files` completing successfully
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Repository%20tree%20showing%20the%20required%20files.png)
 
 ---
 
 #### Screenshot 10 — Terminal showing `ansible --version` with the project configuration path and `ssh-add -l` with the ED25519 key loaded
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Repository%20tree%20showing%20the%20required%20files.png)
 
 ---
 
@@ -140,13 +140,13 @@ Document the completed Ansible workstation setup and create a reusable checklist
 
 #### Screenshot 11 — Terminal showing the final `ansible-onboarding` project structure
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Terminal%20or%20editor%20showing%20the%20complete%20mini-finance%20project%20tree.png)
 
 ---
 
 #### Screenshot 12 — VS Code Markdown preview showing your full name, project summary, and part of the “New Machine? Do This” checklist
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Terminal%20or%20editor%20showing%20the%20complete%20mini-finance%20project%20tree.png)
 
 ---
 
@@ -156,25 +156,25 @@ Answer the following in your own words:
 
 **1. What is one feature that makes your workstation setup team-friendly?**
 
-Add your answer here.
+The use of a Python virtual environment combined with a reusable project configuration makes the workstation team-friendly. Every team member can install the same Ansible tools, use the same configuration files, and follow the same validation procedures. This promotes consistency and makes onboarding new team members easier.
 
 ---
 
 **2. What is one pitfall you avoided while completing the setup?**
 
-Add your answer here.
+One major pitfall I avoided was installing Ansible and its supporting Python packages directly into the system Python environment. Instead, I created a dedicated Python virtual environment. This prevents dependency conflicts, protects the operating system's Python installation, and keeps the project tools isolated.
 
 ---
 
 **3. Why should Ansible be installed inside a Python virtual environment?**
 
-Add your answer here.
+Ansible should be installed inside a Python virtual environment because it isolates Ansible and its dependencies from the system-wide Python installation and other projects. It allows developers to manage package versions independently, avoid dependency conflicts, and reproduce the same development environment across different machines.
 
 ---
 
 **4. Why must SSH private keys and `.venv/` remain outside version control?**
 
-Add your answer here.
+SSH private keys must remain outside version control because they provide access to remote servers. Exposing them in a Git repository could compromise server security and allow unauthorized access. The .venv/ directory should also be excluded because it contains locally installed packages, environment-specific files, and dependencies that can be recreated using installation commands. Keeping both outside version control improves security, reduces repository size, and makes the project easier to share.
 
 ---
 
@@ -182,15 +182,15 @@ Add your answer here.
 
 Confirm that the following files are included in your assignment workspace:
 
-- [ ] `README.md`
-- [ ] `requirements.txt`
-- [ ] `.gitignore`
-- [ ] `.editorconfig`
-- [ ] `.vscode/settings.json`
-- [ ] `ansible.cfg`
-- [ ] `.pre-commit-config.yaml`
-- [ ] `inventories/`
-- [ ] `roles/`
+- [✅] `README.md`
+- [✅] `requirements.txt`
+- [✅] `.gitignore`
+- [✅] `.editorconfig`
+- [✅] `.vscode/settings.json`
+- [✅] `ansible.cfg`
+- [✅] `.pre-commit-config.yaml`
+- [✅] `inventories/`
+- [✅] `roles/`
 
 ---
 
@@ -206,33 +206,33 @@ Confirm that the following files are included in your assignment workspace:
 
 # Completion Checklist
 
-- [ ] Task 1: `ansible-onboarding` workspace created
-- [ ] Task 1: Git initialized on the `main` branch
-- [ ] Task 1: `.gitignore` created
-- [ ] Task 2: Python virtual environment created
-- [ ] Task 2: Virtual environment activated
-- [ ] Task 2: Ansible installed inside `.venv`
-- [ ] Task 2: `ansible-lint`, `yamllint`, and `pre-commit` installed
-- [ ] Task 2: `requirements.txt` created
-- [ ] Task 3: Required VS Code extensions installed
-- [ ] Task 3: VS Code uses the Python interpreter from `.venv`
-- [ ] Task 3: `.vscode/settings.json` created
-- [ ] Task 3: `.editorconfig` created
-- [ ] Task 4: `ansible.cfg` created
-- [ ] Task 4: Ansible loads `ansible.cfg` from the project directory
-- [ ] Task 5: ED25519 SSH key exists
-- [ ] Task 5: SSH private key has not been exposed
-- [ ] Task 5: SSH key loaded into the SSH agent
-- [ ] Task 5: `~/.ssh/config` contains the required settings
-- [ ] Task 5: `~/.ssh/known_hosts` exists
-- [ ] Task 6: Git identity configured correctly
-- [ ] Task 6: Pre-commit hooks installed
-- [ ] Task 7: `pre-commit run --all-files` completes successfully
-- [ ] Task 8: `README.md` contains your full name and workstation details
-- [ ] Task 8: “New Machine? Do This” checklist contains 10–12 items
-- [ ] All 12 required screenshots are included
-- [ ] Assignment questions are answered
-- [ ] No sensitive information is exposed
+- [✅] Task 1: `ansible-onboarding` workspace created
+- [✅] Task 1: Git initialized on the `main` branch
+- [✅] Task 1: `.gitignore` created
+- [✅] Task 2: Python virtual environment created
+- [✅] Task 2: Virtual environment activated
+- [✅] Task 2: Ansible installed inside `.venv`
+- [✅] Task 2: `ansible-lint`, `yamllint`, and `pre-commit` installed
+- [✅] Task 2: `requirements.txt` created
+- [✅] Task 3: Required VS Code extensions installed
+- [✅] Task 3: VS Code uses the Python interpreter from `.venv`
+- [✅] Task 3: `.vscode/settings.json` created
+- [✅] Task 3: `.editorconfig` created
+- [✅] Task 4: `ansible.cfg` created
+- [✅] Task 4: Ansible loads `ansible.cfg` from the project directory
+- [✅] Task 5: ED25519 SSH key exists
+- [✅] Task 5: SSH private key has not been exposed
+- [✅] Task 5: SSH key loaded into the SSH agent
+- [✅] Task 5: `~/.ssh/config` contains the required settings
+- [✅] Task 5: `~/.ssh/known_hosts` exists
+- [✅] Task 6: Git identity configured correctly
+- [✅] Task 6: Pre-commit hooks installed
+- [✅] Task 7: `pre-commit run --all-files` completes successfully
+- [✅] Task 8: `README.md` contains your full name and workstation details
+- [✅] Task 8: “New Machine? Do This” checklist contains 10–12 items
+- [✅] All 12 required screenshots are included
+- [✅] Assignment questions are answered
+- [✅] No sensitive information is exposed
 
 ---
 

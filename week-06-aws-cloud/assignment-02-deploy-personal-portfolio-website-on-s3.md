@@ -127,13 +127,13 @@ Include the required hashtags, the credit note for your track, and the tags spec
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/e-VEGAWJ`
 
 ---
 
 #### Screenshot 8 — Published LinkedIn post showing your caption, live S3 website link, and portfolio screenshot
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20with%20live%20portfolio%20linkedIn.png)
 
 > **Privacy Note:** Do not expose credentials, billing details, or sensitive AWS account information.
 
@@ -160,16 +160,16 @@ Add your screenshot here.
 - [✅] S3 Website Endpoint URL included
 - [✅] No sensitive account information exposed
 =======
-- [ ] Task 1: Template downloaded/cloned with `index.html` confirmed (Screenshot 1)
-- [ ] Task 2: Globally unique S3 bucket created (Screenshot 2)
-- [ ] Task 3: Website files uploaded with `index.html` at bucket root (Screenshot 3)
-- [ ] Task 4: Static website hosting enabled (Screenshot 4)
-- [ ] Task 5: Public-read bucket policy saved (Screenshot 5)
-- [ ] Task 6: Live website verified through the S3 website endpoint (Screenshot 6)
-- [ ] Task 7: Small update re-uploaded and verified (Screenshot 7)
-- [ ] S3 Website Endpoint URL included
-- [ ] No sensitive account information exposed
-- [ ] Linkedin post published
+- [✅] Task 1: Template downloaded/cloned with `index.html` confirmed (Screenshot 1)
+- [✅] Task 2: Globally unique S3 bucket created (Screenshot 2)
+- [✅] Task 3: Website files uploaded with `index.html` at bucket root (Screenshot 3)
+- [✅] Task 4: Static website hosting enabled (Screenshot 4)
+- [✅] Task 5: Public-read bucket policy saved (Screenshot 5)
+- [✅] Task 6: Live website verified through the S3 website endpoint (Screenshot 6)
+- [✅] Task 7: Small update re-uploaded and verified (Screenshot 7)
+- [✅] S3 Website Endpoint URL included
+- [✅] No sensitive account information exposed
+- [✅] Linkedin post published
 >>>>>>> upstream/main
 
 ---

@@ -62,7 +62,7 @@ Deploy a supported Ubuntu LTS VM in `public-subnet`, allowing Azure to create it
 
 #### Screenshot 5 — Terminal showing successful installation or version checks for Node.js, npm, Nginx, Git, and MySQL Client
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20software%20installation.png)
 
 ---
 
@@ -142,7 +142,7 @@ Verify that EpicBook loads through the VM’s public IP, displays products, supp
 
 Paste your working website URL here:
 
-`http://<VM-PUBLIC-IP>`
+`http://52.167.1.94:8080/`
 
 ---
 
@@ -174,13 +174,13 @@ Include **#DMIByPravinMishra #Azure #DevOps #CloudComputing**. Add the credit no
 
 Paste your published LinkedIn post URL here:
 
-`http://52.167.1.94:8080/`
+`https://lnkd.in/p/eE_QcX63`
 
 ---
 
 #### Screenshot 15 — Published LinkedIn post showing your caption, website URL, and EpicBook application screenshot
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20with%20epicbook%20LinkedIn%20post.png)
 
 ---
 
@@ -206,17 +206,17 @@ Add your screenshot here.
 - [✅] Task 5: End-to-end functionality validated (Screenshots 12–13, Public IP URL)
 - [✅] No sensitive data exposed
 =======
-- [ ] Task 1: Resource Group, VNet, subnets, and NSGs created (Screenshots 1–2)
-- [ ] Task 2: VM deployed with NIC and Public IP, and required software installed (Screenshots 3–5)
-- [ ] Task 3: Private MySQL server configured, `bookstore` created, and schema and seed data imported (Screenshots 6–8)
-- [ ] Task 4: EpicBook configured and running behind Nginx (Screenshots 9–11)
-- [ ] Task 5: Product viewing, cart operations, checkout, and database changes verified (Screenshots 12–13)
-- [ ] PM2 configured, startup command completed, and process list saved (Screenshot 14)
-- [ ] Application remains accessible through Nginx while running under PM2
-- [ ] LinkedIn post published with the required hashtags, credit note, and tags (Screenshot 15)
-- [ ] Full name, working website URL, and LinkedIn post URL included
-- [ ] Brief configuration notes included
-- [ ] All screenshots readable and no sensitive information exposed
+- [✅] Task 1: Resource Group, VNet, subnets, and NSGs created (Screenshots 1–2)
+- [✅] Task 2: VM deployed with NIC and Public IP, and required software installed (Screenshots 3–5)
+- [✅] Task 3: Private MySQL server configured, `bookstore` created, and schema and seed data imported (Screenshots 6–8)
+- [✅] Task 4: EpicBook configured and running behind Nginx (Screenshots 9–11)
+- [✅] Task 5: Product viewing, cart operations, checkout, and database changes verified (Screenshots 12–13)
+- [✅] PM2 configured, startup command completed, and process list saved (Screenshot 14)
+- [✅] Application remains accessible through Nginx while running under PM2
+- [✅] LinkedIn post published with the required hashtags, credit note, and tags (Screenshot 15)
+- [✅] Full name, working website URL, and LinkedIn post URL included
+- [✅] Brief configuration notes included
+- [✅] All screenshots readable and no sensitive information exposed
 >>>>>>> upstream/main
 
 ---

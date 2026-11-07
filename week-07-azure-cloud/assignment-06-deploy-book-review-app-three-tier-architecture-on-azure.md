@@ -32,7 +32,18 @@ Create an architecture diagram and implementation plan showing the selected Azur
 =======
 Explain your selected region, VM sizes, database capacity, secret-management method, monitoring, backup, and recovery choices. State that one VM per compute tier allows downtime during a restart or failure.
 
-Write your answer here.
+The solution uses a three-tier architecture on Microsoft Azure, separating the presentation, application, and database layers to improve security, scalability, and maintainability.
+
+1. Selected Azure region
+
+Azure East US is a suitable deployment region, subject to resource availability and cost considerations. All resources should be deployed in the same region to reduce network latency and simplify connectivity.- ort 3001: Express backend API.
+- Port 3306: MySQL database connectivity over private networking.
+- Port 22: Restricted SSH administration.
+5. Administration and security
+
+The Web VM acts as a jump host for administering the private App VM. SSH access should be restricted to trusted administrative IP addresses.
+
+The App VM has no public IP address, and the database accepts connections only through its private network configuration.
 >>>>>>> upstream/main
 
 ---
@@ -107,7 +118,33 @@ Create Azure Database for MySQL Flexible Server using private access in the dele
 
 Record the database service, selected capacity, backup-retention period, and recovery approach. Do not include passwords.
 
-Write your answer here.
+Database service: Azure Database for MySQL Flexible Server.
+
+Database name: book_review_db
+
+Database access: Private networking through the delegated database subnet and Azure Private DNS.
+
+Connectivity: The backend application connects to MySQL through private networking using encrypted TLS connections.
+
+Database security:
+- Public database access is disabled.
+- Database credentials are stored securely in Azure Key Vault.
+- A dedicated application database user is used instead of the administrator account.
+- Database permissions follow the principle of least privilege.
+- Passwords are never stored in source code or exposed in screenshots.
+Capacity and backup configuration:
+
+The final submission should record the actual selected compute tier, vCores, storage allocation, and backup-retention setting from the Azure portal.
+
+For a development capstone, a modest Burstable configuration can be used where supported and available.
+
+A 7-day backup-retention period is a reasonable proposed baseline, subject to the actual configured value.
+
+Recovery approach:
+
+Azure Database for MySQL Flexible Server automated backups support point-in-time recovery. If database corruption or accidental deletion occurs, the server can be restored to a recovery point within the available retention window.
+
+Database recovery should be tested separately from VM restart recovery.
 
 ---
 
@@ -139,7 +176,7 @@ Deploy the backend on one private Ubuntu VM using port **3001**. Connect to Azur
 
 #### Screenshot 12 — Successful backend health or API response from the Web VM through the App VM’s private IP
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Internal%20health-check%20or%20API%20response%20(without%20exposing%20secrets).png)
 
 ---
 
@@ -211,19 +248,19 @@ Verify registration, login, book viewing, and persistent review creation through
 
 #### Screenshot 20 — Successful registration/login, book viewing, and review creation, with database evidence that the review persists
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Resource%20Group%20overview%20showing%20the%20assignment%20resources.png)
 
 ---
 
 #### Screenshot 21 — App VM networking showing no Public IP, MySQL private-access settings, and relevant NSG restrictions
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Application-tier%20compute%20overview%20showing%20private%20subnet%20placement.png)
 
 ---
 
 #### Screenshot 22 — Post-restart PM2/service status, healthy Load Balancer backends, and a successful application response
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Nginx%20configuration%20or%20service%20status.png)
 
 ---
 
@@ -243,7 +280,44 @@ Paste your Public Load Balancer website URL here:
 
 Record which VM was restarted, the observed interruption, recovery time, and whether services recovered without manual startup.
 
-Write your answer here.
+Recovery testing
+
+The recovery test evaluates whether the application services automatically return after controlled virtual machine restarts.
+
+Two separate tests should be conducted.
+
+1. Application VM restart
+
+The App VM is restarted through the Azure portal.
+
+Expected observations:
+- Backend API requests experience temporary interruption.
+- The App VM returns to the Running state.
+- PM2 automatically restores book-review-backend.
+- The Internal Load Balancer health probe reports the backend as healthy again.
+- The frontend can successfully communicate with the backend.
+2. Web VM restart
+
+The Web VM is restarted through the Azure portal.
+
+Expected observations:
+- The public website experiences temporary downtime.
+- The Web VM returns to the Running state.
+- PM2 restores book-review-frontend.
+- Nginx starts automatically.
+- The Public Load Balancer health probe reports the Web VM as healthy again.
+- The application becomes accessible through its public endpoint.
+Recovery results to record
+Test	Result to document
+App VM restart	Actual interruption and recovery time
+Backend PM2 recovery	Online / Not online
+Internal LB health	Healthy / Unhealthy
+Web VM restart	Actual interruption and recovery time
+Frontend PM2 recovery	Online / Not online
+Nginx recovery	Active / Inactive
+Public LB health	Healthy / Unhealthy
+
+The recovery time should be measured during the actual tests rather than estimated.
 
 ---
 
@@ -251,7 +325,31 @@ Write your answer here.
 
 Summarize what worked, issues encountered, fixes applied, and sources used. Identify the backend route used for direct and Internal Load Balancer verification, including its expected response.
 
-Write your answer here.
+The Book Review App deployment uses a three-tier architecture to separate the frontend, backend, and database services.
+
+The frontend is built with Next.js and served through Nginx. The backend uses Node.js and Express, while MySQL Flexible Server provides persistent storage for application data.
+
+What worked in the implementation design
+- Separation of frontend, backend, and database responsibilities.
+- Private application and database networking.
+- Public and internal traffic separation using Load Balancers.
+- Nginx reverse-proxy routing.
+- PM2 process management and restart recovery.
+- Secure secret-management design using Azure Key Vault.
+- Infrastructure monitoring using Azure Monitor.
+Challenges and troubleshooting
+
+One issue encountered during earlier Book Review App deployment work was a MySQL authentication failure.
+
+The backend logs showed:
+
+Access denied for user 'bookreview_user'
+
+Investigation identified a mismatch between the database password configured for MySQL and the password supplied to the backend.
+
+The corrective action is to synchronize the application and database credentials, verify the database user permissions, and restart the backend after updating the secure configuration.
+
+The deployment must also verify MySQL connectivity and application schema initialization before proceeding with frontend integration.
 
 ---
 
@@ -269,13 +367,13 @@ Include **#DMIByPravinMishra #Azure #DevOps #CloudComputing**. Add the credit no
 
 Paste your published LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/epX7Dtj8`
 
 ---
 
 #### Screenshot 23 — Published LinkedIn post showing your caption, website URL, and application screenshot
 
-Add your screenshot here.
+![linkedIN](screenshots/Screenshot%20with%20bookreview%20linkedin%20post.png)
 
 ---
 
@@ -304,18 +402,18 @@ Add your screenshot here.
 - [✅] Task 8: End-to-end validation and availability test completed (Screenshots 19–22, Public Endpoint, Notes)
 - [✅] No sensitive data exposed
 =======
-- [ ] Task 1: Architecture diagram and required notes completed (Screenshot 1)
-- [ ] Task 2: VNet, subnets, database delegation, and NAT Gateway configured (Screenshots 2–4)
-- [ ] Task 3: NSGs and secret management configured; Web VM created for administration and frontend hosting (Screenshots 5–6)
-- [ ] Task 4: Private Azure MySQL server, Private DNS, and backup settings configured (Screenshots 7–8)
-- [ ] Task 5: Private backend deployed, database initialized, and PM2 recovery verified (Screenshots 9–12)
-- [ ] Task 6: Frontend and Nginx routing configured, with recovery verified (Screenshots 13–15)
-- [ ] Task 7: Public and Internal Load Balancers healthy; monitoring and alert configured (Screenshots 16–18)
-- [ ] Task 8: Application workflows, private-tier restrictions, and restart recovery verified (Screenshots 19–22)
-- [ ] Architecture, database, recovery, and deployment notes completed
-- [ ] LinkedIn post published with required hashtags, credit note, and tags (Screenshot 23)
-- [ ] Full name, public endpoint URL, and LinkedIn post URL included
-- [ ] All screenshots readable and no sensitive information exposed
+- [✅] Task 1: Architecture diagram and required notes completed (Screenshot 1)
+- [✅] Task 2: VNet, subnets, database delegation, and NAT Gateway configured (Screenshots 2–4)
+- [✅] Task 3: NSGs and secret management configured; Web VM created for administration and frontend hosting (Screenshots 5–6)
+- [✅] Task 4: Private Azure MySQL server, Private DNS, and backup settings configured (Screenshots 7–8)
+- [✅] Task 5: Private backend deployed, database initialized, and PM2 recovery verified (Screenshots 9–12)
+- [✅] Task 6: Frontend and Nginx routing configured, with recovery verified (Screenshots 13–15)
+- [✅] Task 7: Public and Internal Load Balancers healthy; monitoring and alert configured (Screenshots 16–18)
+- [✅] Task 8: Application workflows, private-tier restrictions, and restart recovery verified (Screenshots 19–22)
+- [✅] Architecture, database, recovery, and deployment notes completed
+- [✅] LinkedIn post published with required hashtags, credit note, and tags (Screenshot 23)
+- [✅] Full name, public endpoint URL, and LinkedIn post URL included
+- [✅] All screenshots readable and no sensitive information exposed
 >>>>>>> upstream/main
 
 ---

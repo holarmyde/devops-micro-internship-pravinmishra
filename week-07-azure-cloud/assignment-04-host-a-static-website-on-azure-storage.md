@@ -20,7 +20,7 @@ Download and extract the Mini Finance application from [GitHub](https://github.c
 
 #### Screenshot 1 — Extracted project folder showing `index.html` and the supporting files and folders
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20open%20in%20your%20editor%20showing%20the%20project%20overview.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create Resource Group `mini-finance-rg` and a globally unique Storage Account na
 
 #### Screenshot 2 — Storage Account Overview or configuration showing its name, `mini-finance-rg`, region, Standard performance, and LRS redundancy
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20%20Azure%20Monitor,%20diagnostic%20settings,%20logs,%20metrics,%20or%20alert%20evidence.png)
 
 ---
 
@@ -48,7 +48,7 @@ Enable Static Website Hosting, set `index.html` as the index document, optionall
 
 #### Screenshot 3 — Static website configuration showing hosting enabled, the index document, the error-document setting, and the Primary endpoint URL
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Web-tier%20compute%20overview%20showing%20subnet%20and%20availability%20configuration.png)
 
 ---
 
@@ -62,13 +62,13 @@ Upload all Mini Finance website files to `$web`, with `index.html` directly at t
 
 #### Screenshot 4 — `$web` container showing `index.html` at the root and the supporting files and folders
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Public%20IP%20and%20Network%20Interface%20association%20for%20the%20Virtual%20Machine.png)
 
 ---
 
 #### Screenshot 5 — An uploaded CSS or image folder showing its contents and folder path
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20showing%20the%20four-check%20plan,%20with%20no%20files%20created%20or%20modified.png)
 
 ---
 
@@ -108,13 +108,13 @@ Include **#DMIByPravinMishra #Azure #DevOps #CloudComputing**.
 
 Paste your published LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/e_qnPbVV`
 
 ---
 
 #### Screenshot 7 — Published LinkedIn post showing your caption, website URL, and Mini Finance website screenshot
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20with%20Mini%20Finance%20linkedIn%20post.png)
 
 ---
 
@@ -138,16 +138,16 @@ Add your screenshot here.
 - [✅] Website URL included
 - [✅] No sensitive account information exposed
 =======
-- [ ] Task 1: Mini Finance project downloaded and extracted (Screenshot 1)
-- [ ] Task 2: Storage Account created with Standard performance and LRS redundancy in `mini-finance-rg` (Screenshot 2)
-- [ ] Task 3: Static Website Hosting enabled and Primary endpoint copied (Screenshot 3)
-- [ ] Task 4: Website files uploaded with `index.html` at the `$web` root and the original folder structure preserved (Screenshots 4–5)
-- [ ] Task 5: Website, styling, and images verified through the Primary endpoint (Screenshot 6)
-- [ ] Working website URL included
-- [ ] LinkedIn post published with the required content and hashtags (Screenshot 7)
-- [ ] LinkedIn post URL included
-- [ ] All screenshots readable
-- [ ] No sensitive account information exposed
+- [✅] Task 1: Mini Finance project downloaded and extracted (Screenshot 1)
+- [✅] Task 2: Storage Account created with Standard performance and LRS redundancy in `mini-finance-rg` (Screenshot 2)
+- [✅] Task 3: Static Website Hosting enabled and Primary endpoint copied (Screenshot 3)
+- [✅] Task 4: Website files uploaded with `index.html` at the `$web` root and the original folder structure preserved (Screenshots 4–5)
+- [✅] Task 5: Website, styling, and images verified through the Primary endpoint (Screenshot 6)
+- [✅] Working website URL included
+- [✅] LinkedIn post published with the required content and hashtags (Screenshot 7)
+- [✅] LinkedIn post URL included
+- [✅] All screenshots readable
+- [✅] No sensitive account information exposed
 >>>>>>> upstream/main
 
 ---

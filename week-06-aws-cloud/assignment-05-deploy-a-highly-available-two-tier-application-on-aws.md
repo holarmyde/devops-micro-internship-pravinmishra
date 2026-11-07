@@ -226,15 +226,42 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+The infrastructure was designed using a custom Amazon Virtual Private Cloud (VPC) with the CIDR block 10.0.0.0/16, distributed across two AWS Availability Zones to provide network-level high availability.
+
+The VPC contains four subnets:
+- Two public subnets across separate Availability Zones to support internet-facing resources such as the Application Load Balancer.
+- Two private subnets across the same Availability Zones to provide isolated networking for backend services.
+An Internet Gateway (IGW) enables internet connectivity for public resources, while a NAT Gateway allows resources in private subnets to access external services without being directly exposed to inbound internet traffic.
+
+Separate public and private route tables manage traffic flow and maintain network isolation.
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+An internet-facing Application Load Balancer (ALB) was configured across two public subnets in different Availability Zones to distribute incoming HTTP traffic across the application servers.
+
+An EC2 Launch Template was created with user data to automate the installation of the web-server runtime, application deployment, database connection configuration, and service startup.
+
+An Auto Scaling Group (ASG) was configured using the Launch Template with:
+- Minimum capacity: 2 instances.
+- Desired capacity: 2 instances.
+- Maximum capacity: 4 instances.
+- Deployment across two Availability Zones.
+- Integration with the ALB target group.
+The ALB performs health checks on registered instances and distributes requests to healthy targets. The ASG maintains the required instance capacity and can automatically replace unhealthy or terminated instances.
+
+This architecture improves application availability, reliability, and scalability.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+Amazon Relational Database Service (RDS) was configured using MySQL as the database engine and deployed within private subnets through a dedicated DB Subnet Group.
+
+Multi-AZ deployment was enabled to provide high availability through a standby database in another Availability Zone and support automatic failover if the primary database experiences an issue.
+
+The database was configured as non-publicly accessible, preventing direct access from the internet.
+
+A dedicated database security group (ha-db-sg) restricts inbound database connections to the EC2 web-tier security group (ha-web-sg) on the required database port.
+
+This setup provides a more secure and resilient database layer while allowing the application servers to communicate with the database.
 
 Summarize the results of both high-availability tests.
 
@@ -275,13 +302,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eCbTrVRk`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20with%20nginx%20linkedIn%20post.png)
 
 ---
 

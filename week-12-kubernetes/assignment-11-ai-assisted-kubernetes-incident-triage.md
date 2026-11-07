@@ -14,21 +14,21 @@ Configure a read-only Bash triage script for your Book Review App, connect it to
 
 ## Submission Details
 
-**Full Name:** Add your full name here.
+**Full Name:** OLUWAFEMI AREMU
 
-**Kubernetes Platform:** Add your platform here.
+**Kubernetes Platform:** Docker-Desktop
 
 **Selected Workload:** Add the Deployment name here.
 
-**Namespace:** Add the namespace here.
+**Namespace:**book-review.
 
-**GitHub Repository URL:** Add your project repository URL here.
+**GitHub Repository URL:** https://github.com/holarmyde?tab=repositories.
 
-**Simulated Incident:** Invalid image or broken readiness probe.
+**Simulated Incident:** broken readiness probe.
 
-**Baseline Status:** HEALTHY or explained WARN.
+**Baseline Status:** HEALTHY.
 
-**Recovery Status:** HEALTHY or explained WARN, with no FAIL.
+**Recovery Status:** HEALTHY.
 
 ---
 
@@ -42,27 +42,27 @@ Identify the actual application configuration and prove that the selected worklo
 
 #### Screenshot 1 — Healthy Pods and ready Service backends
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Healthy%20Pods%20and%20ready%20Service%20backends.png)
 
 ---
 
 #### Screenshot 2 — Workspace directory structure
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20Workspace%20directory%20structure.png)
 
 ### Notes
 
 **1. What proves the selected Pods are ready, not merely running?**
 
-Add your answer here.
+The Kubernetes READY column shows 1/1, meaning the container has passed its readiness check. Running alone only indicates that the container is executing; it does not guarantee that it can receive traffic.
 
 **2. What proves the Service has ready backends?**
 
-Add your answer here.
+The EndpointSlice resource identifies the backend Pod IP addresses registered with the Service. Its conditions.ready: true field confirms that the endpoint is ready to receive traffic.
 
 **3. Why must the original image be recorded before incident simulation?**
 
-Add your answer here.
+Recording the original working image provides a reliable recovery reference. If an invalid image is introduced during the incident simulation, the original image can be restored manually to return the application to its previous working state.
 
 ---
 
@@ -76,21 +76,21 @@ Define the project configuration, incident workflow, and safety boundary for Cla
 
 #### Screenshot 3 — CLAUDE.md showing application configuration, workflow, safety rules, and output rules
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20CLAUDE.md%20showing%20application%20configuration.png)
 
 ### Notes
 
 **1. Why does Claude need project-specific cluster rules?**
 
-Add your answer here.
+Claude needs project-specific cluster rules so it understands the correct Kubernetes context, namespace, Deployment, Pod selector, and safety restrictions. These rules prevent it from investigating the wrong environment or recommending commands that could affect unrelated resources.
 
 **2. Why must a human execute recovery commands?**
 
-Add your answer here.
+A human must execute recovery commands to maintain control, accountability, and safety. Recovery actions can affect service availability or application stability, so a human should review the evidence, approve the recommendation, and decide when to make changes.
 
 **3. Which rule prevents an unsupported diagnosis?**
 
-Add your answer here.
+The evidence-based diagnosis rule prevents unsupported conclusions. Claude must base its diagnosis on actual Kubernetes evidence, such as Pod status, container events, logs, and EndpointSlice information, rather than guessing or making assumptions.
 
 ---
 
@@ -104,21 +104,20 @@ Ask Claude Code to explain the five health checks before running the supplied sc
 
 #### Screenshot 4 — Claude Code showing the five-check read-only plan
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Claude%20Code%20showing%20the%20five-check%20read-only%20plan.png)
 
 ### Notes
 
 **1. Which part represents the Gather phase?**
 
-Add your answer here.
+The Gather phase involved collecting Kubernetes evidence before making any changes. This included checking Pod status and readiness, container restart counts, Warning events, and Service EndpointSlice information using kubectl commands and the triage script.
 
 **2. How did you verify that Claude did not change anything?**
 
-Add your answer here.
-
+I verified that Claude did not change anything by reviewing the commands it suggested and manually executing the recovery command myself. I also checked the Kubernetes Deployment and Pod status to confirm that the configuration changed only when I authorized and executed the recovery action.
 **3. Why is planning before coding useful for incident triage?**
 
-Add your answer here.
+Planning before coding helps define the investigation steps, required evidence, safety checks, and recovery procedures before taking action. It reduces mistakes, prevents unnecessary changes, improves consistency, and ensures that AI recommendations remain within human-approved boundaries.
 
 ---
 
@@ -132,43 +131,51 @@ Configure the supplied triage script for the selected workload and validate its 
 
 #### Screenshot 5 — Script configuration variables and checks array
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Script%20configuration%20variables%20and%20checks%20array.png)
 
 ---
 
 #### Screenshot 6 — Functions for status, readiness, restarts, events, and Service backends
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Functions%20for%20status%20readiness%20restarts.png)
 
 ---
 
 #### Screenshot 7 — Preflight, summary, and exit-code logic
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Preflight,%20summary,%20and%20exit-code%20logic.png)
 
 ---
 
 #### Screenshot 8 — Successful syntax validation and executable permission
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Successful%20syntax%20validation%20and%20executable%20permission.png)
 
 ### Notes
 
 **1. Why must the script fail when no Pods match the configured selector?**
 
-Add your answer here.
+If no Pods match, the script has no valid workload evidence to analyze. Failing prevents it from reporting a false healthy status.
 
 **2. How does the readiness check detect a running but unready Pod?**
 
-Add your answer here.
+It checks the Pod's Ready condition separately from its Running phase. A Pod can be Running while its Ready condition is False.
 
 **3. Why are Service backends checked separately from Pod health?**
 
-Add your answer here.
+A healthy Pod does not automatically prove the Service can route traffic to it. Checking EndpointSlices confirms whether the Service has ready and serving endpoints.
 
 **4. What do exit codes 0, 1, and 2 represent?**
 
-Add your answer here.
+0: No failed checks; healthy result.
+
+
+
+1: One or more health checks failed.
+
+
+
+2: Script could not complete a required check or encountered a critical execution/configuration error.
 
 ---
 
@@ -182,28 +189,27 @@ Run the script on the healthy application and confirm that it contains no failed
 
 #### Screenshot 9 — Baseline report showing your full name and all checks
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Baseline%20report%20showing%20your%20full%20name.png)
 
 ---
 
 #### Screenshot 10 — Captured exit code and final summary
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Captured%20exit%20code%20and%20final%20summar.png)
 
 ### Notes
 
 **1. What is the baseline status?**
 
-Add your answer here.
+The backend Deployment was 1/1 available, and its Pod was Running and Ready. The Pod had 3 previous restarts, so that historical condition should be recorded as a warning if the script reports it. The final baseline classification must come from the actual script report.
 
 **2. Which evidence proves the Service has a ready backend?**
 
-Add your answer here.
+The backend EndpointSlice showed an endpoint with ready: true and serving: true.
 
 **3. What is the difference between a warning and a failure?**
 
-Add your answer here.
-
+A warning identifies something worth monitoring that does not necessarily mean the workload is currently unhealthy. A failure means required health evidence shows a current problem or a required check could not be completed.
 ---
 
 # Task 6 — Configure and Run the Claude Code Skill
@@ -216,27 +222,27 @@ Connect the Bash script to a manually invoked Claude Code evidence-analysis work
 
 #### Screenshot 11 — SKILL.md showing frontmatter and safety rules
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20SKILL.md%20showing%20frontmatter%20and%20safety%20rules.png)
 
 ---
 
 #### Screenshot 12 — Baseline `/k8s-triage` analysis
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Baseline%20`k8s-triage`%20analysis.png)
 
 ### Notes
 
 **1. What does Bash do in this workflow?**
 
-Add your answer here.
+Bash runs the read-only Kubernetes commands, collects the health evidence, evaluates the checks, and saves a report.
 
 **2. What does Claude do in this workflow?**
 
-Add your answer here.
+Claude analyzes the collected report, explains the evidence, identifies likely causes when supported, and recommends recovery steps for a human to review.
 
 **3. Why are instructions alone insufficient to guarantee read-only access?**
 
-Add your answer here.
+Instructions guide Claude's behavior, but they do not technically prevent commands from changing resources. Commands and tool requests must still be inspected, and permissions should be restricted where possible.
 
 ---
 
@@ -250,37 +256,37 @@ Create one controlled failure, save its evidence, and let Claude analyze it with
 
 #### Screenshot 13 — Failed or unready Pod evidence and current Service backends
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Failed%20or%20unready%20Pod%20evidence%20and%20current%20Service%20backends.png)
 
 ---
 
 #### Screenshot 14 — Failed `/k8s-triage` analysis with evidence and a suggested manual recovery command
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Failed%20`k8s-triage`%20analysis%20with%20evidence.png)
 
 ---
 
 #### Screenshot 15 — Saved `incident-failure-report.txt`
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Saved%20`incident-failure-report.txt`.png)
 
 ### Notes
 
 **1. Which failure did you choose?**
 
-Add your answer here.
+I simulated an image-pull failure by changing the backend Deployment to use a deliberately invalid container image.
 
 **2. Which checks failed, and what evidence proved it?**
 
-Add your answer here.
+The Pod status and readiness checks should identify the unavailable or unready backend Pod. The restart and event checks may provide additional evidence, such as image-pull errors. Record the actual report results.
 
 **3. Did Claude execute recovery? Why is that important?**
 
-Add your answer here.
+No. Claude only analyzed the evidence and recommended a recovery command. This preserves human approval and control over changes to the Kubernetes cluster.
 
 **4. Why might the Service retain ready backends during the incident?**
 
-Add your answer here.
+During a rolling update, the old healthy Pod may remain available while Kubernetes attempts to start the replacement Pod.
 
 ---
 
@@ -294,49 +300,51 @@ Restore the healthy configuration yourself and verify recovery using a second tr
 
 #### Screenshot 16 — Recovered Pods and ready Service backends
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Recovered%20Pods%20and%20ready%20Service%20backends.png)
 
 ---
 
 #### Screenshot 17 — Recovered `/k8s-triage` analysis
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Recovered%20`k8s-triage`%20analysis.png)
 
 ---
 
 #### Screenshot 18 — Reports directory showing failure and recovery reports
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Reports%20directory%20showing%20failure.png)
 
 ---
 
 #### Screenshot 19 — `incident-summary.md` with all required sections
 
-Add your screenshot here.
+![yask 8](screenshots/Screenshot%20with%20`incident-summary.md`%20with%20all%20required%20sections.png)
 
 ### Notes
 
 **1. What manual recovery action did you execute?**
 
-Add your answer here.
+I manually restored the backend Deployment to its original working image, book-review-backend:1.0.
 
 **2. What proves the workload recovered?**
 
-Add your answer here.
+The backend Pod returned to Running and Ready, the Deployment became available, and the backend Service EndpointSlice showed a ready and serving endpoint.
 
 **3. Why is the second triage run necessary?**
 
-Add your answer here.
+It independently collects fresh evidence after recovery and confirms the workload's current condition rather than relying on assumptions.
 
 **4. Why should AI not automatically restart every failing production workload?**
 
-Add your answer here.
+Restarting without understanding the cause could interrupt healthy traffic, destroy useful diagnostic evidence, or make the incident worse. Human review is essential.
 
 ### Remaining WARN Results
 
 Explain any WARN results remaining after recovery, or write “None.”
 
-Add your explanation here.
+WARN results remaining after recovery: None.
+
+The recovery report confirms that the backend Deployment successfully rolled out, the Pod was Running and Ready (1/1), and the Service EndpointSlice showed ready: true and serving: true. Any Warning events from the earlier failed-image simulation were historical and did not indicate an active failure after recovery.
 
 ---
 
@@ -350,11 +358,11 @@ Share the incident-triage workflow you completed and explain the role of human c
 
 #### Screenshot 20 — Published LinkedIn post about your Kubernetes incident-triage workflow
 
-Add your screenshot here.
+![task 9](screenshots/Screenshot%20with%20kubernates%20linkedIn%20post_FInal.png)
 
 ### LinkedIn Post URL
 
-Add your published LinkedIn post URL here.
+`https://lnkd.in/p/eS_bhVy4`
 
 ---
 
@@ -388,25 +396,32 @@ Your `incident-summary.md` must contain:
 
 Summarize the evidence and the supported cause of the incident.
 
-Add your summary here.
-
+The incident was caused by a deliberately configured invalid container image, book-review-backend:does-not-exist, in the backend Deployment. Kubernetes events reported ErrImagePull and ImagePullBackOff. The replacement Pod was not ready (0/1), while the original backend Pod remained Running and Ready (1/1). The EndpointSlice confirmed that the original Pod was still ready and serving traffic, but the failed replacement was not. This evidence supports an invalid or unavailable container image as the root cause.
 ## Manual Recovery
 
 Describe the command or configuration change you performed.
 
-Add your summary here.
+After reviewing the incident evidence and Claude's recommendation, I manually restored the known-good backend image using:
+
+kubectl set image deployment/backend backend=book-review-backend:1.0 -n book-review
+
+I then monitored the Deployment rollout using:
+
+kubectl rollout status deployment/backend -n book-review --timeout=180s
+
+Kubernetes confirmed that the Deployment successfully rolled out.
 
 ## Verification
 
 Explain how the recovery report and Kubernetes outputs confirmed recovery.
 
-Add your summary here.
+I generated and saved a post-recovery health report and checked the Kubernetes outputs. The rollout completed successfully, the backend Pod returned to Running with readiness 1/1, and the failed replacement Pod was no longer present in the active Pod listing. The EndpointSlice showed ready: true, serving: true, and terminating: false, confirming that the backend Service had a healthy endpoint. These checks demonstrated that the recovery was successful.
 
 ## Safety Decision
 
 Explain how you kept Claude’s role limited to evidence gathering and analysis.
 
-Add your summary here.
+I kept Claude's role limited to gathering and interpreting Kubernetes evidence, identifying the likely root cause, and recommending a recovery action. I did not authorize Claude to make changes directly to the cluster. As the human operator, I reviewed the findings, assessed the recommendation, and manually executed the recovery command. I then independently verified the result. This human-in-the-loop approach ensured that infrastructure changes remained under human supervision and accountability.
 
 ---
 
@@ -428,32 +443,32 @@ Add your summary here.
 
 # Completion Checklist
 
-- [ ] Confirmed the personal lab context
-- [ ] Discovered and recorded application configuration
-- [ ] Recorded the original working image
-- [ ] Captured healthy Pods and ready Service backends (Screenshot 1)
-- [ ] Created the workspace (Screenshot 2)
-- [ ] Configured CLAUDE.md (Screenshot 3)
-- [ ] Reviewed the five-check triage plan (Screenshot 4)
-- [ ] Configured and reviewed the supplied script (Screenshots 5–7)
-- [ ] Passed Bash syntax validation and set executable permission (Screenshot 8)
-- [ ] Captured a baseline report with no FAIL (Screenshot 9)
-- [ ] Captured the correct exit code (Screenshot 10)
-- [ ] Configured and invoked `/k8s-triage` (Screenshots 11–12)
-- [ ] Simulated one controlled incident manually (Screenshot 13)
-- [ ] Reviewed Claude’s failed-state analysis (Screenshot 14)
-- [ ] Saved failure evidence before recovery (Screenshot 15)
-- [ ] Executed recovery manually and waited for rollout completion
-- [ ] Confirmed recovered Pods and ready Service backends (Screenshot 16)
-- [ ] Captured recovery analysis with no FAIL (Screenshot 17)
-- [ ] Explained any remaining warnings
-- [ ] Saved failure and recovery reports (Screenshot 18)
-- [ ] Completed the seven-section incident summary (Screenshot 19)
-- [ ] Answered all Notes questions
-- [ ] Published the LinkedIn post (Screenshot 20)
-- [ ] Included the LinkedIn post URL
-- [ ] Included all required project files
-- [ ] Checked that no sensitive information is exposed
+- [✅ ] Confirmed the personal lab context
+- [✅ ] Discovered and recorded application configuration
+- [✅ ] Recorded the original working image
+- [✅ ] Captured healthy Pods and ready Service backends (Screenshot 1)
+- [✅ ] Created the workspace (Screenshot 2)
+- [✅ ] Configured CLAUDE.md (Screenshot 3)
+- [✅] Reviewed the five-check triage plan (Screenshot 4)
+- [✅] Configured and reviewed the supplied script (Screenshots 5–7)
+- [✅ ] Passed Bash syntax validation and set executable permission (Screenshot 8)
+- [✅ ] Captured a baseline report with no FAIL (Screenshot 9)
+- [✅ ] Captured the correct exit code (Screenshot 10)
+- [✅ ] Configured and invoked `/k8s-triage` (Screenshots 11–12)
+- [✅ ] Simulated one controlled incident manually (Screenshot 13)
+- [✅ ] Reviewed Claude’s failed-state analysis (Screenshot 14)
+- [✅] Saved failure evidence before recovery (Screenshot 15)
+- [✅] Executed recovery manually and waited for rollout completion
+- [✅] Confirmed recovered Pods and ready Service backends (Screenshot 16)
+- [✅] Captured recovery analysis with no FAIL (Screenshot 17)
+- [✅] Explained any remaining warnings
+- [✅] Saved failure and recovery reports (Screenshot 18)
+- [✅] Completed the seven-section incident summary (Screenshot 19)
+- [✅] Answered all Notes questions
+- [✅] Published the LinkedIn post (Screenshot 20)
+- [✅] Included the LinkedIn post URL
+- [✅] Included all required project files
+- [✅] Checked that no sensitive information is exposed
 
 ---
 

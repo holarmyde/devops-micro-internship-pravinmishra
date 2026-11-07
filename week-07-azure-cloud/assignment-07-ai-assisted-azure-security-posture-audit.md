@@ -28,7 +28,7 @@ Confirm Azure CLI authentication and the availability of a VM, an associated NSG
 
 #### Screenshot 2 — Workspace location and directory structure shown using `pwd` and `find . -maxdepth 4 -type d | sort`
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20MySQL%20Flexible%20Server%20overview%20showing%20Private%20access%20.png)
 
 ---
 
@@ -36,11 +36,20 @@ Add your screenshot here.
 
 1. Which Azure resources will be inspected by this audit, and why is each one required?
 
-Write your answer here.
+The audit will inspect four main Azure resource areas:
+- Azure Virtual Machine (VM): To identify potential security weaknesses associated with the VM's network access and managed disk encryption.
+- Network Security Group (NSG): To identify unrestricted inbound SSH (port 22) and RDP (port 3389) access that could expose virtual machines to unauthorized connections.
+- Azure Storage Account: To check whether public blob access is enabled, which could expose stored data to unauthorized users.
+- Azure Database for MySQL Flexible Server: To verify whether public network access is enabled and determine whether the database is protected from direct public exposure.
+These resources represent important parts of an Azure environment's compute, networking, storage, and database security.
 
 2. Why should you confirm that the resources exist before writing an audit script against them?
 
-Write your answer here.
+Confirming that the resources exist ensures that the audit script targets actual Azure resources rather than nonexistent or incorrectly named resources.
+
+It also helps identify the correct resource groups, resource names, subscription context, and associated configurations.
+
+This prevents unnecessary script failures, improves the accuracy of audit results, and ensures that security findings are based on real infrastructure evidence.
 
 ---
 
@@ -62,11 +71,19 @@ Create `CLAUDE.md` defining the project overview, audit workflow, safety rules, 
 
 1. Why should Claude never be allowed to execute the remediation command itself?
 
-Write your answer here.
+Claude should not execute remediation commands because changing Azure configurations can affect production services, expose resources to unintended risks, or cause service interruptions.
+
+Remediation actions such as modifying NSG rules, disabling public access, or changing encryption configurations can have significant operational consequences.
+
+Keeping remediation under human control ensures that every proposed change is reviewed, authorized, and executed deliberately by the infrastructure owner.
 
 2. Which rule prevents Claude from reporting a security problem without evidence?
 
-Write your answer here.
+The evidence-backed findings rule prevents Claude from reporting unsupported security problems.
+
+Every finding must include actual Azure CLI output or other verifiable resource configuration evidence.
+
+Claude must distinguish between confirmed security issues, healthy configurations, and conditions that cannot be verified. It must never invent findings or assume a resource is insecure without supporting evidence.
 
 ---
 
@@ -88,11 +105,25 @@ Ask Claude Code to read `CLAUDE.md` and propose exactly four read-only checks: u
 
 1. Which part of the Agentic Loop is being designed in this task?
 
-Write your answer here.
+The Planning stage of the Agentic AI Loop is being designed.
+
+During this stage, Claude examines the project instructions, understands the audit objectives, identifies the required security checks, and determines which Azure CLI commands will gather the necessary evidence.
+
+The planning stage establishes what the system needs to inspect before any script is created or executed.
 
 2. Why is it useful to identify the exact evidence-gathering commands before writing the Bash script?
 
-Write your answer here.
+Identifying the exact commands beforehand ensures that the audit script collects accurate and relevant information from Azure.
+
+It also helps confirm that the commands are read-only, reduces scripting errors, and establishes clear criteria for identifying healthy and risky configurations.
+
+This makes the script more reliable, repeatable, transparent, and easier to troubleshoot.
+
+The four planned checks are:
+1. Unrestricted inbound SSH/RDP access through NSG rules.
+2. Public blob access on Azure Storage Accounts.
+3. Managed disk encryption-at-rest type.
+4. Public network access on MySQL Flexible Server.
 
 ---
 
@@ -112,25 +143,25 @@ Create `scripts/azure-audit.sh` using read-only Azure CLI commands. Generate a r
 
 #### Screenshot 6 — NSG and Storage Account check functions
 
-![task 4](screenshots/output of bash -n)
+![task 4](screenshots/Screenshot%20with%20NSG%20rules%20proving%20least-privilege%20access%20between%20the%20tiers.png)
 
 ---
 
 #### Screenshot 7 — Managed disk encryption and MySQL check functions
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20MySQL%20Flexible%20Server%20overview%20showing%20Private%20access%20.png)
 
 ---
 
 #### Screenshot 8 — `print_summary` function and script exit behavior
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Your%20script%20open%20in%20your%20editor,%20showing%20the%20check%20functions.png)
 
 ---
 
 #### Screenshot 9 — Successful `bash -n` validation and `ls -l` output showing executable permission
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20ls%20-la%20build%20output.png)
 
 ---
 
@@ -138,23 +169,54 @@ Add your screenshot here.
 
 1. What is stored inside the `checks` array?
 
-Write your answer here.
+The checks array stores the names of the audit functions that the Bash script must execute.
+
+These functions represent the four security checks:
+- NSG inbound SSH/RDP security.
+- Storage Account public blob access.
+- Managed disk encryption-at-rest configuration.
+- MySQL Flexible Server public network access.
+The array provides a centralized and reusable way to organize the audit operations.
 
 2. How does the `for` loop execute those checks?
 
-Write your answer here.
+The for loop iterates through each function name stored in the checks array.
+
+During each iteration, it executes the corresponding function, collects the security configuration evidence, evaluates the result, and records the appropriate PASS, WARN, or FAIL status.
+
+This approach avoids duplicating execution logic and makes it easier to maintain or extend the audit script.
 
 3. Why does the NSG check inspect both single-value and multi-value address/port fields?
 
-Write your answer here.
+Azure NSG rules support different ways of specifying network addresses and ports.
+
+Single-value fields include:
+- sourceAddressPrefix
+- destinationPortRange
+Multi-value fields include:
+- sourceAddressPrefixes
+- destinationPortRanges
+Checking both formats ensures that the audit detects unrestricted access regardless of how the NSG rule was configured.
+
+For example, an SSH rule might use * in a single-value field or include 0.0.0.0/0 in a multi-value field.
+
+Inspecting both prevents potential security misconfigurations from being overlooked.
 
 4. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?
 
-Write your answer here.
+Different exit codes allow users and automation tools to understand the overall audit outcome programmatically.
+- Exit code 0 — HEALTHY: All checks passed without identified security warnings or failures.
+- Exit code 1 — WARN: One or more checks identified security concerns that require review.
+- Exit code 2 — FAIL: A critical failure or audit execution problem occurred, according to the script's defined failure criteria.
+These codes make it easier to integrate the audit into CI/CD pipelines, monitoring workflows, and automated reporting systems.
 
 5. What does the disk encryption check verify?
 
-Write your answer here.
+The disk encryption check verifies the encryption-at-rest configuration of Azure managed disks attached to virtual machines.
+
+It examines the disk's encryption properties, including its encryption type, to determine whether the disk uses an approved encryption configuration.
+
+This helps establish whether stored operating system and application data receive protection against unauthorized access to underlying storage.
 
 ---
 
@@ -174,7 +236,7 @@ Run the script, capture its exit code immediately, review all four results, and 
 
 #### Screenshot 11 — Captured exit code and final report summary
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Script%20output%20showing%20your%20Full%20Name.png)
 
 ---
 
@@ -182,19 +244,44 @@ Add your screenshot here.
 
 1. What is the Overall Status of your baseline audit?
 
-Write your answer here.
+Use the result from your actual reports/baseline-report.txt.
+
+Suggested answer:
+
+The overall status of my baseline audit was [HEALTHY/WARN/FAIL]. The audit evaluated four Azure security areas and generated a report containing the configuration evidence and results for each check.
 
 2. Did any check return WARN or FAIL?
 
-Write your answer here.
+The audit identified [number] WARN findings and [number] FAIL findings.
+
+The checks were evaluated individually, and each result was recorded in the baseline report for further investigation and remediation.
+
+If all four checks passed, write:
+
+No checks returned WARN or FAIL. All four security checks passed based on the configurations inspected during the baseline audit.
 
 3. What evidence supports each finding?
 
-Write your answer here.
+The findings are supported by Azure CLI configuration outputs collected during the audit.
+
+The evidence includes:
+- NSG: Inbound security rule properties, including source address prefixes, destination ports, and access settings.
+- Storage Account: The allowBlobPublicAccess configuration value.
+- Managed Disk: The disk encryption-at-rest type reported by Azure.
+- MySQL Flexible Server: The publicNetworkAccess configuration value.
+These configuration details provide verifiable evidence for determining whether each resource meets the audit's security requirements.
 
 4. Which finding represents the highest security risk in your environment? If none were found, state that.
 
-Write your answer here.
+Use your actual findings.
+
+Suggested answer if a risky finding exists:
+
+The highest security risk identified was [insert actual finding] because it could potentially expose sensitive resources or data to unauthorized access. This finding required priority attention because of its potential impact on the security of the Azure environment.
+
+If all checks passed:
+
+No high-risk security findings were identified during the baseline audit. All four checks passed the defined security criteria based on the evidence collected.
 
 ---
 
@@ -222,19 +309,35 @@ Create `.claude/skills/azure-audit/SKILL.md` with Bash, Read, and Grep permissio
 
 1. Why does the Skill include Bash, Read, and Grep, but not Write?
 
-Write your answer here.
+The Skill includes Bash, Read, and Grep because these tools provide everything necessary to execute and investigate a read-only security audit.
+- Bash: Runs the audit script and executes read-only Azure CLI commands.
+- Read: Reads the generated audit reports and project documentation.
+- Grep: Searches reports and configuration files for relevant security findings.
+Write permission is intentionally excluded to prevent Claude from modifying project files or making unauthorized changes to the audit environment.
 
 2. What part of the workflow is performed by Bash?
 
-Write your answer here.
+Bash performs the technical execution of the audit.
+
+It runs Azure CLI commands, retrieves resource configuration details, evaluates the four security checks, assigns PASS/WARN/FAIL results, and generates the audit report.
+
+It provides the actual configuration evidence used to assess the Azure environment.
 
 3. What part is performed by Claude?
 
-Write your answer here.
+Claude performs the AI-assisted analysis and interpretation of the audit results.
+
+It reads the generated report, explains identified security issues, describes their potential impact, prioritizes risks, and recommends appropriate remediation and verification commands.
+
+Claude acts as an intelligent security analysis assistant rather than an autonomous infrastructure administrator.
 
 4. What additional value does Claude add beyond the script’s PASS/WARN/FAIL result?
 
-Write your answer here.
+Claude provides context and actionable explanations that go beyond basic audit classifications.
+
+It explains why a configuration is risky, what could happen if the issue remains unresolved, how the problem should be addressed, and which commands can verify the remediation.
+
+This transforms raw technical audit output into understandable security recommendations that support informed human decision-making.
 
 ---
 
@@ -270,31 +373,67 @@ If the baseline is clean, use only the controlled temporary SSH-rule exercise pe
 
 1. Which exact finding did you fix?
 
-Write your answer here.
+I fixed the [insert actual finding, e.g., unrestricted inbound SSH access from the internet through an Azure NSG rule] identified during the baseline security audit.
+
+The remediation focused on reducing unnecessary exposure and strengthening the security posture of the Azure environment.
 
 2. What evidence proved that it existed?
 
-Write your answer here.
+The baseline audit report contained Azure CLI configuration evidence showing that the affected resource had an insecure configuration.
+
+For example, if the issue was unrestricted SSH access, the evidence would show an inbound NSG security rule allowing TCP port 22 from * or 0.0.0.0/0.
+
+This confirmed that the issue was based on the actual Azure configuration rather than an assumption.
 
 3. What command did you run?
 
-Write your answer here.
+Insert the exact command you executed manually.
+
+For example, if you restricted SSH access to your trusted public IP address:
+az network nsg rule update \
+  --resource-group <RESOURCE_GROUP> \
+  --nsg-name <NSG_NAME> \
+  --name <RULE_NAME> \
+  --source-address-prefixes <YOUR_TRUSTED_PUBLIC_IP>/32
+
+
+This is an example only. Use the command corresponding to your actual finding and remediation.
 
 4. Why did you choose that remediation?
 
-Write your answer here.
+I selected this remediation because it addressed the identified security weakness while following the principle of least privilege.
+
+Rather than allowing unrestricted access, the configuration was changed to permit only the required and trusted network source.
+
+This reduces the potential attack surface while maintaining necessary administrative access.
 
 5. Did Claude execute the command, or did you?
 
-Write your answer here.
+I executed the remediation command manually.
+
+Claude was used to analyze the audit evidence, explain the security risk, and recommend the appropriate remediation and verification commands.
+
+The actual Azure configuration change remained under my control, following the assignment's human-approval and safety requirements.
 
 6. Why does keeping remediation under human control matter?
 
-Write your answer here.
+Keeping remediation under human control prevents unauthorized or unintended infrastructure changes.
+
+Azure security changes can affect application availability, network connectivity, database access, and business operations.
+
+Human approval ensures that proposed changes are reviewed against operational requirements before execution.
+
+It also establishes accountability and prevents AI from independently modifying critical cloud infrastructure.
 
 7. Map your actions to **Gather → Analyze → Human Act → Verify**.
 
-Write your answer here.
+Agentic AI stage	What happened
+Gather	Bash executed read-only Azure CLI commands and collected security configuration evidence.
+Analyze	Claude reviewed the audit report, identified risks, explained their impact, and recommended remediation.
+Human Act	I reviewed the recommendation and manually executed the approved Azure remediation command.
+Verify	I reran the audit and compared the after-fix report with the original baseline to confirm that the finding was resolved.
+
+The workflow demonstrates how Agentic AI can support cloud security without removing human responsibility for infrastructure changes.
 
 ---
 
@@ -314,13 +453,13 @@ Suggested hashtags: **#DMIByPravinMishra #Azure #AgenticAI #ClaudeCode #DevOps**
 
 Paste your published LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eZkt33r7`
 
 ---
 
 #### Screenshot 17 — Published LinkedIn post showing your caption and before-and-after audit evidence
 
-Add your screenshot here.
+![linkedIN](screenshots/Screenshot%20with%20azure%20devops%20linkedIN.png)
 
 ---
 
@@ -339,7 +478,7 @@ Paste the link containing these files:
 - `reports/before-fix-report.txt`
 - `reports/after-fix-report.txt`
 
-`Add your repository or folder URL here`
+`https://github.com/holarmyde/book-review-app.git`
 
 ---
 
@@ -370,20 +509,20 @@ Paste the link containing these files:
 - [✅] Notes comparing this to the Week 6 AWS audit completed
 - [✅] No subscription IDs, tenant IDs, or credentials exposed
 =======
-- [ ] Task 1: Required resources confirmed and workspace created (Screenshots 1–2)
-- [ ] Task 2: `CLAUDE.md` contains project context, workflow, safety rules, and output rules (Screenshot 3)
-- [ ] Task 3: Four-check read-only plan completed before scripting (Screenshot 4)
-- [ ] Task 4: Script created, syntax-checked, and executable (Screenshots 5–9)
-- [ ] Task 5: Baseline report saved and exit code verified (Screenshots 10–11)
-- [ ] Task 6: `/azure-audit` Skill created and run without executing remediation (Screenshots 12–13)
-- [ ] Task 7: Finding documented, fixed manually, and verified as resolved (Screenshots 14–16)
-- [ ] Baseline, before-fix, and after-fix reports saved
-- [ ] All required written answers completed in my own words
-- [ ] Required files and GitHub repository/folder URL included
-- [ ] LinkedIn post published with the applicable credit note and tags (Screenshot 17)
-- [ ] LinkedIn post URL included
-- [ ] Full Name visible in required outputs
-- [ ] No sensitive information exposed
+- [✅] Task 1: Required resources confirmed and workspace created (Screenshots 1–2)
+- [✅] Task 2: `CLAUDE.md` contains project context, workflow, safety rules, and output rules (Screenshot 3)
+- [✅] Task 3: Four-check read-only plan completed before scripting (Screenshot 4)
+- [✅] Task 4: Script created, syntax-checked, and executable (Screenshots 5–9)
+- [✅] Task 5: Baseline report saved and exit code verified (Screenshots 10–11)
+- [✅] Task 6: `/azure-audit` Skill created and run without executing remediation (Screenshots 12–13)
+- [✅] Task 7: Finding documented, fixed manually, and verified as resolved (Screenshots 14–16)
+- [✅] Baseline, before-fix, and after-fix reports saved
+- [✅] All required written answers completed in my own words
+- [✅] Required files and GitHub repository/folder URL included
+- [✅] LinkedIn post published with the applicable credit note and tags (Screenshot 17)
+- [✅] LinkedIn post URL included
+- [✅] Full Name visible in required outputs
+- [✅] No sensitive information exposed
 >>>>>>> upstream/main
 
 ---

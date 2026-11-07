@@ -151,7 +151,7 @@ Add a browser screenshot showing:
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+`https://lnkd.in/p/eXSutSt2`
 
 ---
 
@@ -159,7 +159,7 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+an automated pipeline that moves software from source code to production through continuous integration, delivery, and deployment
 
 ---
 
@@ -174,11 +174,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![LinkedIN](screenshots/Screenshot%20with%20LinkedIn%20post%20react.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+`https://lnkd.in/p/eGwzKJ53`
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 
@@ -199,27 +199,27 @@ Add your screenshot here.
 
 # Completion Checklist
 
-* [ ] All tasks were completed in sequence
-* [ ] The correct React repository was imported into Azure Repos
-* [ ] Your Full Name and date were added to the application
-* [ ] The pipeline YAML was authored and committed to the repository
-* [ ] Commits to `main` trigger the pipeline automatically
-* [ ] The pipeline contains Build, Test, Publish, and Deploy stages
-* [ ] All four stages succeeded in the same pipeline run
-* [ ] The production build moved between stages as a pipeline artifact
-* [ ] The Deploy stage used the SSH Service Connection
-* [ ] No password or secret is stored in the YAML
-* [ ] `index.html` is directly inside `/var/www/html`
-* [ ] Raw React source code was not deployed to the Nginx web root
-* [ ] `node_modules/` was not deployed to the Nginx web root
-* [ ] Nginx is active
-* [ ] The application opens through the VM public IP address
-* [ ] Your Full Name and date are visible in the browser screenshot
-* [ ] Screenshots 1–6 are included and readable
-* [ ] No password, token, private key, account ID, or other secret is visible
-* [ ] The final application URL is included
-* [ ] The LinkedIn post is published
-* [ ] The LinkedIn post URL is included
+* [✅] All tasks were completed in sequence
+* [✅] The correct React repository was imported into Azure Repos
+* [✅] Your Full Name and date were added to the application
+* [✅] The pipeline YAML was authored and committed to the repository
+* [✅] Commits to `main` trigger the pipeline automatically
+* [✅] The pipeline contains Build, Test, Publish, and Deploy stages
+* [✅] All four stages succeeded in the same pipeline run
+* [✅] The production build moved between stages as a pipeline artifact
+* [✅] The Deploy stage used the SSH Service Connection
+* [✅] No password or secret is stored in the YAML
+* [✅] `index.html` is directly inside `/var/www/html`
+* [✅] Raw React source code was not deployed to the Nginx web root
+* [✅] `node_modules/` was not deployed to the Nginx web root
+* [✅] Nginx is active
+* [✅] The application opens through the VM public IP address
+* [✅] Your Full Name and date are visible in the browser screenshot
+* [✅] Screenshots 1–6 are included and readable
+* [✅] No password, token, private key, account ID, or other secret is visible
+* [✅] The final application URL is included
+* [✅] The LinkedIn post is published
+* [✅] The LinkedIn post URL is included
 
 ---
 

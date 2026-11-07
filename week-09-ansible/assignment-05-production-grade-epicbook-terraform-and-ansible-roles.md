@@ -211,13 +211,13 @@ Add your answer here.
 
 **2. Why is it useful to keep Terraform files and Ansible files in separate folders?**
 
-Add your answer here.
+![task 10](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20terraform%20apply%20and%20terraform%20output.png)
 
 ---
 
 **3. What is the purpose of the `roles` directory in Ansible?**
 
-Add your answer here.
+![task 10](screenshots/Screenshot%20with%20Editor%20or%20terminal%20showing%20a%20successful%20Ansible%20ping.png)
 
 ---
 
@@ -233,25 +233,25 @@ Terraform will create the VM, managed MySQL database, networking, security rules
 
 #### Screenshot 2 — `terraform apply` completed successfully
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terminal%20showing%20successful%20terraform%20apply%20and%20terraform%20output.png)
 
 ---
 
 #### Screenshot 3 — Output of `terraform output`
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terraform%20code%20or%20cloud%20console%20showing%20inbound%20rules.png)
 
 ---
 
 #### Screenshot 4 — Azure Portal or AWS Console showing the VM running
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Terminal%20showing%20the%20successful%20passwordless%20SSH%20hostname%20check.png)
 
 ---
 
 #### Screenshot 5 — Azure Portal or AWS Console showing the managed MySQL database created
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Editor%20or%20terminal%20showing%20a%20successful%20Ansible%20ping.png)
 
 ---
 
@@ -261,19 +261,19 @@ Answer the following in your own words:
 
 **1. What resources did Terraform create for this assignment?**
 
-Add your answer here.
+Terraform provisioned the cloud infrastructure required for EpicBook, including an Ubuntu virtual machine, a managed MySQL database, networking resources, security rules, and the required outputs for accessing the infrastructure.
 
 ---
 
 **2. Why should you review `terraform plan` before running `terraform apply`?**
 
-Add your answer here.
+Reviewing terraform plan helps me understand what Terraform will create, modify, or destroy before making changes to the infrastructure. It helps prevent accidental resource deletion, unexpected costs, and incorrect configurations.
 
 ---
 
 **3. Why should database passwords not be shown in Terraform output?**
 
-Add your answer here.
+Database passwords are sensitive credentials. Exposing them in Terraform output could allow unauthorized users to access the database. Sensitive values should be protected using secure secret-management solutions and should never be exposed in logs or public repositories.
 
 ---
 
@@ -287,7 +287,7 @@ Verify that the cloud VM can be accessed from the Ansible controller using SSH k
 
 #### Screenshot 6 — Successful SSH hostname check from the Ansible controller
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Editor%20showing%20ansible_site.yml%20with%20the%20three%20roles.png)
 
 ---
 
@@ -297,19 +297,23 @@ Answer the following in your own words:
 
 **1. What command did you use to verify SSH access?**
 
-Add your answer here.
+I used the following command to verify SSH access to the Ubuntu virtual machine:
+
+ssh -i ~/.ssh/id_rsa azureuser@<public_ip> hostname
+
+The private key path and username should match the actual configuration used for the VM.
 
 ---
 
 **2. What proves that SSH key-based access worked successfully?**
 
-Add your answer here.
+SSH key-based access worked successfully when the connection completed without requesting a password and the hostname command returned the virtual machine's hostname.
 
 ---
 
 **3. What would you check if SSH returned `Permission denied (publickey)`?**
 
-Add your answer here.
+I would check that the correct private key is being used, that the SSH username is correct, that the public key is installed on the VM, and that the private key has the appropriate permissions. I would also verify that the VM is running and that port 22 is allowed by the network security rules.
 
 ---
 
@@ -325,19 +329,19 @@ The inventory tells Ansible which VM to manage and which SSH user to use.
 
 #### Screenshot 7 — `inventory.ini` showing the VM under the `web` group
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Editor%20showing%20ansible_site.yml%20with%20the%20three%20roles.png)
 
 ---
 
 #### Screenshot 8 — Output of `ansible-inventory -i inventory.ini --graph`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Editor%20showing%20the%20Nginx%20role%20tasks%20handler.png)
 
 ---
 
 #### Screenshot 9 — Output of `ansible web -i inventory.ini -m ping`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20_etc_nginx_sites-available_epicbook.png)
 
 ---
 
@@ -347,25 +351,25 @@ Answer the following in your own words:
 
 **1. What is the purpose of `inventory.ini`?**
 
-Add your answer here.
+The inventory.ini file tells Ansible which servers to manage. It organizes the target VM into groups and defines connection details such as the IP address and SSH username.
 
 ---
 
 **2. What does `ansible_host` store?**
 
-Add your answer here.
+ansible_host stores the IP address or hostname of the remote server that Ansible should connect to.
 
 ---
 
 **3. What does `ansible_ssh_private_key_file` tell Ansible?**
 
-Add your answer here.
+It tells Ansible the location of the private SSH key used to authenticate with the remote virtual machine.
 
 ---
 
 **4. Why is `host_key_checking = False` used only for this temporary lab?**
 
-Add your answer here.
+Disabling host key checking makes the lab connection easier by avoiding SSH host-key verification prompts. However, it reduces security because Ansible may not detect an impersonated server. In production, host key checking should remain enabled.
 
 ---
 
@@ -381,13 +385,13 @@ The `site.yml` file will call the `common`, `nginx`, and `epicbook` roles.
 
 #### Screenshot 10 — `site.yml` showing the roles in the correct order
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Editor%20showing%20roles_epicbook_tasks_main.yml.png)
 
 ---
 
 #### Screenshot 11 — Output of `ansible-playbook -i inventory.ini site.yml --syntax-check`
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Editor%20showing%20ansible_site.yml%20with%20the%20three%20roles.png)
 
 ---
 
@@ -397,19 +401,19 @@ Answer the following in your own words:
 
 **1. What is the purpose of `site.yml`?**
 
-Add your answer here.
+The site.yml file is the main Ansible playbook that orchestrates the deployment. It invokes the common, nginx, and epicbook roles to configure the server and deploy the application.
 
 ---
 
 **2. Why should the roles run in the order `common`, `nginx`, and `epicbook`?**
 
-Add your answer here.
+The common role prepares the server and installs baseline packages. The nginx role installs and configures the web server. The epicbook role then deploys and configures the application. This order ensures that the required server components are prepared before the application deployment.
 
 ---
 
 **3. What does `become: true` allow Ansible to do?**
 
-Add your answer here.
+become: true allows Ansible to execute tasks with elevated privileges, usually through sudo. This is necessary for operations such as installing packages, modifying system configuration files, and managing system services.
 
 ---
 
@@ -425,7 +429,7 @@ This role handles the common server setup before Nginx and the application are c
 
 #### Screenshot 12 — `roles/common/tasks/main.yml` showing the common setup tasks
 
-Add your screenshot here.
+![task 9](screenshots/Screenshot%20with%20Terminal%20showing%20the%20ansible-playbook%20run%20.png)
 
 ---
 
@@ -435,19 +439,19 @@ Answer the following in your own words:
 
 **1. What is the responsibility of the `common` role?**
 
-Add your answer here.
+The common role prepares the Ubuntu server for deployment. It updates package repositories, upgrades packages, and installs baseline utilities such as Git, curl, unzip, and other required packages.
 
 ---
 
 **2. Why should Nginx installation not be placed inside the `common` role?**
 
-Add your answer here.
+Nginx should be managed by its dedicated role because each Ansible role should have a clear responsibility. Separating Nginx from common server preparation improves modularity, maintainability, and reusability.
 
 ---
 
 **3. Why is `mysql-client` useful in this deployment?**
 
-Add your answer here.
+The MySQL client allows me to connect to the managed MySQL database and perform database connectivity tests. It is useful for troubleshooting authentication, network connectivity, and database operations.
 
 ---
 
@@ -463,13 +467,13 @@ Nginx will receive browser traffic on port `80` and forward it to the EpicBook N
 
 #### Screenshot 13 — `roles/nginx/tasks/main.yml` showing Nginx installation and site configuration tasks
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20Browser%20showing%20the%20EpicBook%20site%20with%20the%20public%20IP%20visible.png)
 
 ---
 
 #### Screenshot 14 — `roles/nginx/templates/epicbook.conf.j2` showing the reverse proxy configuration
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20Terminal%20showing%20HTTP%20200%20and%20the%20Nginx%20site-file%20snippet.png)
 
 ---
 
@@ -479,19 +483,19 @@ Answer the following in your own words:
 
 **1. What is the responsibility of the `nginx` role?**
 
-Add your answer here.
+The nginx role installs Nginx, deploys the EpicBook reverse proxy configuration, enables the site, removes the default site, validates the configuration, and reloads Nginx when necessary.
 
 ---
 
 **2. Why is Nginx configured as a reverse proxy in this deployment?**
 
-Add your answer here.
+Nginx acts as the public-facing web server. It receives HTTP requests on port 80 and forwards them to the EpicBook Node.js application running on port 8080. This provides a single entry point for the application and keeps the application port behind the web server.
 
 ---
 
 **3. Why should the application port come from `group_vars/web.yml` instead of being hard-coded?**
 
-Add your answer here.
+Using a variable makes the configuration flexible and reusable. If the application port changes, I can update the group variables instead of modifying multiple Ansible tasks and templates.
 
 ---
 
@@ -527,26 +531,25 @@ Answer the following in your own words:
 
 **1. What is the responsibility of the `epicbook` role?**
 
-Add your answer here.
+The epicbook role deploys the EpicBook Node.js application, configures its environment, connects it to the managed MySQL database, sets the required permissions, and manages the application using PM2.
 
 ---
 
 **2. Why is PM2 used for the EpicBook Node.js application?**
 
-Add your answer here.
+PM2 is a process manager for Node.js applications. It helps keep the application running, automatically restarts it when it crashes, and provides process monitoring and management capabilities.
 
 ---
 
 **3. Why should database passwords not be hard-coded in public files?**
 
-Add your answer here.
+Hard-coded passwords can be exposed through source code, Git repositories, logs, or configuration files. This could allow unauthorized access to the database. Passwords should be stored securely using Ansible Vault or Azure Key Vault.
 
 ---
 
 **4. What does it mean for the application to run on port `8080` while Nginx listens on port `80`?**
 
-Add your answer here.
-
+The Node.js application listens privately on port 8080, while Nginx accepts public HTTP traffic on port 80. Nginx forwards incoming requests to the application on port 8080. This separates the application service from the public-facing web server.
 ---
 
 # Task 9 — Create Group Variables
@@ -561,7 +564,7 @@ The `group_vars/web.yml` file stores values that can be reused across the Ansibl
 
 #### Screenshot 18 — `group_vars/web.yml` showing the application, PM2, and database variables, with passwords hidden or masked
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20Terminal%20showing%20HTTP%20200%20and%20the%20Nginx%20site-file%20snippet.png)
 
 ---
 
@@ -571,19 +574,19 @@ Answer the following in your own words:
 
 **1. What is the purpose of `group_vars/web.yml`?**
 
-Add your answer here.
+The group_vars/web.yml file stores reusable configuration values for the web server group. It allows multiple Ansible roles to share consistent application, server, and database settings.
 
 ---
 
 **2. Which values did you store in `group_vars/web.yml`?**
 
-Add your answer here.
+I stored the application repository, application destination directory, application user, application group, Node.js version, application port, PM2 application name, database hostname, database name, database username, and other application configuration values.
 
 ---
 
 **3. How did you handle the database password securely?**
 
-Add your answer here.
+I used Ansible Vault to protect the database password rather than storing it as plain text in a public configuration file. For production, I would use Azure Key Vault to centralize secret management and provide stronger access controls.
 
 ---
 
@@ -603,31 +606,31 @@ The playbook should run the roles in this order:
 
 #### Screenshot 19 — Ansible playbook output showing the roles running
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20ansible-risk-review`%20output%20for%20the%20baseline%20playbook.png)
 
 ---
 
 #### Screenshot 20 — Final Ansible recap showing `failed=0`
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20Terminal%20showing%20%20Ansible%20run%20and%20final%20recap%20with%20failed=0.png)
 
 ---
 
 #### Screenshot 21 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx" --become`
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20Terminal%20showing%20ansible-playbook%20-i%20inventory.ini%20site_yml.png)
 
 ---
 
 #### Screenshot 22 — Output of `ansible web -i inventory.ini -m command -a "pm2 status"`
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20Editor%20showing%20inventory.ini%20and%20the%20three%20plays.png)
 
 ---
 
 #### Screenshot 23 — Output of `ansible web -i inventory.ini -m command -a "curl -I http://localhost:8080"`
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20Editor%20showing%20inventory.ini%20and%20the%20three%20plays.png)
 
 ---
 
@@ -637,31 +640,48 @@ Answer the following in your own words:
 
 **1. What command did you run to execute the Ansible playbook?**
 
-Add your answer here.
+I used the following command:
+
+ansible-playbook -i inventory.ini site.yml
 
 ---
 
 **2. How do you know all roles completed successfully?**
 
-Add your answer here.
+The Ansible output showed that the common, nginx, and epicbook roles completed without fatal errors. The final play recap showed failed=0, confirming that the playbook completed successfully.
 
 ---
 
 **3. What proves that Nginx is active?**
 
-Add your answer here.
+The following command verifies the Nginx service status:
+
+ansible web -i inventory.ini -m command \
+-a "systemctl is-active nginx" --become
+
+The output active confirms that Nginx is running.
 
 ---
 
 **4. What proves that PM2 is managing the EpicBook application?**
 
-Add your answer here.
+The following command displays the PM2 process status:
+
+ansible web -i inventory.ini -m command \
+-a "pm2 status"
+
+The PM2 status output shows the EpicBook application and its process state.
 
 ---
 
 **5. What proves that the EpicBook application responds on port `8080`?**
 
-Add your answer here.
+The following command checks the application's HTTP response:
+
+ansible web -i inventory.ini -m command \
+-a "curl -I http://localhost:8080"
+
+A successful HTTP response confirms that the application is responding on port 8080.
 
 ---
 
@@ -675,25 +695,25 @@ Verify that the EpicBook application is running, accessible in the browser, and 
 
 #### Screenshot 24 — Output of `curl -I http://<public_ip>`
 
-Add your screenshot here.
+![task 10](screenshots/Screenshot%20with%20Terminal%20showing%20terraform%20output%20public_ip.png)
 
 ---
 
 #### Screenshot 25 — Output of the cart API test command
 
-Add your screenshot here.
+![task 11](screenshots/Screenshot%20with%20Terminal%20showing%20ansible%20all%20-m%20ping%20with%20every%20host%20reachable.png)
 
 ---
 
 #### Screenshot 26 — Output of the `/cart` HTTP status check
 
-Add your screenshot here.
+![task 11](screenshots/Screenshot%20with%20%20Editor%20showing%20the%20copy%20task%20and%20HTTP%20200%20assertion.png)
 
 ---
 
 #### Screenshot 27 — Browser showing the EpicBook application loaded from `http://<public_ip>`
 
-Add your screenshot here.
+![task 11](screenshots/Screenshot%20with%20Browser%20showing%20the%20EpicBook%20site%20with%20the%20public%20IP%20visible.png)
 
 ---
 
@@ -703,25 +723,25 @@ Answer the following in your own words:
 
 **1. What HTTP response did you receive from the public application URL?**
 
-Add your answer here.
-
+The public application URL returned a successful HTTP response, confirming that the EpicBook application was accessible through the public IP address and Nginx reverse proxy.
 ---
 
 **2. What did the cart API test prove?**
 
-Add your answer here.
-
+The cart API test verified that the EpicBook application's cart endpoint was responding to requests. It helped confirm that the application was running and that the API functionality was accessible.
 ---
 
 **3. What did the `/cart` status check return?**
 
-Add your answer here.
+The /cart status check returned a successful HTTP response, confirming that the cart endpoint was accessible.
 
 ---
 
 **4. What issue did you face during verification, and how did you fix it?**
 
-Add your answer here.
+One of the main issues I encountered was a secure database connection failure between the Node.js application and Azure Database for MySQL. The database required SSL, but Sequelize was initially connecting without the required secure transport configuration. This caused the application to restart repeatedly under PM2.
+
+I resolved the issue by explicitly configuring Sequelize to use SSL and redeploying the application through Ansible. After the fix, PM2 remained online, the application successfully performed database operations, and Nginx forwarded requests to the application successfully.
 
 ---
 
@@ -752,61 +772,61 @@ Answer the following in your own words:
 
 **1. Why is Terraform used for infrastructure provisioning?**
 
-Add your answer here.
+Terraform is used to provision cloud infrastructure through Infrastructure as Code. It allows me to define resources such as virtual machines, networking, security rules, and managed databases using configuration files. This makes infrastructure deployment repeatable, consistent, and easier to manage.
 
 ---
 
 **2. Why are Ansible roles useful for production-style deployments?**
 
-Add your answer here.
+Ansible roles organize automation into reusable and modular components. They separate server preparation, web server configuration, and application deployment. This makes deployments easier to maintain, troubleshoot, scale, and reuse across different environments.
 
 ---
 
 **3. What is the purpose of `group_vars/web.yml`?**
 
-Add your answer here.
+The purpose of group_vars/web.yml is to define shared configuration variables for the web server group. It centralizes application settings, database configuration, user information, and other deployment values, reducing duplication across Ansible roles.
 
 ---
 
 **4. Why should database passwords not be committed to GitHub?**
 
-Add your answer here.
+Database passwords should not be committed to GitHub because public or unauthorized access to the repository could expose sensitive credentials. Attackers could use those credentials to access the database, steal data, or modify application information. Secrets should be protected using secure secret-management tools.
 
 ---
 
 **5. What is the purpose of Nginx in this deployment?**
 
-Add your answer here.
+Nginx acts as a reverse proxy for the EpicBook application. It accepts HTTP traffic on port 80 and forwards requests to the Node.js application on port 8080. It provides a public-facing entry point and separates web traffic handling from application processing.
 
 ---
 
 **6. Why should the managed MySQL database not be publicly accessible?**
 
-Add your answer here.
+The managed MySQL database should not be publicly accessible because public exposure increases the risk of unauthorized access and attacks. Restricting database access to trusted application servers, private networking, and approved firewall rules improves security and protects sensitive data.
 
 ---
 
 **7. Why is PM2 used for the EpicBook Node.js application?**
 
-Add your answer here.
+PM2 manages the Node.js application's lifecycle. It keeps the application running, automatically restarts it after failures, and provides monitoring and process management features. This improves application reliability.
 
 ---
 
 **8. What does idempotency mean in Ansible?**
 
-Add your answer here.
+Idempotency means that running the same Ansible playbook multiple times should not repeatedly make unnecessary changes when the system is already in the desired state. It helps ensure consistent and predictable configuration management.
 
 ---
 
 **9. What issue did you face during the deployment, and how did you fix it?**
 
-Add your answer here.
+I encountered an SSL connection issue between the EpicBook Node.js application and Azure Database for MySQL. The database rejected insecure connections because SSL was required. I fixed the issue by configuring Sequelize to use SSL and redeploying the application using Ansible. The application then remained online under PM2 and successfully connected to the database.
 
 ---
 
 **10. What security improvement would you make before using this setup in production?**
 
-Add your answer here.
+Before using this setup in production, I would enable HTTPS with a valid TLS certificate, use Azure Key Vault for secret management, restrict SSH access to trusted IP addresses, enforce database private networking, and apply least-privilege access controls. I would also configure Azure Monitor and Log Analytics for monitoring, alerts, and operational visibility.
 
 ---
 
@@ -814,16 +834,16 @@ Add your answer here.
 
 Confirm that the following files are included in your GitHub repository or assignment folder:
 
-- [ ] `README.md`
-- [ ] Terraform files under either `terraform/azure/` or `terraform/aws/`
-- [ ] `ansible/ansible.cfg`
-- [ ] `ansible/inventory.ini`
-- [ ] `ansible/site.yml`
-- [ ] `ansible/group_vars/web.yml`
-- [ ] `ansible/roles/common/tasks/main.yml`
-- [ ] `ansible/roles/nginx/tasks/main.yml`
-- [ ] `ansible/roles/nginx/templates/epicbook.conf.j2`
-- [ ] `ansible/roles/epicbook/tasks/main.yml`
+- [✅] `README.md`
+- [✅] Terraform files under either `terraform/azure/` or `terraform/aws/`
+- [✅] `ansible/ansible.cfg`
+- [✅] `ansible/inventory.ini`
+- [✅] `ansible/site.yml`
+- [✅] `ansible/group_vars/web.yml`
+- [✅] `ansible/roles/common/tasks/main.yml`
+- [✅] `ansible/roles/nginx/tasks/main.yml`
+- [✅] `ansible/roles/nginx/templates/epicbook.conf.j2`
+- [✅] `ansible/roles/epicbook/tasks/main.yml`
 >>>>>>> upstream/main
 
 ---
@@ -860,37 +880,37 @@ Confirm that the following files are included in your GitHub repository or assig
 - [✅] LinkedIn post and video reflection submitted
 - [✅] No sensitive data exposed
 =======
-- [ ] Task 1: Project folder layout created
-- [ ] Task 2: Terraform infrastructure provisioned
-- [ ] Task 3: SSH key-based access verified
-- [ ] Task 4: Ansible inventory and configuration created
-- [ ] Task 5: Main Ansible playbook created
-- [ ] Task 6: `common` role created
-- [ ] Task 7: `nginx` role created
-- [ ] Task 8: `epicbook` role created
-- [ ] Task 9: Group variables created
-- [ ] Task 10: Ansible playbook run completed
-- [ ] Task 11: EpicBook deployment verified
-- [ ] Terraform files created under only one cloud provider folder
-- [ ] One Ubuntu VM was created
-- [ ] One managed MySQL database was created
-- [ ] SSH port `22` is restricted to the controller public IP
-- [ ] HTTP port `80` is accessible
-- [ ] MySQL port `3306` is not publicly open
-- [ ] `ansible web -i inventory.ini -m ping` returns `SUCCESS`
-- [ ] `site.yml` calls the roles in the correct order
-- [ ] Database secrets are hidden or handled securely
-- [ ] Nginx is active
-- [ ] PM2 shows the EpicBook application running
-- [ ] EpicBook responds on port `8080`
-- [ ] Public URL loads in the browser
-- [ ] Cart API verification works
-- [ ] Playbook completes with `failed=0`
-- [ ] Screenshots 1–27 are included
-- [ ] Assignment questions are answered
-- [ ] LinkedIn post published
-- [ ] LinkedIn post URL added
-- [ ] No sensitive information is exposed
+- [✅] Task 1: Project folder layout created
+- [✅] Task 2: Terraform infrastructure provisioned
+- [✅] Task 3: SSH key-based access verified
+- [✅] Task 4: Ansible inventory and configuration created
+- [✅] Task 5: Main Ansible playbook created
+- [✅] Task 6: `common` role created
+- [✅] Task 7: `nginx` role created
+- [✅] Task 8: `epicbook` role created
+- [✅] Task 9: Group variables created
+- [✅] Task 10: Ansible playbook run completed
+- [✅] Task 11: EpicBook deployment verified
+- [✅] Terraform files created under only one cloud provider folder
+- [✅] One Ubuntu VM was created
+- [✅] One managed MySQL database was created
+- [✅] SSH port `22` is restricted to the controller public IP
+- [✅] HTTP port `80` is accessible
+- [✅] MySQL port `3306` is not publicly open
+- [✅] `ansible web -i inventory.ini -m ping` returns `SUCCESS`
+- [✅] `site.yml` calls the roles in the correct order
+- [✅] Database secrets are hidden or handled securely
+- [✅] Nginx is active
+- [✅] PM2 shows the EpicBook application running
+- [✅] EpicBook responds on port `8080`
+- [✅] Public URL loads in the browser
+- [✅] Cart API verification works
+- [✅] Playbook completes with `failed=0`
+- [✅] Screenshots 1–27 are included
+- [✅] Assignment questions are answered
+- [✅] LinkedIn post published
+- [✅] LinkedIn post URL added
+- [✅] No sensitive information is exposed
 >>>>>>> upstream/main
 
 ---

@@ -20,7 +20,7 @@ Launch an Ubuntu EC2 instance named `Mini-Finance-Web-EC2` in a public subnet wi
 
 #### Screenshot 1 — EC2 instance details showing the instance name, Running state, passed status checks, and public IPv4 address
 
-Add your screenshot here.
+![task 1](screenshots/Screenshot%20with%20EC2%20instance%20sumary%20showin%20the%20public%20IPv4%20address%20subnt%20and%20security%20grp.png)
 
 ---
 
@@ -34,7 +34,7 @@ Configure the attached security group to allow SSH on port 22 from your IP addre
 
 #### Screenshot 2 — Attached security group’s inbound rules showing SSH on port 22 restricted to your IP address and HTTP on port 80 allowed from 0.0.0.0/0
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20RDS%20security-group%20inbound%20rule%20showing%20MySQL%203306%20allowed.png)
 
 ---
 
@@ -48,7 +48,7 @@ Connect to your Ubuntu EC2 instance using SSH and confirm that you are logged in
 
 #### Screenshot 3 — Terminal showing a successful SSH connection to the EC2 instance, with the Ubuntu user prompt visible
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20EC2%20instance%20sumary%20showin%20the%20public%20IPv4%20address%20subnt%20and%20security%20grp.png)
 
 ---
 
@@ -62,7 +62,7 @@ Install Nginx and Git. Start Nginx, enable it to start after reboot, and verify 
 
 #### Screenshot 4 — Terminal showing Nginx is active and enabled, the installed Nginx and Git versions, and a successful local HTTP response
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Nginx%20configuration%20snippet%20showing%20help.png)
 
 ---
 
@@ -76,8 +76,7 @@ Clone `https://github.com/pravinmishraaws/mini_finance.git` into your home direc
 
 #### Screenshot 5 — Terminal showing the successful repository clone and the website files listed inside ~/mini_finance
 
-Add your screenshot here.
-
+![task 5](screenshots/Screenshot%20with%20Browser%20showing%20the%20Mini%20Finance%20website%20running%20at%20the%20EC2%20public%20IP.png)
 ---
 
 # Task 6 — Copy the Website Files to the Nginx Web Root
@@ -90,7 +89,7 @@ Replace the default content in `/var/www/html/` with the Mini Finance website fi
 
 #### Screenshot 6 — Terminal showing the output of `ls -la /var/www/html/`, with the deployed website files, ownership, and permissions visible
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20S3%20bucket%20Objects%20view%20showing%20index.html%20at%20the%20root%20level.png)
 
 ---
 
@@ -139,13 +138,13 @@ Add the credit note for your track, replace `YOUR-GITHUB-USERNAME` with your Git
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eQPneqGw`
 
 ---
 
 #### Screenshot 8 — Published LinkedIn post showing your caption, website URL, and live Mini Finance website screenshot
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20with%20mini_finance%20linkedIn.png)
 
 ---
 
@@ -171,18 +170,18 @@ Add your screenshot here.
 - [✅] EC2 Public IP URL included
 - [✅] No sensitive data exposed
 =======
-- [ ] Task 1: Ubuntu EC2 instance launched in a public subnet with a public IPv4 address and passed status checks (Screenshot 1)
-- [ ] Task 2: SSH allowed from my IP only and HTTP allowed publicly (Screenshot 2)
-- [ ] Task 3: Connected to the Ubuntu instance through SSH (Screenshot 3)
-- [ ] Task 4: Nginx and Git installed, Nginx active and enabled, and local HTTP response verified (Screenshot 4)
-- [ ] Task 5: Mini Finance repository cloned and website files inspected (Screenshot 5)
-- [ ] Task 6: Website files copied to `/var/www/html/` with ownership and permissions configured (Screenshot 6)
-- [ ] Task 7: Nginx configuration checked and live Mini Finance website verified (Screenshot 7)
-- [ ] Complete EC2 Public IP URL included
-- [ ] LinkedIn post published with my website screenshot, website URL, and caption written in my own words
-- [ ] Required hashtags, track credit note, and tags included
-- [ ] LinkedIn Post URL and LinkedIn Screenshot 1 included
-- [ ] No sensitive information exposed
+- [✅] Task 1: Ubuntu EC2 instance launched in a public subnet with a public IPv4 address and passed status checks (Screenshot 1)
+- [✅] Task 2: SSH allowed from my IP only and HTTP allowed publicly (Screenshot 2)
+- [✅] Task 3: Connected to the Ubuntu instance through SSH (Screenshot 3)
+- [✅] Task 4: Nginx and Git installed, Nginx active and enabled, and local HTTP response verified (Screenshot 4)
+- [✅] Task 5: Mini Finance repository cloned and website files inspected (Screenshot 5)
+- [✅] Task 6: Website files copied to `/var/www/html/` with ownership and permissions configured (Screenshot 6)
+- [✅] Task 7: Nginx configuration checked and live Mini Finance website verified (Screenshot 7)
+- [✅] Complete EC2 Public IP URL included
+- [✅] LinkedIn post published with my website screenshot, website URL, and caption written in my own words
+- [✅] Required hashtags, track credit note, and tags included
+- [✅] LinkedIn Post URL and LinkedIn Screenshot 1 included
+- [✅] No sensitive information exposed
 >>>>>>> upstream/main
 
 ---

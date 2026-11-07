@@ -104,7 +104,7 @@ Go to the DMI Leaderboard, find your name, select **Share your progress**, and c
 
 #### Screenshot 2 — Published WhatsApp Status showing the automatically generated DMI Leaderboard rank and personal progress link
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20NAT%20Gateway%20status%20showing%20Available%20and%20the%20Elastic%20IP.png)
 
 > **Privacy Note:** Make sure no private phone numbers, personal messages, or sensitive information are visible in the screenshot.
 
@@ -130,16 +130,16 @@ Add your screenshot here.
 - [✅] Notes question answered
 - [✅] No sensitive billing or account information exposed
 =======
-- [ ] Task 1: AWS Free Tier account created and Basic Support Plan (Free) selected
-- [ ] Task 2: Logged in to the AWS Management Console
-- [ ] Task 3: Explored the AWS Console and reviewed AWS Free Tier offerings
-- [ ] Task 4: Opened the Billing Dashboard
-- [ ] Task 5: Configured a monthly Cost Budget with name, amount, and start month
-- [ ] Task 6: Configured budget alert thresholds and notification email
-- [ ] Task 7: Reviewed and created the budget, and included Screenshot 1
-- [ ] Task 7: Answered the budget alerts question
-- [ ] Task 8: Published the DMI Leaderboard message on WhatsApp Status and included Screenshot 2
-- [ ] No sensitive information exposed
+- [✅] Task 1: AWS Free Tier account created and Basic Support Plan (Free) selected
+- [✅] Task 2: Logged in to the AWS Management Console
+- [✅] Task 3: Explored the AWS Console and reviewed AWS Free Tier offerings
+- [✅] Task 4: Opened the Billing Dashboard
+- [✅] Task 5: Configured a monthly Cost Budget with name, amount, and start month
+- [✅] Task 6: Configured budget alert thresholds and notification email
+- [✅] Task 7: Reviewed and created the budget, and included Screenshot 1
+- [✅] Task 7: Answered the budget alerts question
+- [✅] Task 8: Published the DMI Leaderboard message on WhatsApp Status and included Screenshot 2
+- [✅] No sensitive information exposed
 >>>>>>> upstream/main
 
 ---

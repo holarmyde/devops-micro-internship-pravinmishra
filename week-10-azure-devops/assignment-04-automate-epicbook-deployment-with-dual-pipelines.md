@@ -70,7 +70,7 @@ Add a screenshot of the Infrastructure Pipeline run showing:
 * `backend_private_ip`
 * `mysql_fqdn`
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20App%20Pipeline%20run%20summary%20showing%20successful%20completion.png)
 
 > Do not expose the MySQL password, Client Secret, Terraform state, SSH private key, or another sensitive value.
 
@@ -86,7 +86,7 @@ Add a screenshot of the Azure Portal Resource Group overview showing:
 * Azure Database for MySQL Flexible Server
 * Related EpicBook resources
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Ansible%20playbook%20output%20showing%20successful%20configuration.png)
 
 > Hide sensitive IDs, credentials, and database details.
 
@@ -124,7 +124,7 @@ Run the Application Pipeline to configure the VMs, deploy EpicBook, and verify t
 
 Add a screenshot of the Application Pipeline run summary showing all required stages or jobs succeeded.
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Ansible%20playbook%20output%20showing%20successful%20configuration.png)
 
 ---
 
@@ -137,7 +137,7 @@ Add a screenshot of the Application Pipeline log showing:
 * Zero failed hosts
 * Zero unreachable hosts
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Azure%20Portal%20confirming%20the%20provisioned%20resources.png)
 
 > Do not expose the SSH private key, MySQL password, Client Secret, or complete database connection string.
 
@@ -162,7 +162,7 @@ Add a browser screenshot showing:
 
 The screenshot may show a product, cart, or successful order view.
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20wit%20Browser%20displayin%20d%20runnin%20EpicBook%20applicatn%20wit%20d%20fend%20public%20IP%20visible.png)
 
 > Do not expose credentials or sensitive information.
 
@@ -172,15 +172,15 @@ Add your screenshot here.
 
 ## Frontend Application URL
 
-[Paste your final EpicBook application URL here.]
+`http://68.210.145.38`
 
 ## Infrastructure Repository URL
 
-[Paste your Infrastructure Repository URL here.]
+`https://dev.azure.com/omoade870/EpicBook-DevOps/_settings/adminservices?resourceId=c71c2810-f1d4-4d42-a124-12005d1f85f7`
 
 ## Application Repository URL
 
-[Paste your Application Repository URL here.]
+`https://github.com/holarmyde/theepicbook.git`
 
 ---
 
@@ -188,7 +188,9 @@ Add your screenshot here.
 
 Write a short explanation of why separate Infrastructure and Application Repositories were used.
 
-[Write your explanation here.]
+Separate Infrastructure and Application Repositories were used to improve organization, security, and maintainability. The Infrastructure Repository contains the Terraform configuration responsible for provisioning Azure resources, including virtual machines, networking, and Azure Database for MySQL Flexible Server. The Application Repository contains the Ansible playbooks, inventory, and application deployment configuration used to install, configure, and deploy EpicBook.
+
+This separation allows infrastructure provisioning and application deployment to be managed independently through their respective Azure DevOps pipelines. It also promotes modularity, reduces the risk of unintended infrastructure changes during application updates, and supports better access control and troubleshooting.
 
 ---
 
@@ -201,7 +203,11 @@ Write a short explanation of how the following non-sensitive Terraform outputs w
 * `backend_private_ip`
 * `mysql_fqdn`
 
-[Write your explanation here.]
+After the Infrastructure Pipeline successfully completed the Terraform apply operation, the required non-sensitive Terraform outputs were retrieved. These outputs included `app_public_ip`, `backend_ansible_host`, `backend_private_ip`, and `mysql_fqdn`.
+
+The values were manually transferred to the Application Repository and used to configure the Ansible inventory and application variables. The public IP address was used to access the frontend VM, the backend Ansible host was used for SSH connectivity, the backend private IP was used for internal communication between the frontend and backend, and the MySQL FQDN was used to establish the database connection.
+
+This manual handoff created a clear separation between infrastructure provisioning and application configuration while ensuring that Ansible received the necessary connection details. Sensitive information, such as SSH private keys and database passwords, was excluded from the handoff and stored securely through Azure DevOps secure files and secret variables.
 
 ---
 
@@ -216,11 +222,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20with%20epicbook%20linkedIn.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+`https://lnkd.in/p/eXSutSt2`
 
 Your post must include:
 
@@ -256,46 +262,46 @@ Your post must include:
 
 # Completion Checklist
 
-* [ ] Two separate repositories were created
-* [ ] The Infrastructure Repository contains Terraform and its pipeline
-* [ ] The Application Repository contains EpicBook, Ansible, and its pipeline
-* [ ] Your Full Name and deployment date are visible in EpicBook
-* [ ] Both pipelines use the intended `main` branch
-* [ ] The Azure Resource Manager Service Connection works
-* [ ] The Azure Client Secret is not stored in Git or YAML
-* [ ] Terraform uses an Azure Storage remote backend
-* [ ] Terraform state was not published or committed
-* [ ] Separate frontend, backend, and database subnets were created
-* [ ] The frontend VM accepts public HTTP traffic on port 80
-* [ ] SSH access is restricted
-* [ ] The backend application port is not publicly accessible
-* [ ] Azure Database for MySQL uses private access
-* [ ] The Infrastructure Pipeline validates, plans, applies, and displays non-sensitive outputs
-* [ ] The reviewed Terraform plan was used during Apply
-* [ ] Approval or manual validation occurred before Apply
-* [ ] `app_public_ip` is available
-* [ ] `backend_ansible_host` is available
-* [ ] `backend_private_ip` is available
-* [ ] `mysql_fqdn` is available
-* [ ] Only non-sensitive Terraform outputs were transferred to the Application Repository
-* [ ] The SSH private key is stored in Azure DevOps Secure Files
-* [ ] The SSH private key was not committed or published
-* [ ] The MySQL password is stored as a secret pipeline variable
-* [ ] Ansible reaches both frontend and backend VMs
-* [ ] Ansible completes with zero failed and zero unreachable hosts
-* [ ] Nginx proxies requests to the backend private IP
-* [ ] EpicBook runs as a persistent service
-* [ ] The database schema and seed data are available
-* [ ] The application displays database-backed products
-* [ ] Cart or checkout actions are recorded in MySQL
-* [ ] The final application displays your Full Name and deployment date
-* [ ] Screenshots 1–6 are included and readable
-* [ ] The Infrastructure Repository URL is included
-* [ ] The Application Repository URL is included
-* [ ] The final EpicBook application URL is included
-* [ ] The LinkedIn post is published
-* [ ] The LinkedIn post URL is included
-* [ ] No secret or sensitive identifier is exposed
+* [✅ ] Two separate repositories were created
+* [✅ ] The Infrastructure Repository contains Terraform and its pipeline
+* [✅ ] The Application Repository contains EpicBook, Ansible, and its pipeline
+* [✅ ] Your Full Name and deployment date are visible in EpicBook
+* [✅ ] Both pipelines use the intended `main` branch
+* [✅ ] The Azure Resource Manager Service Connection works
+* [✅ ] The Azure Client Secret is not stored in Git or YAML
+* [✅ ] Terraform uses an Azure Storage remote backend
+* [✅ ] Terraform state was not published or committed
+* [✅] Separate frontend, backend, and database subnets were created
+* [✅ ] The frontend VM accepts public HTTP traffic on port 80
+* [✅ ] SSH access is restricted
+* [✅ ] The backend application port is not publicly accessible
+* [✅ ] Azure Database for MySQL uses private access
+* [✅ ] The Infrastructure Pipeline validates, plans, applies, and displays non-sensitive outputs
+* [✅ ] The reviewed Terraform plan was used during Apply
+* [✅ ] Approval or manual validation occurred before Apply
+* [✅ ] `app_public_ip` is available
+* [✅ ] `backend_ansible_host` is available
+* [✅ ] `backend_private_ip` is available
+* [✅ ] `mysql_fqdn` is available
+* [✅ ] Only non-sensitive Terraform outputs were transferred to the Application Repository
+* [✅] The SSH private key is stored in Azure DevOps Secure Files
+* [✅] The SSH private key was not committed or published
+* [✅] The MySQL password is stored as a secret pipeline variable
+* [✅] Ansible reaches both frontend and backend VMs
+* [✅] Ansible completes with zero failed and zero unreachable hosts
+* [✅ ] Nginx proxies requests to the backend private IP
+* [✅ ] EpicBook runs as a persistent service
+* [✅ ] The database schema and seed data are available
+* [✅ ] The application displays database-backed products
+* [✅ ] Cart or checkout actions are recorded in MySQL
+* [✅ ] The final application displays your Full Name and deployment date
+* [✅ ] Screenshots 1–6 are included and readable
+* [✅ ] The Infrastructure Repository URL is included
+* [✅ ] The Application Repository URL is included
+* [✅ ] The final EpicBook application URL is included
+* [✅ ] The LinkedIn post is published
+* [✅ ] The LinkedIn post URL is included
+* [✅ ] No secret or sensitive identifier is exposed
 
 ---
 

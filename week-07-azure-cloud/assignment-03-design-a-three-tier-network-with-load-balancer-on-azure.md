@@ -54,13 +54,13 @@ Deploy Ubuntu 22.04 LTS VM `web-nginx` in `web-subnet`, inside `vnet-demo-rg`, w
 
 #### Screenshot 4 — VM Overview showing `web-nginx`, its running status, and public IP
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Web-tier%20compute%20overview%20showing%20subnet%20and%20availability%20configuration.png)
 
 ---
 
 #### Screenshot 5 — VM Networking configuration showing `eb-demo-vnet`, `web-subnet`, and inbound rules allowing SSH 22 and HTTP 80
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20Terminal%20showing%20the%20EpicBook%20repository%20cloned%20and%20dependencies%20installed.png)
 
 ---
 
@@ -74,13 +74,13 @@ Install, enable, and start NGINX on `web-nginx`, then verify the default page th
 
 #### Screenshot 6 — Terminal showing `sudo systemctl status nginx --no-pager` with NGINX active and running
 
-Add your screenshot here.
+![task 3](screenshots/Screenshot%20with%20NSG%20rules%20proving%20least-privilege%20access%20between%20the%20tiers.png)
 
 ---
 
 #### Screenshot 7 — Browser showing the NGINX welcome page through the VM Public IP, with the address bar visible
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Browser%20showing%20the%20NGINX%20welcome%20page.png)
 
 ---
 
@@ -94,13 +94,13 @@ Create Standard Public Load Balancer `web-public-elb` in `vnet-demo-rg`, with fr
 
 #### Screenshot 8 — Load Balancer frontend configuration showing its public IP
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Load%20Balancer%20frontend%20IP%20configuration.png)
 
 ---
 
 #### Screenshot 9 — `web-http-rule` configuration showing the frontend, `web-backend-pool`, TCP ports 80 → 80, and `web-health-probe`
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Web-tier%20compute%20overview%20showing%20subnet%20and%20availability%20configuration.png)
 
 ---
 
@@ -114,7 +114,7 @@ Confirm that the NGINX default page is accessible through the Load Balancer’s 
 
 #### Screenshot 10 — Browser showing the NGINX welcome page through the Load Balancer Public IP, with the address bar visible
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20Browser%20showing%20the%20NGINX%20welcome%20page.png)
 
 ---
 
@@ -128,7 +128,7 @@ Save Screenshots 1–10, then delete Resource Group `vnet-demo-rg` to avoid ongo
 
 #### Screenshot 11 — Evidence confirming deletion of `vnet-demo-rg`, such as an Azure success notification or the Resource Groups list showing no results when filtered by its name
 
-Add your screenshot here.
+![task 7](screenshots/Screenshot%20with%20Architecture%20diagram%20showing%20the%20public%20entry%20point1-1.png)
 
 ---
 
@@ -144,13 +144,13 @@ Publish a LinkedIn post sharing your Azure deployment, including a screenshot of
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eEgwt3pU`
 
 ---
 
 #### Screenshot 12 — Published LinkedIn post showing your caption and deployment screenshot
 
-Add your screenshot here.
+![linkedIn](screenshots/Screenshot%20with%20nginx%20linkedIn%20post.png)
 
 ---
 # Submission Instructions
@@ -175,17 +175,17 @@ Add your screenshot here.
 - [✅] No sensitive data exposed
 
 =======
-- [ ] Task 1: Resource Group created (Screenshot 1)
-- [ ] Task 2: VNet and three required subnets created (Screenshots 2–3)
-- [ ] Task 3: Web VM deployed with the required networking configuration (Screenshots 4–5)
-- [ ] Task 4: NGINX running and verified through the VM public IP (Screenshots 6–7)
-- [ ] Task 5: Public Load Balancer configured (Screenshots 8–9)
-- [ ] Task 6: NGINX reachable through the Load Balancer public IP (Screenshot 10)
-- [ ] Task 7: Resource Group deleted after saving deployment evidence (Screenshot 11)
-- [ ] LinkedIn post published with the required hashtags (Screenshot 12)
-- [ ] LinkedIn post URL included
-- [ ] All required screenshots are readable and meet the full-name requirement
-- [ ] No sensitive information exposed
+- [✅] Task 1: Resource Group created (Screenshot 1)
+- [✅] Task 2: VNet and three required subnets created (Screenshots 2–3)
+- [✅] Task 3: Web VM deployed with the required networking configuration (Screenshots 4–5)
+- [✅] Task 4: NGINX running and verified through the VM public IP (Screenshots 6–7)
+- [✅] Task 5: Public Load Balancer configured (Screenshots 8–9)
+- [✅] Task 6: NGINX reachable through the Load Balancer public IP (Screenshot 10)
+- [✅] Task 7: Resource Group deleted after saving deployment evidence (Screenshot 11)
+- [✅] LinkedIn post published with the required hashtags (Screenshot 12)
+- [✅] LinkedIn post URL included
+- [✅] All required screenshots are readable and meet the full-name requirement
+- [✅] No sensitive information exposed
 >>>>>>> upstream/main
 ---
 

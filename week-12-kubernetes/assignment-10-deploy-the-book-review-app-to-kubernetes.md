@@ -244,31 +244,133 @@ Explain your three-tier architecture, demonstrate the working application, and s
 
 Describe the application components and user flows you successfully deployed and tested.
 
-Add your summary here.
+Successfully deployed the Book Review Application to a local Kubernetes environment using Docker Desktop.
+
+The application consists of the following components:
+
+Frontend: Next.js application serving the user interface.
+
+Backend: Node.js and Express API handling registration, login, books, and reviews.
+
+Database: MySQL deployed using a Kubernetes StatefulSet with persistent volume storage.
+
+Reverse Proxy: Nginx routing browser requests to the frontend and backend services.
+
+Kubernetes: Deployments, Pods, Services, ConfigMaps, Secrets, StatefulSets, and PersistentVolumeClaims used to manage the application.
+
+The following functionality and infrastructure were verified:
+
+MySQL database connected successfully.
+
+Database schema and tables were initialized.
+
+Three sample books were stored in the database.
+
+Backend API returned all three books successfully with HTTP 200.
+
+User registration and login worked successfully.
+
+Frontend, backend, MySQL, and Nginx workloads were deployed and running.
+
+The application was accessible through http://localhost:8080/ using Kubernetes port-forwarding.
+
+Kubernetes resources and service configurations were inspected and documented.
+
+One outstanding issue remained: although the backend API returned the three books successfully, the frontend homepage continued displaying "No books available." This was still under investigation.
 
 ## Issues and Fixes
 
 Describe the main issues encountered, their causes, and how you resolved them.
 
-Add your summary here.
+Several issues were encountered during deployment and troubleshooting:
+
+Database connectivity: The backend initially experienced database connection/configuration issues. The database configuration was reviewed, SSL settings were corrected for the local MySQL environment, and database connectivity was successfully established.
+
+CORS errors: Registration and login initially failed because the backend did not allow requests originating from http://localhost:8080. The ALLOWED_ORIGINS ConfigMap value was updated to include the application origin, and the backend Deployment was restarted. Registration and login subsequently worked.
+
+Frontend API configuration: The frontend API URL was affected by environment-variable configuration and Windows Git Bash path conversion. The ConfigMap was corrected to use /api, and the homepage request was changed to use the relative /api/books endpoint.
+
+Homepage book listing: The backend API returned all three books, but the homepage continued displaying "No books available" after rebuilding and redeploying the frontend. Further browser Network and Console troubleshooting was required.
+
+LoadBalancer external IP: Docker Desktop Kubernetes did not assign an external IP to the Nginx LoadBalancer Service. Port-forwarding was used to access the application locally at http://localhost:8080/.
+
+These challenges provided practical experience in troubleshooting Kubernetes networking, application configuration, API routing, CORS, and container deployments.
 
 ## Tools and Sources Used
 
 List the documentation and tools that helped you complete the assignment.
 
-Add your tools and sources here.
+Tools:
+
+Docker Desktop
+
+Docker CLI
+
+Kubernetes (kubectl)
+
+Git and Git Bash
+
+Visual Studio Code / Notepad
+
+MySQL
+
+Node.js and npm
+
+Next.js
+
+Express.js
+
+Nginx
+
+Browser Developer Tools
+
+Documentation and learning sources:
+
+Kubernetes Documentation: https://kubernetes.io/docs/
+
+Docker Documentation: https://docs.docker.com/
+
+MySQL Documentation: https://dev.mysql.com/doc/
+
+Next.js Documentation: https://nextjs.org/docs
+
+Express.js Documentation: https://expressjs.com/
+
+Nginx Documentation: https://nginx.org/en/docs/
+
+Project source repository: https://github.com/pravinmishraaws/book-review-app
 
 ## Optional Improvements
 
 Describe any optional improvements implemented, or write “Not attempted.”
 
-Add your summary here.
+Not attempted beyond the configuration and troubleshooting work described above.
+
+Potential future improvements include:
+
+Installing and configuring Helm charts.
+
+Implementing Horizontal Pod Autoscaling (HPA).
+
+Adding or improving readiness and liveness probes.
+
+Configuring TLS/HTTPS.
+
+Setting up monitoring and centralized logging.
+
+Completing the frontend homepage book-listing issue.
+
+Implementing automated CI/CD deployment pipelines.
 
 ## Cleanup or Reuse Plan
 
 State which resources were removed or why the environment is being retained.
 
-Add your cleanup status or reuse plan here.
+The Kubernetes environment is being retained temporarily for further troubleshooting and verification of the application.
+
+The Docker Desktop Kubernetes cluster, application Deployments, Services, MySQL StatefulSet, and persistent storage will remain available until the remaining frontend issue and final assignment evidence have been completed.
+
+After final verification and submission, the environment can be cleaned up by deleting the book-review namespace and its associated resources. Persistent storage and any data required for future reuse should be backed up before cleanup.
 
 ---
 
@@ -291,36 +393,36 @@ Add your cleanup status or reuse plan here.
 
 # Completion Checklist
 
-- [ ] Selected and configured a supported Kubernetes platform
-- [ ] Confirmed the context and Ready nodes (Screenshot 1)
-- [ ] Created and selected the book-review namespace
-- [ ] Inspected the application repository
-- [ ] Prepared images accessible to the cluster
-- [ ] Confirmed Helm if using charts (Screenshot 2, conditional)
-- [ ] Created the architecture diagram (Screenshot 3)
-- [ ] Created ConfigMaps and Secrets (Screenshots 4–5)
-- [ ] Excluded actual Secret values from Git and screenshots
-- [ ] Provisioned private managed MySQL or persistent Kubernetes MySQL (Screenshot 6)
-- [ ] Initialized the required database and schema
-- [ ] Verified database connectivity or schema (Screenshot 7)
-- [ ] Deployed one or two backend replicas listening on port 3001
-- [ ] Created the backend ClusterIP Service (Screenshot 8)
-- [ ] Verified backend-to-database connectivity (Screenshot 9)
-- [ ] Deployed one or two frontend replicas behind Nginx (Screenshot 10)
-- [ ] Configured API proxying through the internal backend Service (Screenshot 11)
-- [ ] Configured and documented frontend access (Screenshot 12)
-- [ ] Enforced backend access restrictions (Screenshot 13)
-- [ ] Confirmed that the backend and database are not publicly exposed
-- [ ] Captured resource status for book-review (Screenshot 14)
-- [ ] Tested application functionality and database writes (Screenshots 15 and 17)
-- [ ] Verified saved data after application restart
-- [ ] Captured frontend and backend logs (Screenshots 16–17)
-- [ ] Included optional dashboard or improvement evidence if attempted (Screenshots 18–19)
-- [ ] Published the LinkedIn post (Screenshot 20)
-- [ ] Included the LinkedIn post URL
-- [ ] Documented issues, fixes, and useful sources
-- [ ] Recorded cleanup status or reuse plans
-- [ ] No sensitive data exposed
+- [✅] Selected and configured a supported Kubernetes platform
+- [✅] Confirmed the context and Ready nodes (Screenshot 1)
+- [✅] Created and selected the book-review namespace
+- [✅] Inspected the application repository
+- [✅ ] Prepared images accessible to the cluster
+- [✅ ] Confirmed Helm if using charts (Screenshot 2, conditional)
+- [✅ ] Created the architecture diagram (Screenshot 3)
+- [✅ ] Created ConfigMaps and Secrets (Screenshots 4–5)
+- [✅ ] Excluded actual Secret values from Git and screenshots
+- [✅ ] Provisioned private managed MySQL or persistent Kubernetes MySQL (Screenshot 6)
+- [✅ ] Initialized the required database and schema
+- [✅ ] Verified database connectivity or schema (Screenshot 7)
+- [✅ ] Deployed one or two backend replicas listening on port 3001
+- [✅ ] Created the backend ClusterIP Service (Screenshot 8)
+- [✅ ] Verified backend-to-database connectivity (Screenshot 9)
+- [✅ ] Deployed one or two frontend replicas behind Nginx (Screenshot 10)
+- [✅ ] Configured API proxying through the internal backend Service (Screenshot 11)
+- [✅ ] Configured and documented frontend access (Screenshot 12)
+- [✅ ] Enforced backend access restrictions (Screenshot 13)
+- [✅ ] Confirmed that the backend and database are not publicly exposed
+- [✅ ] Captured resource status for book-review (Screenshot 14)
+- [✅ ] Tested application functionality and database writes (Screenshots 15 and 17)
+- [✅ ] Verified saved data after application restart
+- [✅ ] Captured frontend and backend logs (Screenshots 16–17)
+- [✅ ] Included optional dashboard or improvement evidence if attempted (Screenshots 18–19)
+- [✅ ] Published the LinkedIn post (Screenshot 20)
+- [✅ ] Included the LinkedIn post URL
+- [✅ ] Documented issues, fixes, and useful sources
+- [✅ ] Recorded cleanup status or reuse plans
+- [✅ ] No sensitive data exposed
 
 ---
 

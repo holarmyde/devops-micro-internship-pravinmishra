@@ -176,11 +176,11 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-Add your screenshot here.
+![linkedIN](screenshots/Screenshot%20with%20static-website%20linkedIn%20post.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here]
+`https://lnkd.in/p/en-VURbW`
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 
@@ -199,28 +199,28 @@ Add your screenshot here.
 
 # Completion Checklist
 
-* The correct Azure Static Website repository was imported into Azure Repos
-* `index.html` is visible in Azure Repos
-* Your Full Name was added to the website
-* The target EC2 instance was provisioned using Terraform
-* A suitable Ubuntu image and EC2 size were selected
-* Nginx was configured using Ansible
-* SSH login works using the selected authentication method
-* The SSH user can write to `/var/www/html`
-* TCP ports 22 and 80 are configured correctly
-* The self-hosted Azure Pipelines agent is online
-* The SSH Service Connection was created successfully
-* The YAML trigger includes all branches
-* The YAML uses the correct self-hosted agent pool
-* The copy and remote-verification tasks completed successfully
-* The pipeline status is **Succeeded**
-* A new pushed commit triggered the pipeline automatically
-* The Azure Static Website loads through the EC2 public IP address
-* Your Full Name is visible on the deployed website
-* Screenshots 1–5 are included and readable
-* The final website URL is included
-* The LinkedIn post screenshot and URL are included
-* No sensitive information is exposed
+- [✅ ] The correct Azure Static Website repository was imported into Azure Repos
+- [✅ ] `index.html` is visible in Azure Repos
+- [✅ ] Your Full Name was added to the website
+- [✅ ] The target EC2 instance was provisioned using Terraform
+- [✅ ] A suitable Ubuntu image and EC2 size were selected
+- [✅ ] Nginx was configured using Ansible
+- [✅ ] SSH login works using the selected authentication method
+- [✅ ] The SSH user can write to `/var/www/html`
+- [✅ ] TCP ports 22 and 80 are configured correctly
+- [✅ ] The self-hosted Azure Pipelines agent is online
+- [✅ ] The SSH Service Connection was created successfully
+- [✅ ] The YAML trigger includes all branches
+- [✅ ] The YAML uses the correct self-hosted agent pool
+- [✅ ] The copy and remote-verification tasks completed successfully
+- [✅ ] The pipeline status is **Succeeded**
+- [✅ ] A new pushed commit triggered the pipeline automatically
+- [✅ ] The Azure Static Website loads through the EC2 public IP address
+- [✅ ] Your Full Name is visible on the deployed website
+- [✅ ] Screenshots 1–5 are included and readable
+- [✅ ] The final website URL is included
+- [✅ ] The LinkedIn post screenshot and URL are included
+- [✅ ] No sensitive information is exposed
 
 ---
 

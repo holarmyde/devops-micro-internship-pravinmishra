@@ -232,13 +232,13 @@ Add the credit note for your track, replace `YOUR-GITHUB-USERNAME` with your Git
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eeGVFyH4`
 
 ---
 
 #### Screenshot 22 — Published LinkedIn post showing your caption, application URL, and live EpicBook screenshot
 
-Add your screenshot here.
+![LinkedIn](screenshots/Screenshot%20with%20epicbook_again_linkedIn.png)
 
 > **Privacy Note:** Do not expose passwords, private keys, `.env` values, database credentials, or sensitive AWS account information.
 
@@ -265,17 +265,17 @@ Add your screenshot here.
 - [✅] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
 - [✅] No sensitive data exposed
 =======
-- [ ] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
-- [ ] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
-- [ ] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
-- [ ] Task 4: Node.js, npm, Nginx, and MySQL client, Git installed (Screenshots 8–10)
-- [ ] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
-- [ ] Task 6: Database initialized from the SQL dump (Screenshot 13)
-- [ ] Task 7: Backend deployed and responding on port 8080 (Screenshots 14–16)
-- [ ] Task 8: Nginx proxying requests to EpicBook, with PM2 persistence. (Screenshots 17–18)
-- [ ] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
-- [ ] No sensitive data exposed
-- [ ] LinedIn post published
+- [✅] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
+- [✅] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
+- [✅] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
+- [✅] Task 4: Node.js, npm, Nginx, and MySQL client, Git installed (Screenshots 8–10)
+- [✅] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
+- [✅] Task 6: Database initialized from the SQL dump (Screenshot 13)
+- [✅] Task 7: Backend deployed and responding on port 8080 (Screenshots 14–16)
+- [✅] Task 8: Nginx proxying requests to EpicBook, with PM2 persistence. (Screenshots 17–18)
+- [✅] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
+- [✅] No sensitive data exposed
+- [✅] LinedIn post published
 >>>>>>> upstream/main
 
 ---

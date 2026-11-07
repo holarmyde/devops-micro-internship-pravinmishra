@@ -159,13 +159,13 @@ Add the credit note for your track, replace `YOUR-GITHUB-USERNAME` with your Git
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eeWZkmv3`
 
 ---
 
 #### Screenshot 11 — Published LinkedIn post showing your caption, application URL, and live React application screenshot
 
-Add your screenshot here.
+![linkedIN](screenshots/Screenshot%20with%20reacct%20linkedIn%20post.png)
 
 # Submission Instructions
 
