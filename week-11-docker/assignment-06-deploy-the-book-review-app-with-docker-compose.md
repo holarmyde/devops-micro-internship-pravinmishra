@@ -174,7 +174,7 @@ docker compose logs mysql backend --tail=50
 
 The logs must show MySQL readiness and successful backend database connection.
 
-Add your screenshot here.
+![task 4](screenshots/Screenshot%20with%20Backend%20Configuration_tt.png)
 
 ---
 

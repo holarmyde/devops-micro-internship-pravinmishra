@@ -49,7 +49,7 @@ Create a baseline single-stage Docker image and run the application on port 3000
 =======
 Add a screenshot showing the completed `Dockerfile.single`.
 
-Add your screenshot here.
+![task 2](screenshots/Screenshot%20with%20Contents%20of%20Dockerfile.single.png)
 >>>>>>> upstream/main
 
 ---

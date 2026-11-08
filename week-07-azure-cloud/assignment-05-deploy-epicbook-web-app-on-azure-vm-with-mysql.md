@@ -156,7 +156,7 @@ Run EpicBook in the background using PM2, configure startup after a VM reboot, s
 
 #### Screenshot 14 — Terminal showing the `epicbook` process with status `online` in `pm2 list`
 
-Add your screenshot here.
+![task 5](screenshots/Screenshot%20with%20Terminal%20showing%20the%20EpicBook%20repository%20cloned%20and%20dependencies%20installed.png)
 
 ---
 
