@@ -307,8 +307,14 @@ Write a short explanation covering:
 - How Task 1 proved Bind Mount persistence
 - How Task 2 proved Docker Volume persistence
 - Why Docker Volumes are commonly used for application data
-
-Write your explanation here.
+1. Difference between a Bind Mount and a Docker Volume
+A Bind Mount connects a specific directory or file on the host machine to a path inside a container, allowing both to access the same files. A Docker Volume is managed by Docker and provides persistent storage that can be shared between containers independently of their lifecycles.
+2. How Task 1 proved Bind Mount persistence
+I mounted a host directory (/home/azureuser/nginx-logs) into an Nginx container to store its access and error logs. After stopping and removing the container, I verified that the log files and their contents remained available on the host machine.
+3. How Task 2 proved Docker Volume persistence
+I created a named Docker volume (shared-data) and mounted it into both backend and frontend containers. The backend wrote data while the frontend read and displayed it. After removing and recreating both containers using the same volume, the previously stored data remained accessible.
+4. Why Docker Volumes are commonly used for application data
+Docker Volumes provide reliable persistent storage for important application data, such as databases, uploaded files, and application records. They allow containers to be replaced, updated, or recreated without losing valuable data, making them essential for reliable containerized applications..
 
 ---
 
