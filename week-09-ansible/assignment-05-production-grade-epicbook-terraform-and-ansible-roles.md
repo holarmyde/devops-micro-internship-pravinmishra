@@ -182,6 +182,7 @@ Confirm the EpicBook site loads with HTTP 200, inspect the Nginx configuration, 
 #### Screenshot 15 — Terminal showing the idempotent second Ansible run with mostly OK/UNCHANGED and `failed=0`
 =======
 #### Screenshot 1 — Terminal showing the completed `epicbook-prod` project structure
+![task 10](screenshots/Screenshot%20with%20Terminal%20showing%20the%20ansible-playbook%20run%20.png)
 >>>>>>> upstream/main
 
 ![task 10](screenshots/Screenshot%20with%20Terminal%20showing%20the%20ansible-playbook%20run%20.png)
@@ -204,7 +205,7 @@ My production remediation plan includes enabling HTTPS, enforcing TLS certificat
 =======
 **1. Which cloud provider did you choose for this assignment?**
 
-Add your answer here.
+I chosed Microsoft Azure
 >>>>>>> upstream/main
 
 ---
@@ -509,19 +510,19 @@ Create the `epicbook` role to deploy the EpicBook application, connect it to the
 
 #### Screenshot 15 — `roles/epicbook/tasks/main.yml` showing application deployment tasks
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Editor%20showing%20roles_epicbook_tasks_main.yml.png)
 
 ---
 
 #### Screenshot 16 — Task or file showing how the database connection is configured, with secrets hidden
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20files_index.html.png)
 
 ---
 
 #### Screenshot 17 — Task or output showing the EpicBook application managed by PM2
 
-Add your screenshot here.
+![task 8](screenshots/Screenshot%20with%20Terminal%20or%20editor%20showing%20the%20complete%20epicbook-prod.png)
 
 ---
 
