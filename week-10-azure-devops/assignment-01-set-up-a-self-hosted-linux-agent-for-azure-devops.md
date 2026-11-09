@@ -110,7 +110,7 @@ Add a terminal screenshot showing:
 
 ![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20the%20agent%20service%20running%20successfully.png)
 =======
-> Ensure that the PAT is not visible.
+![task 4](screenshots/Screenshot%20with%20Terminal%20showing%20the%20agent%20service%20running%20successfully.png)
 >>>>>>> upstream/main
 
 ---
@@ -185,7 +185,7 @@ I also encountered an authentication mistake while configuring the Azure DevOps 
 * Output from `df -h`
 * Output from `pwd`
 
-Add your screenshot here.
+![task 6](screenshots/Screenshot%20with%20The%20pipeline%20run%20succeeding%20after%20your%20fix.png)
 
 ---
 
@@ -194,7 +194,181 @@ Add your screenshot here.
 Paste the contents of your completed `azure-pipelines.yml` file below.
 
 ```yaml
-# Paste your completed azure-pipelines.yml here
+
+trigger:
+  branches:
+    include:
+      - main
+
+pr: none
+
+variables:
+  - group: EpicBook-Production-Variables
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: TerraformPlan
+    displayName: Terraform validation and plan
+    jobs:
+      - job: ValidateAndPlan
+        displayName: Validate EpicBook infrastructure
+        steps:
+          - checkout: self
+
+          - task: AzureCLI@2
+            displayName: Validate and create reviewed plan
+            inputs:
+              azureSubscription: sc-epicbook-azure
+              scriptType: bash
+              scriptLocation: inlineScript
+              workingDirectory: $(Build.SourcesDirectory)/terraform
+              inlineScript: |
+                set -euo pipefail
+
+                sudo apt-get update -qq
+                sudo apt-get install -y -qq curl unzip jq
+
+                VERSION="1.16.1"
+                curl -fsSLo /tmp/terraform.zip \
+                  "https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip"
+                unzip -o /tmp/terraform.zip -d /tmp/terraform-bin
+                sudo install /tmp/terraform-bin/terraform /usr/local/bin/terraform
+
+                terraform version
+                terraform fmt -check -recursive
+                terraform init -input=false -reconfigure
+                terraform validate
+
+                KEY_FILE="$(Agent.TempDirectory)/epicbook_id_ed25519.pub"
+                printf '%s\n' "$EPICBOOK_SSH_PUBLIC_KEY" > "$KEY_FILE"
+                chmod 600 "$KEY_FILE"
+                export TF_VAR_ssh_public_key_path="$KEY_FILE"
+
+                PLAN_FILE="$(Agent.TempDirectory)/epicbook.tfplan"
+                PLAN_JSON="$(Agent.TempDirectory)/epicbook-plan.json"
+
+                terraform plan \
+                  -input=false \
+                  -lock-timeout=60s \
+                  -out="$PLAN_FILE"
+
+                terraform show -json "$PLAN_FILE" > "$PLAN_JSON"
+
+                # Block deletions and actual changes to security rules or associations.
+                if ! jq -e '
+                  [
+                    .resource_changes[]?
+                    | select(.change.actions != ["no-op"])
+                    | select(
+                        (.change.actions | index("delete")) != null
+                        or
+                        (
+                          (
+                            .type
+                            | test(
+                                "network_security_rule|network_interface_security_group_association|subnet_network_security_group_association"
+                              )
+                          )
+                          and
+                          (.change.before != .change.after)
+                        )
+                      )
+                  ] | length == 0
+                ' "$PLAN_JSON" >/dev/null; then
+                  echo "SAFETY CHECK FAILED: review deletions or actual network security rule/association changes."
+                  exit 1
+                fi
+
+                mkdir -p "$(Build.ArtifactStagingDirectory)"
+                cp "$PLAN_FILE" "$(Build.ArtifactStagingDirectory)/epicbook.tfplan"
+                echo "Plan passed the configured safety checks."
+
+            env:
+              EPICBOOK_SSH_PUBLIC_KEY: $(sshPublicKey)
+              TF_VAR_admin_source_cidr: $(adminSourceCidr)
+              TF_VAR_admin_source_cidrs: $(adminSourceCidrs)
+              TF_VAR_mysql_admin_password: $(mysqlAdminPassword)
+
+          - task: PublishPipelineArtifact@1
+            displayName: Publish reviewed Terraform plan
+            inputs:
+              targetPath: $(Build.ArtifactStagingDirectory)/epicbook.tfplan
+              artifact: epicbook-reviewed-plan
+
+  - stage: Approval
+    displayName: Manual plan approval
+    dependsOn: TerraformPlan
+    condition: succeeded()
+    jobs:
+      - job: ManualApproval
+        displayName: Review before applying
+        pool: server
+        timeoutInMinutes: 1500
+        steps:
+          - task: ManualValidation@1
+            timeoutInMinutes: 1440
+            inputs:
+              notifyUsers: ''
+              instructions: |
+                Review the TerraformPlan stage logs and the reviewed plan artifact.
+                Confirm every proposed resource change is expected.
+                Reject this run if any change is unclear or unsafe.
+                Approve only after the plan has been reviewed.
+              onTimeout: reject
+
+  - stage: TerraformApply
+    displayName: Apply approved Terraform plan
+    dependsOn: Approval
+    condition: succeeded()
+    jobs:
+      - job: ApplyReviewedPlan
+        displayName: Apply exact saved plan
+        steps:
+          - checkout: self
+
+          - task: DownloadPipelineArtifact@2
+            displayName: Download reviewed plan
+            inputs:
+              artifact: epicbook-reviewed-plan
+              path: $(Pipeline.Workspace)/epicbook-reviewed-plan
+
+          - task: AzureCLI@2
+            displayName: Initialize and apply reviewed plan
+            inputs:
+              azureSubscription: sc-epicbook-azure
+              scriptType: bash
+              scriptLocation: inlineScript
+              workingDirectory: $(Build.SourcesDirectory)/terraform
+              inlineScript: |
+                set -euo pipefail
+
+                sudo apt-get update -qq
+                sudo apt-get install -y -qq curl unzip
+
+                VERSION="1.16.1"
+                curl -fsSLo /tmp/terraform.zip \
+                  "https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip"
+                unzip -o /tmp/terraform.zip -d /tmp/terraform-bin
+                sudo install /tmp/terraform-bin/terraform /usr/local/bin/terraform
+
+                terraform init -input=false -reconfigure
+
+                PLAN_FILE="$(Pipeline.Workspace)/epicbook-reviewed-plan/epicbook.tfplan"
+                test -f "$PLAN_FILE" || {
+                  echo "ERROR: Reviewed plan artifact is missing."
+                  exit 1
+                }
+
+                terraform apply -input=false "$PLAN_FILE"
+                terraform output
+
+            env:
+              EPICBOOK_SSH_PUBLIC_KEY: $(sshPublicKey)
+              TF_VAR_admin_source_cidr: $(adminSourceCidr)
+              TF_VAR_admin_source_cidrs: $(adminSourceCidrs)
+              TF_VAR_mysql_admin_password: $(mysqlAdminPassword)
 ```
 
 > Do not include your PAT, SSH private key, password, or cloud credentials in the YAML file.
@@ -205,7 +379,17 @@ Paste the contents of your completed `azure-pipelines.yml` file below.
 
 Write a short summary of what you configured.
 
-[Write your summary here.]
+### Assignment Summary
+
+In this assignment, I worked on configuring a self-hosted Azure DevOps agent using an Ubuntu Linux environment.
+
+I learned how to create an Azure DevOps organization and project, generate a Personal Access Token, configure an agent pool, and register a Linux machine as a self-hosted agent.
+
+I also explored SSH connectivity, Linux system administration, agent service management, and Azure DevOps pipeline configuration.
+
+Finally, I created a YAML test pipeline to verify the Linux environment and demonstrate how Azure DevOps executes pipeline jobs using a self-hosted agent.
+
+This assignment improved my practical understanding of CI/CD automation, Linux administration, cloud infrastructure, and DevOps engineering.
 
 ---
 
@@ -220,9 +404,9 @@ Add a screenshot of your LinkedIn post showing:
 * Three to five lines explaining your experience
 * A screenshot of the successful pipeline run with no secrets visible
 
-Add your screenshot here.
+![LinkedIn](screenshots/successful%20pipeline%20LinkedIn%20post.png)
 
-**LinkedIn Post URL:** [Paste your LinkedIn post URL here]
+**LinkedIn Post URL:** https://www.linkedin.com/posts/oluwafemi-aremu-a85ab4197_devops-azuredevops-linux-ugcPost-7525618422974644224-STf3/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5CRAUBiD9hmJ-VjKBPuiy5dtrdA6AJQDk
 >>>>>>> upstream/main
 
 ---
